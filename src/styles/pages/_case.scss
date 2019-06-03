@@ -1,0 +1,1274 @@
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix{
+    content: '';
+    clear: both;
+}
+
+h3{
+    margin: 0;
+}
+
+.case{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 20px;
+}
+.case .caseInr{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.row.case-row{
+    margin: 0;
+}
+.caseHeading{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+h2{
+    margin: 0;
+    font-size: 22px;
+    position: relative;
+    line-height: 40px;
+    letter-spacing: .5px;
+    color: #000000;
+    font-weight: bold;
+    display: inline-block;
+}
+.caseHeading i, .caseHeading h2{
+    display: inline-block;
+}
+.caseHeading h2{
+padding-left: 15px;
+top: -4px;
+}
+.tabs-component{
+    padding: 0 15px;
+}
+.case-btn{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: right;
+}
+i.icon{
+    padding-left: 10px;
+}
+
+// case tab
+i.icon-left-menu-color{
+    color: #000000;
+}
+.wrapper-tab{
+    width: 100%;
+    margin: 15px auto 0;
+    position: relative;
+}
+.tabs{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.tabs .custom-tabs{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    // overflow-x: scroll;
+}
+.custom-tabs .custom-tab-inr{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: white;
+    min-width: 100px;
+}
+
+.custom-tabs .PrivateTabScrollButton-root-222{
+    width: initial;
+}
+
+.custom-tabs .MuiPaper-elevation4{
+    box-shadow: 0 0 0 0;
+}
+.custom-tabs .MuiPrivateTabIndicator-colorPrimary-244{
+background-color: transparent;
+}
+
+.custom-tabs .custom-tab-inr.MuiTab-textColorPrimary-245.MuiTab-selected{
+    color: #2196f3;
+    border: 2px solid #2196f3;
+}
+
+
+// case tab1
+.tabone{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+
+}
+.case-tab-padding{
+    padding-right: 0;
+}
+h2.h2-fontwght{
+    font-weight:500;
+}
+.wrap-tab1-left{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+}
+.tab1-heading{
+    border-bottom: 1px solid lightgray;
+    padding: 0 0 16px 0;
+}
+.tab1-form{
+    width: 100%;
+    margin: 30px auto 20px;
+    position: relative;
+    border-right: 1px solid lightgray;
+    float: left;
+}
+.tab1-form.tab2-form{
+    border-right: 0;
+}
+.tab2-top-mgn{
+    margin-top: 60px;
+}
+.form{
+    width: 95%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7px auto;
+}
+.form p{
+    display: inline-block;
+    width: 60px;
+}
+.form p.form-para{
+    width: initial;
+    margin-bottom: 0px;
+}
+.form .inputbase{
+    width: 64%;
+    padding-left: 15px;
+    position: relative;
+    top: -7px;
+    vertical-align: middle;
+}
+.tab2-top-mgn .form .inputbase input,
+ .tab1-spacing .form .inputbase input{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.tab2-top-mgn .form .inputbase, .tab1-spacing .form .inputbase{
+    top: 0;
+
+}
+.form .inputbase .MuiInputBase-input-291{
+    width: 100%;
+}
+.drpdwn-elt{
+    width: 30%;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.drpdwn .dropdown-40 .ms-Dropdown-title {
+    border-radius: 5px;
+    line-height: 32px;
+    height: 35px;
+    width: 100%;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.case-contact-name{
+    width: 100%;
+    margin: 15px auto;
+    position: relative;
+}
+.drpdwn .caretDownWrapper-42{
+    line-height: 35px;
+    height: 35px;
+}
+.case-btn.case-tab-btn{
+    width: initial;
+    float: right;
+    position: relative;
+    top: 0px;
+    text-align: center;
+}
+.btnStyle{
+    
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: .5px;
+   
+}
+
+.case-contact-name p{
+    display: inline-block;
+    margin: 0;
+    top: -6px;
+    position: relative;
+    padding-left: 15px;
+    letter-spacing: .5px;
+}
+.wrap-tab1-left.wrap-tab1-right{
+    padding-bottom: 0;
+}
+.tab1-form.tab1-form2{
+margin: 0 auto;
+padding: 10px 0;
+border-right: 2px dotted lightgray;
+}
+.tabs-row2{
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto;
+}
+.tab1-form.tab3-form{
+    border-right: none;
+}
+.tab1-form.tab3-form .table{
+    float: right;
+}
+.tab1-form.tab2-form .table tbody tr td{
+    text-align: center;
+    width: 50%;
+    padding: 7px 10px;
+}
+.tab1-form.tab2-form .table tbody tr td:first-child{
+    background-color: #F2F1F2;
+}
+.case-btn.case-tab-btn .btn.btn-color{
+    background-color: #3B434B;
+}
+.case-btn.case-tab-btn .btn.btn-color1{
+    background-color: #3d7be3;
+}
+.case-detail{
+    text-align: center;
+    line-height: 75px;
+    font-size: 18px;
+    letter-spacing: .5px;
+    width: 100%;
+    margin: 0 auto;
+}
+.tab4-margin{
+    margin-top: -47px;
+    padding: 0;
+    clear: both;
+    float: right;
+}
+.tab4-margin .tab1-heading{
+    padding: 15px;
+}
+.tabs-drpdwn{
+    width: 30%;
+}
+.tabs-drpdwn .drpdwn-elt{
+    width: 100%;
+}
+// case tab4
+.case-4-content{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 430px;
+    float: left;
+    clear: both;
+}
+.case-4-inr-content{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+.case-4-inr-para{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 8px 0;
+}
+.case-4-inr-para p{
+    margin: 0;
+}
+.case-4-inr-div{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    background-color: white;
+    padding: 8px 0;
+}
+.case-4-inr-div i{
+    color: #3B434B;
+}
+.case-4-inr-div p{
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: -6px;
+    padding-left: 10px;
+}
+.case-4-inr-div p b{
+    color: #2196f3;
+}
+
+.div5-margin{
+    margin-top: -130px;
+}
+
+// font management form
+.font-div, .font-wrapper-container{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+    clear: both;
+}
+.font-wrapper{
+    width: 98%;
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    float: left;
+    clear: both;
+
+}
+.font-wrapper-container .font-drpdwn{
+    width: 16%;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    padding-right: 10px;
+}
+.font-drpdwn .drpdwn{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.font-button, .font-icon{
+    width: 30%;
+    float: left;
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    vertical-align: top;
+    flex-wrap: wrap;
+}
+
+.font-wrapper-container span.font-mod-span{
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    top: 6px;
+}
+.font-button button, .font-icon button{
+    // min-width: 46px;
+    padding: 8px 13px;
+    width: 25%;
+    min-width: 23%;
+}
+.font-textarea{
+    width: 100%;
+    float: left;
+    clear: both;
+    margin: 10px auto 0;
+}
+.form-control:focus{
+    border-color: none;
+    box-shadow: 0 0 0 0;
+}
+
+.form-cal .react-datepicker-wrapper{
+    width: 18%;
+    border: 1px solid lightgray;
+    padding: 6px 10px;
+    margin-left: 15px;
+    height: 37px;
+    
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    position: relative;
+}
+.form-cal i{
+    position: absolute;
+    top: 8px;
+    left: 190px;
+    font-size: 20px;
+    color: gray;
+}
+.form-cal .react-datepicker__input-container > input{
+    border-bottom: none;
+    width: 100%;
+    outline: 0;
+}
+.drpdwn-elt.form-drpdwn{
+    width: 20%;
+}
+.form-accordian{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+}
+.form-accordian .expansion{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+   
+    
+}
+.form-accordian .expansion.MuiExpansionPanel-root-298:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.form-accordian .expansion.MuiExpansionPanel-root-298:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.form-accordian .expansion.MuiPaper-elevation1-111{
+    box-shadow: 0 0 0 0;
+}
+.form-accordian .expansion .MuiExpansionPanelSummary-content-308 > :last-child {
+    padding-left: 32px;
+}
+.form-accordian .expansion .MuiExpansionPanelSummary-expandIcon-309{
+    left: 8px;
+    right: 97%;
+}
+.form-accordian .expansion .expansion-summary {
+    // margin: 0px 0;
+    // padding: 20px 0;
+    border-bottom: 1px solid lightgray;
+}
+.accord1{
+    width: 100%;
+}
+.accord1 .accord-supreme-btn{
+    margin-bottom: 10px;
+}
+.accord1 .accord-supreme-btn button{
+    background-color: #3D7BE3;
+    color: white;
+}
+.accord1 .accord-table{
+    width: 100%;
+    margin: 0 auto;
+}
+.accord-table .table tbody tr td:first-child, .accord-table .table tbody tr td:nth-child(3), .accord-table .table tbody tr td:nth-child(5){
+    width: 120px;
+    background-color: #f2f1f2;
+    color: #4B4B4B;
+    padding: 8px 10px 6px;
+}
+.accord-table .table tbody tr td:nth-child(2), .accord-table .table tbody tr td:nth-child(4), .accord-table .table tbody tr td:nth-child(6){
+    width: 400px;
+    color: #4B4B4B;
+    padding-left: 20px;
+    padding: 8px 10px 6px 20px;
+}
+.accord-table .table tbody tr td i{
+    color: #AEAEAE;
+}
+.accord-table .table tbody tr:last-child td{
+    border-bottom: 1px solid #dee2e6;
+}
+.accord2{
+    width: 100%;
+    margin: 5px auto;
+    position: relative;
+}
+.accord2 .accord2-wrap{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.accord2-wrap-inr{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+}
+.accord2-wrap-inr .padding-pretty{
+    // display: inline;
+    margin-left: 20px;
+}
+.accord2-wrap-inr .drpdwn-elt{
+    width: 10%;
+    display: inline-block;
+    padding-left: 0px;
+    margin-right: 40px;
+}
+.accord2-wrap-inr .radio label input{
+    margin: 0 10px;
+}
+
+.form.app-form{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.form .form-search-input{
+    width: 60%;
+    padding-left: 17px;
+    position: relative;
+}
+.form-search-input i{
+    position: absolute;
+}
+
+.font-drpdwn .drpdwn .dropdown-40 .ms-Dropdown-title, .font-drpdwn .drpdwn .caretDownWrapper-42{
+    height: 40px;
+    line-height: 40px;
+}
+.form.form-without-border{
+    margin-top: 10px;
+}
+.form.form-without-border .react-datepicker-wrapper{
+    width: 18%;
+    margin-left: 20px;
+}
+.form.form-without-border .react-datepicker__input-container > input{
+    border-bottom: 0;
+    width: 100%;
+    outline: 0;
+}
+.wrapper-checkbox{
+    width: 88%;
+    position: relative;
+    padding-left: 20px;
+}
+.wrapper-checkbox .inr-wrap-chkbox{
+    width: 250px;
+    // margin: 0 auto;
+    position: relative;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    // display: flex;
+    // flex-wrap: wrap;
+}
+.pretty{
+    margin-right: 0;
+}
+.wrapper-checkbox .inr-wrap-chkbox .custom-checkbox{
+    // display: inline-block;
+    margin-bottom: 0;
+    float: right;
+}
+.contain-cal-btn{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contain-cal-btn .btn.btn-color{
+    background-color: #3c424b;
+}
+.contain-cal-btn .btn.btnStyle{
+    margin-right: 10px;
+}
+.form-cal-btn{
+    width: 20%;
+    position: relative;
+    margin-right: 10px;
+}
+.form-cal-btn .react-datepicker-wrapper{
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 6px 10px;
+    /* margin-left: 15px; */
+    height: 37px;
+    
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+.form-cal-btn .react-datepicker-wrapper .react-datepicker__input-container > input{
+    border-bottom: none;
+    width: 100%;
+    outline: 0;
+}
+.form-cal-btn i{
+    position: absolute;
+    top: 6px;
+    right: 7px;
+}
+
+.custom-checkbox.checkbox2{
+    top: 6px;
+}
+.font-icon i{
+    color: gray;
+}
+
+// casetabtwo
+.task-row2{
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    float: left;
+
+}
+.client-accord, .client-accord .client-accord-wrap, .client-accord .client-accord-wrap .accord-table{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+ td.blank{
+    background-color: transparent !important;
+}
+
+.table-inr-btns{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    float: left;
+}
+
+.table-inr-btns .btn-color1{
+    background-color: #00c57a;
+    margin-right: 0;
+    padding: 6px 10px;
+    margin-bottom: 0;
+}
+.table-inr-btns .btn-color2{
+    background-color: #FFBD11;
+    margin-right: 5px;
+    padding: 6px 10px;
+    margin-bottom: 0;
+}
+td.table-td{
+    padding-right: 0 !important;
+}
+
+td .inr-wrap-chkbox{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    top: 6px;
+}
+td .inr-wrap-chkbox .custom-checkbox{
+    display: inline-block;
+}
+.textfield-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.textfield-wrapper .form-group{
+    width: 44%;
+    margin-bottom: 0;
+}
+.textfield-wrapper span{
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+.textfield-wrapper .inputtype{
+  width: 100%;
+  display: inline-block;
+}
+.tab1-heading.h3-heading{
+    border-bottom: none;
+}
+.accord2-rght{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+}
+.accord2-rght h3.h2-fontwght{
+    float: left;
+    top: 5px;
+    position: relative;
+    letter-spacing: .5px;
+    
+}
+.accord2-rght .table-inr-btns.table-rght-btns{
+    float: right;
+    width: initial;
+}
+.table-inr-btns.table-rght-btns .btn-color2, .task-row2 .btn.btn-color2{
+    background-color: #3C424B;
+    margin-right: 0;
+}
+.table-inr-btns.table-rght-btns .btn-color1{
+    margin-right: 5px;
+}
+.accord2-rght .drpdwn-elt{
+    padding-left: 0;
+}
+.table-inr-btns.table-rght-btns .btn.accord3-btn-clr, .task-checkbox-width .btn.accord3-btn-clr{
+    background-color: #ababab;
+}
+.form-submisn-btns{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+    float: left;
+}
+.form-submisn-btns .btnStyle{
+    padding: 18px 40px;
+}
+.form-submisn-btns .btn.accord3-btn-clr, .task-row2 .btn.accord3-btn-clr,
+.task-head-right .btn.accord3-btn-clr, .task-form .tab1-form.tab2-form.task-table-form .table tbody tr td .btn.accord3-btn-clr{
+    background-color: #ababab;
+}
+.form-submisn-btns .btn.clr3{
+    background-color: #FE0000;
+}
+.form-submisn-btns .btn.clr1{
+    background-color: #3D7BE3;
+}
+.task-row2 .btnStyle{
+    padding: 10px 5px;
+    margin-right: 5px;
+}
+.task-rght-row-drpdwn{
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+}
+.task-rght-row-drpdwn .left-heading{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.task-search{
+    width: 40%;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    // padding: 5px 10px;
+}
+.task-search:hover{
+    border: 1px solid #000000;
+}
+.drpdwn-elt.drpdwn-elt-tab2{
+    width: 19%;
+}
+.drpdwn-elt.drpdwn-elt-tab2 .drpdwn .dropdown-40 .ms-Dropdown-title{
+    line-height: 42px;
+    height: 46px;
+    width: 100%;
+}
+.drpdwn-elt.drpdwn-elt-tab2 .drpdwn .caretDownWrapper-42 {
+    line-height: 43px;
+    height: 45px;
+}
+
+// enhanced table
+.paginatn-table{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.table-row{
+    border-top: 2px solid black;
+}
+.table-cell{
+    border-bottom: 1px solid black;
+    padding: 4px 10px 4px 10px;
+}
+.table-body .task-table2 .task-td-border{
+    border-right: 1px solid lightgray;
+}
+.table-body .task-table2 .task-checkbox-width{
+    width: 5%;
+    margin: 0 auto;
+    position: relative;
+}
+.table-body .task-table2 .task-checkbox-width:nth-child(2),
+.table-body .task-table2 .task-checkbox-width:nth-child(4),
+.table-body .task-table2 .task-checkbox-width:nth-child(5)
+{
+    width: 10%;
+    padding: 10px;
+}
+.table-body .task-table2 .task-checkbox-width:nth-child(3){
+    width: 45%;
+    padding: 10px;
+}
+.table-body .task-table2 .task-checkbox-width:nth-child(6){
+    width: 12%;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+.table-action-btn{
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+    
+}
+.table-action-btn.table-btn-clr i{
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.table-action-btn.table-btn-clr:first-child i{
+    background-color: #FFC00B;
+}
+.table-action-btn.table-btn-clr:nth-child(2) i{
+    background-color: #00C57A;
+}
+.table-action-btn.table-btn-clr:nth-child(3) i{
+    background-color: #FE0000;
+}
+.task-checkbox-width .btnStyle, .task-head-middle .btnStyle{
+    padding: 5px 5px;
+    margin-bottom: 0;
+}
+
+.task-head-right{
+    margin: 0 auto;
+    width: 23%;
+    position: relative;
+}
+.task-head-right .btn.btnStyle{
+    margin-right: 0;
+}
+.task-head-middle{
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 35px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.tab2-heading{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.task-head-middle .btnStyle{
+    margin-right: 5px;
+}
+.task-head-middle .btn.accord3-btn-clr:hover, .task-head-middle .btn.accord3-btn-clr:focus,
+.task-head-middle .btn.accord3-btn-clr:active{
+background-color: #3D7BE3;
+color: white;
+}
+.tab2-form-rght-btn{
+    top: -8px;
+}
+.tab2-form-rght-btn .btn.btnStyle{
+    padding: 5px 20px;
+}
+.task-form{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.task-form .task-form .tab1-form.tab2-form.task-table-form{
+    margin: 0;
+}
+.task-form .tab1-form.tab2-form.task-table-form .table tbody tr td:first-child{
+    width: 25%;
+    text-align: left;
+    padding-left: 15px;
+}
+.task-form .tab1-form.tab2-form.task-table-form .table tbody tr td:last-child{
+    width: 100%;
+    padding-right: 0;
+}
+.task-form .tab1-form.tab2-form.task-table-form .table tbody tr td .form-group{
+    margin-bottom: 0;
+}
+td.task-forminput-width .form-group{
+    width: 70%;
+}
+td.task-forminput-width i{
+padding-left: 15px;
+vertical-align: middle;
+color: #3C444C;
+}
+.task-form td .form-cal-btn{
+    width: 40%;
+}
+.task-form tr td p{
+    vertical-align: middle;
+    margin-bottom: 0;
+    padding: 10px;
+    color: gray;
+    letter-spacing: .5px;
+}
+.task-form tr td p span{
+    cursor: pointer;
+}
+.task-form .font-textarea{
+    margin-top: 0;
+}
+.tab1-form.tab2-form.task-table-form .table tbody tr td .btn.btnStyle{
+    margin-right: 0;
+}
+.task-form .task-form-para-btn{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.task-form .task-form-para-btn p{
+margin-bottom: 0;
+color: gray;
+letter-spacing: .5px;
+margin-bottom: 8px;
+}
+.task-form .task-form-para-btn p span.para-clr{
+    color: #000000;
+}
+.task-form-para-btn .btn.btnStyle{
+    display: block;
+    margin: 0 auto;
+    background-color: #3D7BE3;
+    padding: 15px 30px;
+    margin-top: 15px;
+}
+.task-head-middle .btn.accord3-btn-clr{
+    background-color: #EFEFEF;
+    color: gray;
+    border: 1px solid lightgray;
+}
+
+
+
+// responsive code
+
+// 1900px css code
+@media screen and (max-width:1900px){
+    .case{
+        padding: 20px 10px;
+    }
+    .form .inputbase{
+        width: 55%;
+    }
+    .task-head-right{
+        width: 35%;
+    }
+    .task-head-middle{
+        width: 55%;
+    }    
+    .table-body .task-table2 .task-checkbox-width:nth-child(3){
+        width: 40%;
+    }
+    .table-body .task-table2 .task-checkbox-width:nth-child(6){
+        width: 20%;
+    }
+    .table-body .task-table2 .task-checkbox-width:nth-child(2){
+        width: 14%;
+    }
+    .task-form td .form-cal-btn{
+        width: 130px;
+    }
+    .wrapper-checkbox {
+        width: 85%;
+        
+    }
+    .form-cal-btn{
+        width: 25%;
+    }
+    .btnStyle{
+        padding: 10px 5px;
+    }
+    .form-cal i{
+        left: 29.5%;
+    }
+    .font-button, .font-icon{
+        width: 30%;
+    }
+    .drpdwn-elt.form-drpdwn {
+        width: 22%;
+    }
+    .form-cal .react-datepicker-wrapper{
+        width: 20%;
+    }
+}
+
+// 1600px
+@media screen and (max-width:1600px){
+    .custom-tabs .custom-tab-inr{
+        min-width:50px;
+    }
+     .custom-tabs .custom-tab-inr .MuiTab-labelContainer-241{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .form .inputbase{
+        width: 45%;
+
+    }
+    .textfield-wrapper .form-group{
+        width: 43%;
+    }
+    .table-inr-btns .btn-color1, .table-inr-btns .btn-color2{
+        padding: 6px 2px;
+    }
+    .form-cal-btn {
+        width: 30%;
+    }
+    .wrapper-checkbox {
+        width: 80%;
+    }
+    .form-cal .react-datepicker-wrapper{
+        width: 110px;
+    }
+    .form-cal i {
+        left: 177px;
+    }
+    .drpdwn-elt.form-drpdwn, .form.form-without-border .react-datepicker-wrapper{
+        width: 125px;
+    }
+  
+}
+// 1400px
+@media screen and (max-width:1400px){
+    .form{
+        width: 100%;
+    }
+    .drpdwn-elt{
+        width: 40%;
+    }
+    .task-head-middle {
+        width: 55%;
+        padding-left: 10px;
+    }
+    .task-head-right {
+        width: 35%;
+    }
+    .task-row2 .checkbox label, .task-head-right .checkbox label{
+        margin-right: 6px;
+    }
+    .drpdwn-elt{
+        padding-left: 10px;
+    }
+    .task-row2 .btnStyle{
+        padding: 10px 2px;
+    }
+    .wrap-tab1-left{
+        padding: 20px 10px 10px 10px;
+    }
+    .task-head-middle .btnStyle {
+        padding: 5px 2px;
+    }
+  
+    .table-body .task-table2 .task-checkbox-width:nth-child(2) {
+        width: 16%;
+    }
+    .textfield-wrapper .form-group {
+        width: 40%;
+    }
+    .accord-table .table tbody tr td .drpdwn-elt{
+        padding-left: 0;
+    }
+    .accord2-rght .drpdwn-elt{
+        width: 25%;
+    }
+    .font-button, .font-icon {
+        width: 35%;
+    }
+    .font-wrapper-container .font-drpdwn {
+        width: 22%;
+    }
+}
+// 1280px
+@media screen and (max-width:1280px){
+    .form .inputbase{
+        width: 40%;
+    }
+    .case-btn.case-tab-btn.tabs-drpdwn{
+        width: 50%;
+    }
+    .table-body .task-table2 .task-checkbox-width:nth-child(3) {
+        width: 34%;
+    }
+    .task-strt-row2 .task-row2 .btn.btnStyle{
+        font-size: 12px !important;
+    }
+    .font-button, .font-icon {
+        width: 30%;
+    }
+  
+}
+// 992px
+@media screen and (max-width:992px){
+    .form .inputbase {
+        width: 55%;
+    }
+    .tab1-form{
+        border-right: none;
+        border-bottom: 1px solid lightgray;
+        margin: 20px auto 0;
+    }
+    .tab1-form.tab1-form2{
+        border-right: none;
+        border-bottom: 2px dotted lightgray;
+    }
+    .tab1-form.tab2-form {
+        border-bottom: 0;
+    }
+    
+    .tab2-top-mgn{
+        margin: 20px 0;
+    }
+    .tab4-margin{
+        margin-top: -120px;
+    }
+    .case-4-content{
+        height: 437px;
+    }
+    .div5-margin{
+        margin-top: 0;
+    }
+    .custom-tabs .custom-tab-inr .MuiTab-labelContainer-241 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .custom-tabs .custom-tab-inr{
+        margin-right: 5px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .btnStyle{
+        padding: 10px 10px;
+    }
+    .tabs-row2.tabs-row3 .case-tab-padding{
+        padding-right: 15px;
+    }
+    .MuiTabs-fixed-778, .MuiTabs-fixed-227, .MuiTabs-fixed-687{
+        overflow-x: scroll;
+    }
+    .task-form-para-btn .btn.btnStyle{
+        margin-bottom: 15px;
+    }
+    .col-lg-8.col-md-12.col-sm-12.case-tab-padding{
+        padding-right: 15px;
+    }
+    .tabone .case-rght-margin{
+        margin-top: 10px;
+    }
+    .textfield-wrapper .form-group {
+        width: 47%;
+    }
+    .form-cal-btn {
+        width: 25%;
+    }
+}
+// 767px 
+@media screen and (max-width:767px){
+    .tabone .case-tab-padding{
+        padding-right: 15px;
+    }
+    .tabone .case-rght-margin{
+        margin-top: 10px;
+    }
+    .case .case-padding{
+        padding: 0;
+    }
+    .tab4-margin {
+        margin-top: 10px;
+    }
+    .case-btn.case-tab-btn.tabs-drpdwn {
+        width: 30%;
+    }
+    .case-main-heading{
+        width: 75%;
+        display: inline-block;
+    }
+    .case-main-button{
+        width: 22%;
+        display: inline-block;
+    }
+    .task-head-middle{
+        width: 80%;
+    }
+    .task-head-right{
+        margin-top: 10px;
+        width: 50%;
+    }
+    .table-body .task-table2 .task-checkbox-width:nth-child(6) {
+        width: 25%;
+    }
+    .table-body .task-table2 .task-checkbox-width:nth-child(3) {
+        width: 30%;
+    }
+    .table-body .task-table2 .task-checkbox-width:nth-child(2) {
+        width: 20%;
+    }
+   
+    .accord2-wrap-inr .drpdwn-elt{
+        width: 25%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .form-cal-btn{
+        width: 140px;
+    }
+    .wrapper-checkbox {
+        width: 75%;
+    }
+    .tabs-component{
+        padding: 0;
+    }
+    .font-button, .font-icon {
+        width: 34%;
+    }
+   
+}
+// 440px 
+@media screen and (max-width:440px){
+    .wrapper-checkbox .inr-wrap-chkbox .custom-checkbox{
+        float: none;
+    }
+    .wrapper-checkbox .inr-wrap-chkbox{
+        width: 200px;
+    }
+    .form-submisn-btns .btnStyle {
+        padding: 18px 15px;
+    }
+    .font-wrapper-container .font-drpdwn {
+        width: 35%;
+        margin-bottom: 10px;
+    }
+    .font-button{
+        width: 60%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .font-icon{
+        width: 100%;
+    }
+}
