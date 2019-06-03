@@ -4,12 +4,12 @@ import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
-import { FormGroup, Table } from '@material-ui/core';
-import InputBase from '@material-ui/core/InputBase';
+import { FormGroup } from '@material-ui/core';
 import Search from './Search';
 import EnhancedTable from './EnhancedTable';
 import Button from '@material-ui/core/Button';
 import TaskForm from './TaskForm';
+
 export default class CaseTabTwo extends React.Component{
     render(){
         return(

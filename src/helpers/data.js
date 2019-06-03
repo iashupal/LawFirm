@@ -123,7 +123,7 @@ export const allMenuData = [
       {
         name: 'pages.caseLaw',
         data: [
-          { link: '/app/case/Case', name: 'pages.case' ,
+          { link: '/app/screen/Case', name: 'pages.case' ,
             
           },
           // { link: '/app/litigation/search', name: 'pages.litigationSearch' },

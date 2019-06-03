@@ -7,6 +7,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import '../../styles/pages/_case.scss';
+import CaseTabThree from './CaseTabThree';
 import CaseTabOne from './CaseTabOne';
 import CaseTabTwo from './CaseTabTwo';
 function TabContainer(props) {
@@ -77,7 +78,7 @@ function TabContainer(props) {
                                         <CaseTabOne/>
                                    </TabContainer>}
                                    {value === 1 && <TabContainer><CaseTabTwo/></TabContainer>}
-                                   {value === 2 && <TabContainer>Item Three</TabContainer>}
+                                   {value === 2 && <TabContainer><CaseTabThree/></TabContainer>}
                                    {value === 3 && <TabContainer>Item Four</TabContainer>}
                                    {value === 4 && <TabContainer>Item Five</TabContainer>}
                                    {value === 5 && <TabContainer>Item Six</TabContainer>}

@@ -11,6 +11,8 @@
 
 h3{
     margin: 0;
+    
+    font-family: 'Material-Design-Iconic-Font';  
 }
 
 .case{
@@ -18,6 +20,7 @@ h3{
     margin: 0 auto;
     position: relative;
     padding: 20px 20px;
+    font-family: 'Material-Design-Iconic-Font'; 
 }
 .case .caseInr{
     width: 100%;
@@ -41,6 +44,7 @@ h2{
     color: #000000;
     font-weight: bold;
     display: inline-block;
+    font-family: 'Material-Design-Iconic-Font'; 
 }
 .caseHeading i, .caseHeading h2{
     display: inline-block;
@@ -80,6 +84,7 @@ i.icon-left-menu-color{
     width: 100%;
     margin: 0 auto;
     position: relative;
+    color: black;
     // overflow-x: scroll;
 }
 .custom-tabs .custom-tab-inr{
@@ -88,9 +93,14 @@ i.icon-left-menu-color{
     margin-right: 10px;
     background-color: white;
     min-width: 100px;
+    font-family: 'Material-Design-Iconic-Font'; 
+}
+.custom-tab-inr span{
+    color: black;
 }
 
-.custom-tabs .PrivateTabScrollButton-root-222{
+.custom-tabs .PrivateTabScrollButton-root-222, .custom-tabs .MuiPrivateTabScrollButton-root-429, .custom-tabs .MuiPrivateTabScrollButton-root-349,
+ .custom-tabs .MuiPrivateTabScrollButton-root-577{
     width: initial;
 }
 
@@ -139,6 +149,7 @@ h2.h2-fontwght{
     position: relative;
     border-right: 1px solid lightgray;
     float: left;
+    font-family: 'Material-Design-Iconic-Font'; 
 }
 .tab1-form.tab2-form{
     border-right: 0;
@@ -209,15 +220,23 @@ h2.h2-fontwght{
     position: relative;
     top: 0px;
     text-align: center;
+    font-family: 'Material-Design-Iconic-Font';
 }
 .btnStyle{
     
     color: white;
     padding: 10px 20px;
     letter-spacing: .5px;
+    // font-family: "Noto Sans KR", sans-serif;
+    font-family: 'Material-Design-Iconic-Font'; 
    
 }
-
+.checkbox label span{
+    font-family: 'Material-Design-Iconic-Font'; 
+}
+.custom-tabs .MuiPrivateTabScrollButton-root-234{
+    width: initial;
+}
 .case-contact-name p{
     display: inline-block;
     margin: 0;
@@ -266,6 +285,7 @@ border-right: 2px dotted lightgray;
     letter-spacing: .5px;
     width: 100%;
     margin: 0 auto;
+    font-family: 'Material-Design-Iconic-Font'; 
 }
 .tab4-margin{
     margin-top: -47px;
@@ -290,6 +310,7 @@ border-right: 2px dotted lightgray;
     height: 430px;
     float: left;
     clear: both;
+    font-family: 'Material-Design-Iconic-Font'; 
 }
 .case-4-inr-content{
     width: 100%;
@@ -818,6 +839,7 @@ td .inr-wrap-chkbox .custom-checkbox{
 .table-body .task-table2 .task-checkbox-width:nth-child(3){
     width: 45%;
     padding: 10px;
+    text-align: left;
 }
 .table-body .task-table2 .task-checkbox-width:nth-child(6){
     width: 12%;
@@ -963,7 +985,12 @@ margin-bottom: 8px;
     border: 1px solid lightgray;
 }
 
-
+// tab3
+.tab3{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+}
 
 // responsive code
 

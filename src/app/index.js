@@ -93,7 +93,7 @@ class App extends React.Component {
               {!(hasError && getEnv() === 'localhost') && (
                 <Switch>
                   <Route path={`${match.url}/main`} component={asyncComponent(() => import('./routes/System/Main'))} />
-                  <Route component={asyncComponent(()=> import('../components/case/Case'))} path={`${match.url}/case/Case`} />
+                  <Route component={asyncComponent(()=> import('../components/screen/Case'))} path={`${match.url}/screen/Case`} />
                   <Route component={asyncComponent(() => import('components/Error404')) } />
                 </Switch>
               )}

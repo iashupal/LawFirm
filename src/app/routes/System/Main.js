@@ -68,7 +68,7 @@ class Main extends React.Component {
       }, // 송무 등록
       {
         name: mlMessage('pages.case'),
-        link: '/app/case/Case',
+        link: '/app/screen/Case',
         icon: ic_main_15,
       }
     ];
