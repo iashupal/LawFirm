@@ -32,16 +32,16 @@ export default class TimeButton extends React.Component{
       } 
     render(){
         let start = (this.state.time == 0) ?
-            <i className="material-icons" onClick={this.startTimer}> play_circle_outline</i> :  //start//
+            <i className="material-icons left" onClick={this.startTimer}> play_circle_outline</i> :  //start//
             null
         let stop = (this.state.isOn) ?
-            <i className="material-icons" onClick={this.stopTimer}> pause_circle_outline</i> :  //stop
+            <i className="material-icons left" onClick={this.stopTimer}> pause_circle_outline</i> :  //stop
             null
         let reset = (this.state.time != 0 && !this.state.isOn) ?
-            <i className="material-icons" onClick={this.resetTimer}>play_circle_outline</i> :  //reset
+            <i className="material-icons left" onClick={this.resetTimer}>play_circle_outline</i> :  //reset
             null
         let resume = (this.state.time != 0 && !this.state.isOn) ?
-           <i className="material-icons" onClick={this.startTimer}> play_circle_outline</i> :  //resume
+           <i className="material-icons left" onClick={this.startTimer}> play_circle_outline</i> :  //resume
             null
         return(
             <div className="timer">

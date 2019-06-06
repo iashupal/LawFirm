@@ -15,8 +15,12 @@ import UserInfoPopup from 'components/UserInfo/UserInfoPopup';
 import UserInfo from 'components/UserInfo';
 import { RU } from 'helpers/ramda';
 import ManualDialog from 'components/Header/ManualDialog';
-// import DropdownElement from '../case/DropdownElement';
-
+import DropdownElement from '../DropdownElement/DropdownElement';
+import TimeButton from '../Timebutton/TimeButton';
+// import PopupBtn from '../OpenPopupBtn/PopupBtn';
+import Search from '../screen/Search';
+import Notification from '../Badge/Notification';
+import AddContent from '../AddContent/AddContent';
 const { changeURL, parseQueryStr } = RU;
 
 class Header extends React.Component {
@@ -124,19 +128,38 @@ class Header extends React.Component {
             <img src="assets/images/logo/Law.ai_white.png" style={{ width: '160px' }} alt="logo" title="logo" />
           </Link>
           {!(location.pathname === '/app/elastic_search') && (
-            <SearchBox
-              styleName="d-none d-lg-block"
-              placeholder=""
-              value={this.state.searchText}
-              onChange={this.updateSearchText}
-              onKeyPress={this.searchKeyPress}
+            // <SearchBox
+            //   styleName="d-none d-lg-block"
+            //   placeholder=""
+            //   value={this.state.searchText}
+            //   onChange={this.updateSearchText}
+            //   onKeyPress={this.searchKeyPress}
+            // />
+            <Search
+            styleName="d-none d-lg-block"
+               placeholder=""
+               value={this.state.searchText}
+               onChange={this.updateSearchText}
+               onKeyPress={this.searchKeyPress}
             />
           )}
-          {/* <div className="drpdwn-elt form-drpdwn">
-              <DropdownElement/>
-          </div> */}
           
-          <ul className="header-notifications list-inline ml-auto">
+          <div className="drpdwn-elt form-drpdwn header-dpdwn">
+              <DropdownElement/>
+          </div>
+          {/* <div className="right"> */}
+          <div className="add-dialog ml-auto">
+            <AddContent/>
+          </div>
+          <div className="record-time">
+            <TimeButton/>
+          </div>
+          <div className="notification-badge">
+            <Notification/>
+          </div>
+          
+          
+          <ul className="header-notifications list-inline">
             <li className="d-inline-block d-lg-none list-inline-item">
               <Dropdown
                 className="quick-menu nav-searchbox"
@@ -201,6 +224,7 @@ class Header extends React.Component {
               </li>
             )}
           </ul>
+          {/* </div> */}
         </Toolbar>
       </AppBar>
     );

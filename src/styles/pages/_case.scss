@@ -105,7 +105,7 @@ i.icon-left-menu-color{
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .custom-tab-inr span{
-    color: black;
+    color: #606060;
     font-size: 13px;
 }
 
@@ -185,6 +185,7 @@ h2.h2-fontwght{
     display: inline-block;
     width: 60px;
     font-size: 14px;
+    color: #373930;
 }
 .form p.form-para{
     width: initial;
@@ -223,15 +224,18 @@ h2.h2-fontwght{
     width: 100%;
     // box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
     border-radius: 5px;
+    border-color: #a6a6a6;
+    color: #606060;
 }
 .case-contact-name{
     width: 100%;
     margin: 15px auto;
     position: relative;
 }
-.drpdwn-elt .drpdwn .caretDownWrapper-42, .drpdwn .ms-Dropdown-caretDownWrapper{
+.drpdwn-elt .drpdwn .caretDownWrapper-42, .drpdwn-elt .drpdwn .ms-Dropdown-caretDownWrapper{
     line-height: 35px;
     height: 35px;
+    color: #808080;
 }
 .case-btn.case-tab-btn{
     width: initial;
@@ -618,6 +622,7 @@ border-right: 2px dotted lightgray;
 .font-drpdwn .drpdwn .dropdown-40 .ms-Dropdown-title, .font-drpdwn .drpdwn .caretDownWrapper-42{
     height: 40px;
     line-height: 40px;
+    color: #a6a6a6;
 }
 .form.form-without-border{
     margin-top: 10px;
@@ -868,12 +873,19 @@ td .inr-wrap-chkbox .custom-checkbox{
     line-height: 42px;
     height: 46px;
     width: 100%;
+    color: #606060;
+    border-color: #a6a6a6;
 }
 .drpdwn-elt.drpdwn-elt-tab2 .drpdwn .ms-Dropdown-caretDownWrapper,
  .drpdwn-elt.drpdwn-elt-tab2 .drpdwn .ms-Dropdown-caretDownWrapper.caretDownWrapper-43 {
     line-height: 43px;
     height: 45px;
+    color: #a6a6a6;
 }
+.drpdwn-elt .drpdwn .caretDownWrapper-42, .drpdwn .ms-Dropdown-caretDownWrapper i{
+    color: #606060;
+}
+
 
 // enhanced table
 .paginatn-table{

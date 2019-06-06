@@ -57,6 +57,43 @@
     }
   }
 }
+.drpdwn-elt.form-drpdwn.header-dpdwn{
+  width: 10%;
+}
+.add-dialog{
+  width: 194px;
+  position: relative;
+  height: 49px;
+  z-index: 1;
+  vertical-align: middle;
+  float: right;
+}
+.record-time{
+  position: relative;
+    z-index: 1;
+    float: right;
+}
+.drpdwn-elt.form-drpdwn.header-dpdwn .drpdwn .dropdown-40 .ms-Dropdown-title, .drpdwn-elt.form-drpdwn.header-dpdwn .drpdwn .ms-Dropdown-title {
+    line-height: 40px;
+    height: 43px;
+    width: 100%;
+    border-radius: 5px;
+    
+    letter-spacing: .5px;
+}
+.form-drpdwn.header-dpdwn .drpdwn .dropdown-40 .ms-Dropdown-title, .form-drpdwn.header-dpdwn .drpdwn .ms-Dropdown-title{
+ background-color: transparent;
+    color: white;
+     border-color: white;
+}
+.drpdwn-elt.form-drpdwn.header-dpdwn .drpdwn .caretDownWrapper-42, .drpdwn-elt.form-drpdwn.header-dpdwn .drpdwn .ms-Dropdown-caretDownWrapper {
+    line-height: 41px;
+    height: 42px;
+}
+.drpdwn-elt.form-drpdwn.header-dpdwn.form-drpdwn.header-dpdwn .drpdwn .caretDownWrapper-42,
+.drpdwn-elt.form-drpdwn.header-dpdwn.form-drpdwn.header-dpdwn .drpdwn .ms-Dropdown-caretDownWrapper i.ms-Dropdown-caretDown{
+    color: white;
+}
 
 .app-toolbar {
   min-height: $app-bar-height;
@@ -64,8 +101,8 @@
   max-height: $app-bar-height;
 
   & .search-bar {
-    margin-left: 100px;
-    margin-right: auto;
+    margin-left: 40px;
+    margin-right: 0;
     max-width: 400px;
     width: 380px;
 

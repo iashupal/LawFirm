@@ -63,9 +63,11 @@ class ManualDialog extends Component {
           onClick={e => {
             this.setState({ dialogOpen: true });
           }}
-          color="secondary"
         >
-          <i className="zmdi zmdi-help zmdi-hc-lg" />
+          {/* <i className="zmdi zmdi-help zmdi-hc-lg" /> */}
+          <i className="material-icons " style={{color: 'white'}}>
+              help
+          </i>
         </Button>
         <Dialog
           open={this.state.dialogOpen}
