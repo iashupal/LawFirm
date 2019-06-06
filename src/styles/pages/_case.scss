@@ -12,7 +12,8 @@
 h3{
     margin: 0;
     
-    font-family: 'Material-Design-Iconic-Font';  
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif; 
 }
 
 .case{
@@ -20,7 +21,8 @@ h3{
     margin: 0 auto;
     position: relative;
     padding: 20px 20px;
-    font-family: 'Material-Design-Iconic-Font'; 
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .case .caseInr{
     width: 100%;
@@ -44,7 +46,8 @@ h2{
     color: #000000;
     font-weight: bold;
     display: inline-block;
-    font-family: 'Material-Design-Iconic-Font'; 
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .caseHeading i, .caseHeading h2{
     display: inline-block;
@@ -55,6 +58,10 @@ top: -4px;
 }
 .tabs-component{
     padding: 0 15px;
+}
+.MuiTabs-scrollable-387{
+    width: 100%;
+    margin-left: -56px;
 }
 .case-btn{
     width: 100%;
@@ -85,6 +92,7 @@ i.icon-left-menu-color{
     margin: 0 auto;
     position: relative;
     color: black;
+    
     // overflow-x: scroll;
 }
 .custom-tabs .custom-tab-inr{
@@ -93,15 +101,23 @@ i.icon-left-menu-color{
     margin-right: 10px;
     background-color: white;
     min-width: 100px;
-    font-family: 'Material-Design-Iconic-Font'; 
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .custom-tab-inr span{
     color: black;
+    font-size: 13px;
 }
 
-.custom-tabs .PrivateTabScrollButton-root-222, .custom-tabs .MuiPrivateTabScrollButton-root-429, .custom-tabs .MuiPrivateTabScrollButton-root-349,
- .custom-tabs .MuiPrivateTabScrollButton-root-577{
+ .PrivateTabScrollButton-root-222, .MuiPrivateTabScrollButton-root-429, .MuiPrivateTabScrollButton-root-349,
+  .MuiPrivateTabScrollButton-root-577, .MuiPrivateTabScrollButton-root-339, .MuiPrivateTabScrollButton-root-443, .MuiPrivateTabScrollButton-root-340,
+  .MuiPrivateTabScrollButton-root-495,.MuiPrivateTabScrollButton-root-393{
     width: initial;
+}
+.custom-tab {
+    & .MuiPrivateTabScrollButton-root-495{
+        width: initial;
+    }
 }
 
 .custom-tabs .MuiPaper-elevation4{
@@ -149,7 +165,8 @@ h2.h2-fontwght{
     position: relative;
     border-right: 1px solid lightgray;
     float: left;
-    font-family: 'Material-Design-Iconic-Font'; 
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .tab1-form.tab2-form{
     border-right: 0;
@@ -167,6 +184,7 @@ h2.h2-fontwght{
 .form p{
     display: inline-block;
     width: 60px;
+    font-size: 14px;
 }
 .form p.form-para{
     width: initial;
@@ -178,6 +196,7 @@ h2.h2-fontwght{
     position: relative;
     top: -7px;
     vertical-align: middle;
+    font-size: 14px;
 }
 .tab2-top-mgn .form .inputbase input,
  .tab1-spacing .form .inputbase input{
@@ -192,17 +211,17 @@ h2.h2-fontwght{
     width: 100%;
 }
 .drpdwn-elt{
-    width: 30%;
+    width: 28%;
     display: inline-block;
     padding-left: 15px;
 }
 
-.drpdwn .dropdown-40 .ms-Dropdown-title {
+.drpdwn .dropdown-40 .ms-Dropdown-title, .drpdwn .ms-Dropdown-title {
     border-radius: 5px;
     line-height: 32px;
     height: 35px;
     width: 100%;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    // box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
     border-radius: 5px;
 }
 .case-contact-name{
@@ -210,7 +229,7 @@ h2.h2-fontwght{
     margin: 15px auto;
     position: relative;
 }
-.drpdwn .caretDownWrapper-42{
+.drpdwn-elt .drpdwn .caretDownWrapper-42, .drpdwn .ms-Dropdown-caretDownWrapper{
     line-height: 35px;
     height: 35px;
 }
@@ -220,7 +239,8 @@ h2.h2-fontwght{
     position: relative;
     top: 0px;
     text-align: center;
-    font-family: 'Material-Design-Iconic-Font';
+    // font-family: 'Material-Design-Iconic-Font';
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .btnStyle{
     
@@ -228,11 +248,22 @@ h2.h2-fontwght{
     padding: 10px 20px;
     letter-spacing: .5px;
     // font-family: "Noto Sans KR", sans-serif;
-    font-family: 'Material-Design-Iconic-Font'; 
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
    
 }
+.task-strt-row2{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.checkbox{
+    top: 2px;
+    position: relative;
+}
 .checkbox label span{
-    font-family: 'Material-Design-Iconic-Font'; 
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .custom-tabs .MuiPrivateTabScrollButton-root-234{
     width: initial;
@@ -244,6 +275,7 @@ h2.h2-fontwght{
     position: relative;
     padding-left: 15px;
     letter-spacing: .5px;
+    font-size: 14px;
 }
 .wrap-tab1-left.wrap-tab1-right{
     padding-bottom: 0;
@@ -285,7 +317,8 @@ border-right: 2px dotted lightgray;
     letter-spacing: .5px;
     width: 100%;
     margin: 0 auto;
-    font-family: 'Material-Design-Iconic-Font'; 
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .tab4-margin{
     margin-top: -47px;
@@ -310,7 +343,8 @@ border-right: 2px dotted lightgray;
     height: 430px;
     float: left;
     clear: both;
-    font-family: 'Material-Design-Iconic-Font'; 
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .case-4-inr-content{
     width: 100%;
@@ -365,8 +399,8 @@ border-right: 2px dotted lightgray;
     width: 98%;
     position: relative;
     border: 1px solid lightgray;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 5px;
+    padding: 11px;
     background-color: #f5f5f5;
     float: left;
     clear: both;
@@ -394,7 +428,7 @@ border-right: 2px dotted lightgray;
     background-color: white;
     height: 40px;
     display: flex;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    // box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
     border-radius: 5px;
     vertical-align: top;
     flex-wrap: wrap;
@@ -425,13 +459,13 @@ border-right: 2px dotted lightgray;
 
 .form-cal .react-datepicker-wrapper{
     width: 18%;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(166, 166, 166);
     padding: 6px 10px;
     margin-left: 15px;
     height: 37px;
     
     border-radius: 4px;
-    box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    // box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
     position: relative;
 }
 .form-cal i{
@@ -453,6 +487,8 @@ border-right: 2px dotted lightgray;
     width: 100%;
     margin: 10px auto;
     position: relative;
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .form-accordian .expansion{
     width: 100%;
@@ -481,6 +517,12 @@ border-right: 2px dotted lightgray;
     left: 8px;
     right: 97%;
 }
+.form-accordian {
+    & ExpandMoreIcon {
+        left: 8px;
+        right: 97%;
+    }
+}
 .form-accordian .expansion .expansion-summary {
     // margin: 0px 0;
     // padding: 20px 0;
@@ -495,6 +537,8 @@ border-right: 2px dotted lightgray;
 .accord1 .accord-supreme-btn button{
     background-color: #3D7BE3;
     color: white;
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .accord1 .accord-table{
     width: 100%;
@@ -505,12 +549,16 @@ border-right: 2px dotted lightgray;
     background-color: #f2f1f2;
     color: #4B4B4B;
     padding: 8px 10px 6px;
+    // font-family: 'Material-Design-Iconic-Font'; 
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .accord-table .table tbody tr td:nth-child(2), .accord-table .table tbody tr td:nth-child(4), .accord-table .table tbody tr td:nth-child(6){
     width: 400px;
     color: #4B4B4B;
     padding-left: 20px;
     padding: 8px 10px 6px 20px;
+    // font-family: 'Material-Design-Iconic-Font';
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif; 
 }
 .accord-table .table tbody tr td i{
     color: #AEAEAE;
@@ -532,16 +580,21 @@ border-right: 2px dotted lightgray;
     width: 100%;
     margin: 10px auto;
     position: relative;
+    // font-family: 'Material-Design-Iconic-Font';
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .accord2-wrap-inr .padding-pretty{
     // display: inline;
     margin-left: 20px;
 }
 .accord2-wrap-inr .drpdwn-elt{
-    width: 10%;
+    width: 7%;
     display: inline-block;
     padding-left: 0px;
     margin-right: 40px;
+}
+.drpdwn-elt.client-drpdwn-accord{
+    padding-left: 0
 }
 .accord2-wrap-inr .radio label input{
     margin: 0 10px;
@@ -584,7 +637,7 @@ border-right: 2px dotted lightgray;
     padding-left: 20px;
 }
 .wrapper-checkbox .inr-wrap-chkbox{
-    width: 250px;
+    width: 240px;
     // margin: 0 auto;
     position: relative;
     border: 1px solid lightgray;
@@ -601,6 +654,12 @@ border-right: 2px dotted lightgray;
     // display: inline-block;
     margin-bottom: 0;
     float: right;
+    width: 45%;
+    position: relative;
+    top: -7px;
+}
+.wrapper-checkbox .inr-wrap-chkbox .custom-checkbox .checkbox{
+    width: 100%;
 }
 .contain-cal-btn{
     width: 100%;
@@ -613,7 +672,8 @@ border-right: 2px dotted lightgray;
     background-color: #3c424b;
 }
 .contain-cal-btn .btn.btnStyle{
-    margin-right: 10px;
+    margin-right: 5px;
+    padding: 10px 10px;
 }
 .form-cal-btn{
     width: 20%;
@@ -628,7 +688,7 @@ border-right: 2px dotted lightgray;
     height: 37px;
     
     border-radius: 4px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    // box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
     position: relative;
 }
 .form-cal-btn .react-datepicker-wrapper .react-datepicker__input-container > input{
@@ -706,8 +766,11 @@ td .inr-wrap-chkbox .custom-checkbox{
     flex-wrap: wrap;
 }
 .textfield-wrapper .form-group{
-    width: 44%;
+    width: 45%;
     margin-bottom: 0;
+}
+.case-tab-padding.accord-exec-padding{
+    padding-left: 0;
 }
 .textfield-wrapper span{
     padding: 10px 10px;
@@ -740,6 +803,9 @@ td .inr-wrap-chkbox .custom-checkbox{
 .table-inr-btns.table-rght-btns .btn-color2, .task-row2 .btn.btn-color2{
     background-color: #3C424B;
     margin-right: 0;
+}
+.accord2-rght .drpdwn-elt{
+    width: 25%;
 }
 .table-inr-btns.table-rght-btns .btn-color1{
     margin-right: 5px;
@@ -787,9 +853,9 @@ td .inr-wrap-chkbox .custom-checkbox{
 }
 .task-search{
     width: 40%;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    // box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    border: 1px solid lightgray;
+    border: 1px solid rgb(166, 166, 166);
     // padding: 5px 10px;
 }
 .task-search:hover{
@@ -798,12 +864,13 @@ td .inr-wrap-chkbox .custom-checkbox{
 .drpdwn-elt.drpdwn-elt-tab2{
     width: 19%;
 }
-.drpdwn-elt.drpdwn-elt-tab2 .drpdwn .dropdown-40 .ms-Dropdown-title{
+.drpdwn-elt.drpdwn-elt-tab2 .drpdwn .ms-Dropdown-title{
     line-height: 42px;
     height: 46px;
     width: 100%;
 }
-.drpdwn-elt.drpdwn-elt-tab2 .drpdwn .caretDownWrapper-42 {
+.drpdwn-elt.drpdwn-elt-tab2 .drpdwn .ms-Dropdown-caretDownWrapper,
+ .drpdwn-elt.drpdwn-elt-tab2 .drpdwn .ms-Dropdown-caretDownWrapper.caretDownWrapper-43 {
     line-height: 43px;
     height: 45px;
 }
@@ -846,6 +913,10 @@ td .inr-wrap-chkbox .custom-checkbox{
     padding: 5px;
     text-align: center;
     margin: 0 auto;
+}
+.form.app-form-para p, .form.app-form-para span.semi-coln{
+   position: relative;
+   top: 4px;
 }
 .table-action-btn{
     display: inline-block;
@@ -891,6 +962,9 @@ td .inr-wrap-chkbox .custom-checkbox{
     padding-left: 35px;
     padding-top: 4px;
     padding-bottom: 4px;
+    vertical-align: middle;
+    display: table-cell;
+    top: 4px;
 }
 .tab2-heading{
     width: 100%;
@@ -938,6 +1012,8 @@ td.task-forminput-width i{
 padding-left: 15px;
 vertical-align: middle;
 color: #3C444C;
+position: relative;
+top: 4px;
 }
 .task-form td .form-cal-btn{
     width: 40%;
@@ -1011,12 +1087,12 @@ margin-bottom: 8px;
     .table-body .task-table2 .task-checkbox-width:nth-child(3){
         width: 40%;
     }
-    .table-body .task-table2 .task-checkbox-width:nth-child(6){
-        width: 20%;
-    }
-    .table-body .task-table2 .task-checkbox-width:nth-child(2){
-        width: 14%;
-    }
+    // .table-body .task-table2 .task-checkbox-width:nth-child(6){
+    //     width: 20%;
+    // }
+    // .table-body .task-table2 .task-checkbox-width:nth-child(2){
+    //     width: 14%;
+    // }
     .task-form td .form-cal-btn{
         width: 130px;
     }
@@ -1025,22 +1101,22 @@ margin-bottom: 8px;
         
     }
     .form-cal-btn{
-        width: 25%;
+        width: 21%;
     }
-    .btnStyle{
-        padding: 10px 5px;
-    }
+    // .btnStyle{
+    //     padding: 10px 20px;
+    // }
     .form-cal i{
-        left: 29.5%;
+        left: 27.5%;
     }
     .font-button, .font-icon{
         width: 30%;
     }
-    .drpdwn-elt.form-drpdwn {
-        width: 22%;
-    }
+    // .drpdwn-elt.form-drpdwn {
+    //     width: 22%;
+    // }
     .form-cal .react-datepicker-wrapper{
-        width: 20%;
+        width: 18%;
     }
 }
 
@@ -1057,8 +1133,17 @@ margin-bottom: 8px;
         width: 45%;
 
     }
+     .table-body .task-table2 .task-checkbox-width:nth-child(6){
+        width: 20%;
+    }
+    .table-body .task-table2 .task-checkbox-width:nth-child(2){
+        width: 14%;
+    }
     .textfield-wrapper .form-group{
         width: 43%;
+    }
+    .btnStyle{
+        padding: 10px 10px;
     }
     .table-inr-btns .btn-color1, .table-inr-btns .btn-color2{
         padding: 6px 2px;

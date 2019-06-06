@@ -4,7 +4,7 @@ import '../../styles/pages/_case.scss';
 import TabsComponent from './TabsComponent';
 import FormComponent from './FormComponent';
 import Button from '@material-ui/core/Button';
-
+import PageTitle from '../PageTitle/PageTitle';
  
  export default class Case extends React.Component{
      constructor(props){
@@ -29,7 +29,8 @@ import Button from '@material-ui/core/Button';
                                     <i className="material-icons icon-left-menu-color">
                                         class
                                     </i>
-                                    <h2>Case</h2>
+                                    {/* <h2>Case</h2> */}
+                                    <PageTitle/>
                                 </div>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-6 case-padding case-main-button">

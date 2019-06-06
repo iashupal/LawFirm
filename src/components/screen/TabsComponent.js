@@ -27,13 +27,15 @@ function TabContainer(props) {
       width: '100%',
       // backgroundColor: theme.palette.background.paper,
     },
+   
   });
   
   
    class TabsComponent extends React.Component{
+    
     state = {
       value: 0,
-      // appBarWidth: 1179,
+      
     };
   
     handleChange = (event, value) => {
@@ -42,7 +44,7 @@ function TabContainer(props) {
   
   render(){
     
-        const { value, appBarWidth } = this.state;
+        const { value} = this.state;
         const {classes} = this.props;
         return(
           <div className={classes.root}>
@@ -59,7 +61,7 @@ function TabContainer(props) {
                                        variant="scrollable"
                                        scrollButtons="auto"
                                        className="custom-tabs"
-                                      //  scrollable={appBarWidth < 1179}
+                                      
                                    >
                                        <Tab label="Item One" className="custom-tab-inr"/>
                                        <Tab label="Task" className="custom-tab-inr"/>

@@ -7,10 +7,11 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Button from '@material-ui/core/Button';
-import DropdownElement from './DropdownElement';
+import DropdownElement from '../DropdownElement/DropdownElement';
 import TextField from '@material-ui/core/TextField';
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import '../../../node_modules/pretty-checkbox/dist/pretty-checkbox.min.css';
+import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
 
 
 const styles = theme => ({
@@ -21,7 +22,14 @@ const styles = theme => ({
     //   fontSize: theme.typography.pxToRem(15),
       fontWeight: theme.typography.fontWeightRegular,
       fontSize: '18px',
+      fontFamily: 'Material-Design-Iconic-Font',
     },
+    expandIcon: {
+        left: 8,
+        right: '97%'
+    }
+
+
   
     
   });
@@ -33,7 +41,7 @@ const styles = theme => ({
         <div className="form-accordian">
                 <ExpansionPanel className="expansion">
                     <ExpansionPanelSummary
-                    expandIcon={<ExpandMoreIcon/>}
+                    expandIcon={<ExpandMoreIcon className={classes.expandIcon}/>}
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                     className="expansion-summary"
@@ -187,7 +195,7 @@ const styles = theme => ({
                                                             <tr>
                                                                 <td>Case</td>
                                                                 <td>
-                                                                <div className="drpdwn-elt">
+                                                                <div className="drpdwn-elt client-drpdwn-accord">
                                                                     <DropdownElement/>
                                                                 </div>
                                                                 </td>
@@ -203,9 +211,13 @@ const styles = theme => ({
                                                                             </div>
                                                                             
                                                                         </div>
-                                                                        <div className="custom-control custom-checkbox">
-                                                                            <input type="checkbox" className="custom-control-input" id="customCheck1" name="example2" />
-                                                                            <label className="custom-control-label" for="customCheck1">Checkbox</label>
+                                                                        <div className="custom-checkbox">
+                                                                        <div className="checkbox right">
+                                                                            <input type="checkbox" id="checkbox3" name="" value=""/>
+                                                                            <label htmlFor="checkbox3"><span>Checkbox</span></label>
+                                                                        </div>
+                                                                            {/* <input type="checkbox" className="custom-control-input" id="customCheck1" name="example2" />
+                                                                            <label className="custom-control-label" for="customCheck1">Checkbox</label> */}
                                                                         </div>
                                                                     </div>
                                                                 </td>
@@ -323,7 +335,7 @@ const styles = theme => ({
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-12 col-sm-12 case-tab-padding">
+                                        <div className="col-lg-4 col-md-12 col-sm-12 case-tab-padding accord-exec-padding">
                                             <div className="font-wrapper">
                                                 <div className="font-wrapper-container">
                                                     <div className="tab1-heading h3-heading">
@@ -348,7 +360,7 @@ const styles = theme => ({
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-12 col-sm-12 case-tab-padding">
+                                        <div className="col-lg-4 col-md-12 col-sm-12 case-tab-padding accord-exec-padding">
                                             <div className="font-wrapper">
                                                 <div className="font-wrapper-container">
                                                     <div className="tab1-heading h3-heading">

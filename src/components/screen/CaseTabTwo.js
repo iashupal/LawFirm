@@ -1,5 +1,5 @@
 import React from 'react';
-import DropdownElement from './DropdownElement';
+import DropdownElement from '../DropdownElement/DropdownElement';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
@@ -9,6 +9,7 @@ import Search from './Search';
 import EnhancedTable from './EnhancedTable';
 import Button from '@material-ui/core/Button';
 import TaskForm from './TaskForm';
+import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
 
 export default class CaseTabTwo extends React.Component{
     render(){
@@ -29,7 +30,7 @@ export default class CaseTabTwo extends React.Component{
                                 </div>
                                 <div className="task-head-right right">
                                     <Button className="btn left btnStyle accord3-btn-clr right" variant="contained">Button2</Button>
-                                        <div className="checkbox right">
+                                        {/* <div className="checkbox right">
                                             <FormGroup>  
                                                 <FormControlLabel
                                                     control={
@@ -42,8 +43,9 @@ export default class CaseTabTwo extends React.Component{
                                                         label="Custom size"
                                                 />
                                             </FormGroup>  
-                                        </div>
                                             
+                                        </div> */}
+                                            <SimpleCheckbox/>
                                     </div>  
 
                             </div>
@@ -51,7 +53,7 @@ export default class CaseTabTwo extends React.Component{
                                 <div className="row">
                                     <div className="col-lg-4 col-md-4 col-sm-12 case-tab-padding">
                                         <div className="task-row2">
-                                            <div className="checkbox left">
+                                            {/* <div className="checkbox left">
                                                 <FormGroup>  
                                                     <FormControlLabel
                                                         control={
@@ -64,6 +66,10 @@ export default class CaseTabTwo extends React.Component{
                                                             label="Custom"
                                                         />
                                                 </FormGroup>  
+                                            </div> */}
+                                            <div className="checkbox left">
+                                                <input type="checkbox" id="checkbox2" name="" value=""/>
+                                                <label htmlFor="checkbox2"><span>Checkbox</span></label>
                                             </div>
                                             <button type="button" className="btn btnStyle accord3-btn-clr ">Button2</button>
                                             <button type="button" className="btn btnStyle btn-color2">Button1</button>

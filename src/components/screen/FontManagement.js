@@ -1,5 +1,5 @@
 import React from 'react';
-import DropdownElement from './DropdownElement';
+import DropdownElement from '../DropdownElement/DropdownElement';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 export default class FontManagement extends React.Component{
@@ -44,7 +44,7 @@ export default class FontManagement extends React.Component{
                        
                     </div>
                     <div className="font-textarea">
-                    <textarea className="form-control z-depth-1" rows="5" placeholder="Write something here..."></textarea>
+                    <textarea className="form-control z-depth-1" rows="6" placeholder="Write something here..."></textarea>
                     </div>
                 </div>
             </div>

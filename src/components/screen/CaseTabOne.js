@@ -1,7 +1,7 @@
 import React from 'react';
 import TextField from './TextField';
-import DropdownElement from './DropdownElement';
-import ButtonComponent from '../Button/ButtonComponent';
+import DropdownElement from '../DropdownElement/DropdownElement';
+// import ButtonComponent from '../Button/ButtonComponent';
 import InputBase from '@material-ui/core/InputBase';
 export default class CaseTabOne extends React.Component{
     render(){

@@ -91,11 +91,11 @@ class EnhancedTableHead extends React.Component {
                 padding={row.disablePadding ? 'none' : 'default'}
                 sortDirection={orderBy === row.id ? order : false}
               >
-                <Tooltip
+                {/* <Tooltip
                   title="Sort"
                   placement={row.numeric ? 'bottom-end' : 'bottom-start'}
                   enterDelay={300}
-                >
+                > */}
                   <TableSortLabel
                     active={orderBy === row.id}
                     direction={order}
@@ -103,7 +103,7 @@ class EnhancedTableHead extends React.Component {
                   >
                     {row.label}
                   </TableSortLabel>
-                </Tooltip>
+                {/* </Tooltip> */}
               </TableCell>
             ),
             this,

@@ -15,7 +15,7 @@ import UserInfoPopup from 'components/UserInfo/UserInfoPopup';
 import UserInfo from 'components/UserInfo';
 import { RU } from 'helpers/ramda';
 import ManualDialog from 'components/Header/ManualDialog';
-import DropdownElement from '../case/DropdownElement';
+// import DropdownElement from '../case/DropdownElement';
 
 const { changeURL, parseQueryStr } = RU;
 
@@ -132,9 +132,9 @@ class Header extends React.Component {
               onKeyPress={this.searchKeyPress}
             />
           )}
-          <div className="drpdwn-elt form-drpdwn">
+          {/* <div className="drpdwn-elt form-drpdwn">
               <DropdownElement/>
-          </div>
+          </div> */}
           
           <ul className="header-notifications list-inline ml-auto">
             <li className="d-inline-block d-lg-none list-inline-item">
