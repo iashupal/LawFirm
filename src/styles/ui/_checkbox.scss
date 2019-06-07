@@ -19,13 +19,13 @@
     content: '';
     position: absolute;
     left: 0;
-    top: 2px;
+    top: 3px;
     margin: 4px;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     transition: transform 0.28s ease;
     border-radius: 3px;
-    border: 2px solid #CDCDCD;
+    border: 1px solid gray;
 }
 .checkbox label:after {
   content: '';
@@ -40,7 +40,7 @@
     transform: rotate(-45deg) scale(0);
     position: absolute;
     top: 12px;
-    left: 9px;
+    left: 8px;
 }
 .checkbox input[type="checkbox"]:checked ~ label::before {
     color: #4179E3;

@@ -5,16 +5,16 @@ import FontManagement from './FontManagement';
 import DatePicker from "react-datepicker";
 import InputBase from '@material-ui/core/InputBase';
 import "react-datepicker/dist/react-datepicker.css";
-
-// import '../../../node_modules/pretty-checkbox/src/pretty-checkbox.scss';
-import Accordian from './Accordian';
+import Accordian from '../Accordian/Accordian';
 import Button from '@material-ui/core/Button';
 import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
+import '../../styles/ui/_crosscheckbox.scss';
+import CrossCheckbox from '../Checkbox/CrossCheckbox';
 export default class FormComponent extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            startDate: new Date()
+            startDate: new Date(),
         };
         this.handleChange = this.handleChange.bind(this);
     }
@@ -36,12 +36,13 @@ export default class FormComponent extends React.Component{
                       <div className="row">
                                 <div className="col-lg-6 col-md-12 col-sm-12">
                                     <div className="tab1-form">
-                                        <div className="form app-form">
-                                            <p>Number2</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                            <InputBase defaultValue="[input]" style={{color: 'gray'}} className="inputbase"/>
+                                        {/* <div className="form app-form"> */}
+                                            {/* <p>Number2</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
+                                            <InputBase defaultValue="input" style={{color: 'gray'}} className="inputbase"/> */}
+                                            <TextField value={"Input"} label={"Number"}/>
                                             
                                             
-                                        </div>
+                                        {/* </div> */}
                                         <div className="form app-form">
                                             <p>Number2</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
                                             <div className="form-search-input">
@@ -112,19 +113,24 @@ export default class FormComponent extends React.Component{
                                             <p>Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span className="semi-coln">:</span>
                                             <div className="wrapper-checkbox">
                                                 <div className="inr-wrap-chkbox">
-
-                                                    <div className="pretty p-icon p-curve">
+                                                    {/* <CrossCheckbox/> */}
+                                                    <form className="cross-checkbox">
+                                                        <input id="demo_box_2" className="css-checkbox" type="checkbox" />
+                                                        <label htmlFor="demo_box_2" name="demo_lbl_2" className="css-label">Select</label>
+                                                        
+                                                    </form>
+                                                    {/* <div className="pretty p-icon p-curve">
                                                         <input type="checkbox" />
                                                         <div className="state">
                                                             <i className="icon mdi mdi-check"></i>
                                                             <label>Normal</label>
                                                         </div>
                                                         
-                                                    </div>
+                                                    </div> */}
                                                     
                                                     {/* <div className="custom-control custom-checkbox">
                                                         <input type="checkbox" className="custom-control-input" id="customCheck" name="example1" />
-                                                        <label className="custom-control-label" for="customCheck">Custom checkbox</label>
+                                                        <label className="custom-control-label" htmlFor="customCheck">Custom checkbox</label>
                                                     </div> */}
                                                     <div className="custom-checkbox">
                                                         <SimpleCheckbox/>
@@ -162,7 +168,7 @@ export default class FormComponent extends React.Component{
                                                     </div>
                                                     <div className="custom-control custom-checkbox checkbox2">
                                                         <input type="checkbox" className="custom-control-input" id="customCheck" name="example1" />
-                                                        <label className="custom-control-label" for="customCheck">check</label>
+                                                        <label className="custom-control-label" htmlFor="customCheck">check</label>
                                                     </div>
                                                 </div>
                                             </div>

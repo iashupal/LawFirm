@@ -45,7 +45,7 @@ export default class TaskForm extends React.Component{
                             <tr>
                                 <td>Mary</td>
                                 <td className="task-forminput-width">
-                                    <div class="form-group left">
+                                    <div className="form-group left">
                                         <input type="text" className="form-control inputtype" placeholder="Default form control" name="text2" />
                                     </div> 
                                     <i className="material-icons icon-left-menu-color left">

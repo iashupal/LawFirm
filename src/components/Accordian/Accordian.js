@@ -50,7 +50,7 @@ const styles = theme => ({
                     </ExpansionPanelSummary>
                     
                     <ExpansionPanelDetails>
-                    <Typography className="accord1">
+                    <div className="accord1">
                         <div className="accord-supreme-btn">
                             <Button variant="contained">Supreme Court</Button>
                         </div>
@@ -123,7 +123,7 @@ const styles = theme => ({
                             </tbody>
                         </table>
                     </div>
-                    </Typography>
+                    </div>
                     </ExpansionPanelDetails>
                 </ExpansionPanel>
                 <ExpansionPanel className="expansion">
@@ -136,7 +136,7 @@ const styles = theme => ({
                     <Typography className={classes.heading}>Client</Typography>
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
-                    <Typography className="accord1">
+                    <div className="accord1">
                        <div className="accord2">
                            <div className="accord2-wrap">
                                <div className="accord2-wrap-inr">
@@ -265,11 +265,11 @@ const styles = theme => ({
                                                     <h3 className="h2-fontwght">CaseTab3</h3>
                                                 </div>
                                                 <div className="textfield-wrapper">
-                                                    <div class="form-group">
+                                                    <div className="form-group">
                                                         <input type="text" className="form-control inputtype" placeholder="Default form control" name="text2" />
                                                     </div>
                                                     <span> and</span>
-                                                    <div class="form-group">
+                                                    <div className="form-group">
                                                         <input type="text" className="form-control inputtype" placeholder="Default form control" name="text3" />
                                                     </div>
                                                 </div>
@@ -292,7 +292,7 @@ const styles = theme => ({
                                </div>
                            </div>
                        </div>
-                    </Typography>
+                    </div>
                     </ExpansionPanelDetails>
                 </ExpansionPanel> 
                 <ExpansionPanel className="expansion">
@@ -306,7 +306,7 @@ const styles = theme => ({
                     </ExpansionPanelSummary>
                     <ExpansionPanelDetails>
                     
-                    <Typography className="accord1">
+                    <div className="accord1">
                        <div className="accord2">
                            <div className="accord2-wrap">
                                <div className="client-accord">
@@ -389,7 +389,7 @@ const styles = theme => ({
                                </div>
                            </div>
                        </div>
-                    </Typography>
+                    </div>
                     
                     </ExpansionPanelDetails>
                 </ExpansionPanel>                                    

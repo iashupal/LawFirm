@@ -35,3 +35,37 @@
     font-size: 16px;
     margin-bottom: 0;
 }
+
+.dialog-wrapper{
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.dialog-wrapper .MuiDialog-paperWidthSm-602{
+    width: 600px;
+    max-width: 600px;
+}
+.dialog-wrapper .MuiDialog-paperScrollPaper-597{
+    flex: auto;
+}
+.dialog-wrapper .MuiDialog-paper-596{
+    display: initial;
+}
+.dialog-content .tab1-form.tab2-form.task-table-form{
+    margin: 0 auto;
+}
+ .cross-btn{
+    position: absolute !important;
+    top: 0px;
+    z-index: 9999;
+    background-color: blue !important;
+    border-radius: 0 !important;
+    padding: 10px !important;
+    right: 0;
+}
+.MuiPaper-elevation24-169{
+    box-shadow: 0 0 0 0;
+}
+.MuiPaper-rounded-144{
+    border-radius: 0;
+}

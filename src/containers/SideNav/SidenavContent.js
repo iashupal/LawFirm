@@ -162,7 +162,9 @@ class SidenavContent extends Component {
           <ul className="nav-menu" key={item1.name}>
             <li className="nav-header">
               <IntlMessages id={item1.name} />
+
             </li>
+           
            
             <li className="menu collapse-box">
               {item1.data.map(item2 => (

@@ -14,7 +14,7 @@ import PinnedSubheaderList from '../List/PinnedSubheaderList';
 import AlignItemsList from '../List/AlignItemsList';
 import Textbox from '../Textbox/Textbox';
 import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
-// import CrossCheckbox from '../Checkbox/CrossCheckbox';
+import CrossCheckbox from '../Checkbox/CrossCheckbox';
 import TimeButton from '../Timebutton/TimeButton';
 import PopupBtn from '../OpenPopupBtn/PopupBtn';
 export default class CaseTabThree extends React.Component{
@@ -30,12 +30,12 @@ export default class CaseTabThree extends React.Component{
                 <PinnedSubheaderList/>
                 <AlignItemsList/>
                 <Textbox/>
-                {/* <CrossCheckbox/> */}
+                <CrossCheckbox/>
                 <TimeButton/>
                 <PopupBtn/>
                 
                 {/* <SimpleCheckbox/> */}
-                {/* <Spliter/> */}
+                <Spliter/>
                 {/* <SwitchButton/> */}
                 {/* <RangeSlider/> */}
                 {/* <Dialogbox/> */}

@@ -18,7 +18,7 @@ import ManualDialog from 'components/Header/ManualDialog';
 import DropdownElement from '../DropdownElement/DropdownElement';
 import TimeButton from '../Timebutton/TimeButton';
 // import PopupBtn from '../OpenPopupBtn/PopupBtn';
-import Search from '../screen/Search';
+import Search from '../Search/Search';
 import Notification from '../Badge/Notification';
 import AddContent from '../AddContent/AddContent';
 const { changeURL, parseQueryStr } = RU;
@@ -137,7 +137,6 @@ class Header extends React.Component {
             // />
             <Search
             styleName="d-none d-lg-block"
-               placeholder=""
                value={this.state.searchText}
                onChange={this.updateSearchText}
                onKeyPress={this.searchKeyPress}
@@ -157,7 +156,7 @@ class Header extends React.Component {
           <div className="notification-badge">
             <Notification/>
           </div>
-          
+          <ManualDialog />
           
           <ul className="header-notifications list-inline">
             <li className="d-inline-block d-lg-none list-inline-item">
@@ -181,7 +180,7 @@ class Header extends React.Component {
                 </DropdownMenu>
               </Dropdown>
             </li>
-            <ManualDialog />
+           
             
             {!settingIconHide && (
               <li className="list-inline-item">

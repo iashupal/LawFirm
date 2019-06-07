@@ -26,7 +26,7 @@ class AlignItemsList extends React.Component {
 
   return (
     <List className={classes.root}>
-      <ListItem alignItems="flex-start">
+      <ListItem alignitems="flex-start">
         <ListItemAvatar>
           <Avatar alt="Remy Sharp" src="../../assets/images/logo/1.jpg" />
         </ListItemAvatar>
@@ -48,7 +48,7 @@ class AlignItemsList extends React.Component {
         />
       </ListItem>
       <Divider variant="inset" component="li" />
-      <ListItem alignItems="flex-start">
+      <ListItem alignitems="flex-start">
         <ListItemAvatar>
           <Avatar alt="Remy Sharp" src="../../assets/images/logo/1.jpg" />
         </ListItemAvatar>
@@ -70,7 +70,7 @@ class AlignItemsList extends React.Component {
         />
       </ListItem>
       <Divider variant="inset" component="li" />
-      <ListItem alignItems="flex-start">
+      <ListItem alignitems="flex-start">
         <ListItemAvatar>
           <Avatar alt="Remy Sharp" src="../../assets/images/logo/1.jpg" />
         </ListItemAvatar>

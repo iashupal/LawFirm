@@ -872,3 +872,4 @@ export const MultiSelect = styled(Picky)`
   border-radius: 4px;
   top: -6px;
 `;
+

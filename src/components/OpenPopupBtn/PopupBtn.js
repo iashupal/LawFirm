@@ -1,109 +1,82 @@
-// import React from 'react';
-
-// import Modal from 'react-bootstrap-modal';
-// import Button from '@material-ui/core/Button';
-// // import ModalHeader from 'react-bootstrap/ModalHeader';
-// // import ModalTitle from 'react-bootstrap/ModalTitle';
-// // import ModalBody from 'react-bootstrap/ModalBody';
-// // import ModalFooter from 'react-bootstrap/ModalFooter';
-// export default class PopupBtn extends React.Component{
-//     constructor(props, context) {
-//         super(props, context);
-    
-//         this.handleShow = this.handleShow.bind(this);
-//         this.handleClose = this.handleClose.bind(this);
-    
-//         this.state = {
-//           show: false,
-//         };
-//       }
-    
-//       handleClose() {
-//         this.setState({ show: false });
-//       }
-    
-//       handleShow() {
-//         this.setState({ show: true });
-//       }
-//     render(){
-//         return(
-//             <div className="popup">
-//                 <div className="popup-btn" onClick={this.handleShow}>
-//                     <p>Popup</p>
-//                     <i className="material-icons right" >
-//                         add
-//                     </i>
-//                 </div>
-//                 <Button variant="primary" onClick={this.handleShow}>
-//                     Launch demo modal
-//                 </Button>
-
-//                 <Modal show={this.state.show} onHide={this.handleClose}>
-//                     <Modal.Header closeButton>
-//                         <Modal.Title>Modal heading</Modal.Title>
-//                     </Modal.Header>
-//                     <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-//                     <Modal.Footer>
-//                         <Button variant="secondary" onClick={this.handleClose}>
-//                         Close
-//                         </Button>
-//                         <Button variant="primary" onClick={this.handleClose}>
-//                         Save Changes
-//                         </Button>
-//                     </Modal.Footer>
-//                 </Modal>
-//             </div>
-//         )
-//     }
-// }
-
-
 import React from 'react';
-import Modal from './Modal';
 import '../../styles/ui/_popupbtn.scss';
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import TaskForm from '../screen/TaskForm';
+import CloseIcon from '@material-ui/icons/Close';
 class PopupBtn extends React.Component {
-
-    constructor() {
-        super();
-
-        this.state = {
-            isShowing: false
-        }
+    constructor(props){
+        super(props);
+    
+    this.state = {
+        open: false,
+      };
+      this.handleClickOpen = this.handleClickOpen.bind(this);
+      this.handleClose = this.handleClose.bind(this);
     }
-
-    openModalHandler = () => {
-        this.setState({
-            isShowing: true
-        });
+    handleClickOpen(){
+        this.setState({open: true});
     }
-
-    closeModalHandler = () => {
-        this.setState({
-            isShowing: false
-        });
+    handleClose(){
+        this.setState({open: false});
     }
-
     render () {
         return (
-            <div className="wrap-popup">
-                  { this.state.isShowing ? <div onClick={this.closeModalHandler} className="back-drop"></div> : null }
-                 <div className="popup">
-              
-
-                {/* <button className="open-modal-btn" onClick={this.openModalHandler}>Open Modal</button> */}
-                    <div className="popup-btn" onClick={this.openModalHandler}>
-                        <p>Popup</p>
-                        <i className="material-icons right" >
-                            add
-                        </i>
-                    </div>
-                    </div>
-                <Modal
-                    className="modal"
-                    show={this.state.isShowing}
-                    close={this.closeModalHandler}>
-                        Maybe aircrafts fly very high because they don't want to be seen in plane sight?
-                </Modal>
+          <div className="dialog-form">
+                <Button variant="outlined" color="primary" onClick={this.handleClickOpen}>
+                    Open dialog
+                </Button>
+                    <Dialog
+                        open={this.state.open}
+                        onClose={this.handleClose}
+                        aria-labelledby="customized-dialog-title"
+                        aria-describedby="alert-dialog-description"
+                        className="dialog-wrapper"
+                        maxWidth={'lg'}
+                    >
+                        <DialogTitle id="customized-dialog-title">Dialog
+                        {/* <Button onClick={this.handleClose} className="cross-btn">
+                                <CloseIcon />
+                        </Button> */}
+                        {/* <div className="wrap-tab1-left wrap-tab1-right left">
+                            <div className="tab1-heading">
+                                <h2 className="h2-fontwght">CaseTab2</h2>
+                                <div className="case-btn case-tab-btn tab2-form-rght-btn">
+                                    <Button variant="contained" className="btn btnStyle btn-color">Case Form
+                                        <i className="material-icons icon">
+                                            queue
+                                        </i>
+                                    </Button>
+                                </div>
+                            </div>
+                            
+                            
+                        </div> */}
+                        </DialogTitle>
+                        <DialogContent className="dialog-content">
+                            <p>Dialog</p>
+                            <DialogContentText id="alert-dialog-description">
+                            Let Google help apps determine location. This means sending anonymous location data to
+                            Google, even when no apps are running.
+                            {/* <div className="task-form left">
+                                <TaskForm/>
+                            </div> */}
+                            </DialogContentText>
+                        </DialogContent>
+                        <DialogActions> 
+                            <Button onClick={this.handleClose} className="cross-btn">
+                                {/* <CloseIcon /> */}
+                                DisAgree
+                            </Button> 
+                             <Button onClick={this.handleClose} color="primary" autoFocus>
+                            Agree
+                            </Button>
+                        </DialogActions>
+                    </Dialog>
             </div>
         );
     }

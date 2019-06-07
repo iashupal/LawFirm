@@ -11,7 +11,7 @@ export default class CaseTabOne extends React.Component{
                     <div className="col-lg-8 col-md-8 col-sm-12 case-tab-padding">
                         <div className="wrap-tab1-left">
                             <div className="tab1-heading">
-                                <h2 className="h2-fontwght">CaseTab1</h2>
+                                <h2>CaseTab1</h2>
                             </div>
                             <div className="row">
                                 <div className="col-lg-6 col-md-12 col-sm-12">
@@ -65,7 +65,7 @@ export default class CaseTabOne extends React.Component{
                     <div className="col-lg-4 col-md-4 col-sm-12 case-rght-margin">
                     <div className="wrap-tab1-left wrap-tab1-right">
                             <div className="tab1-heading">
-                                <h2 className="h2-fontwght">CaseTab2</h2>
+                                <h2>CaseTab2</h2>
                                 <div className="case-btn case-tab-btn">
                                 <button type="button" className="btn btnStyle btn-color">Case Form</button>
                                 {/* <ButtonComponent text={"Case Form"} className="btnStyle"/> */}
@@ -83,22 +83,26 @@ export default class CaseTabOne extends React.Component{
                                         </div>
                                         <div className="form">
                                             <p className="form-para">Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                            <InputBase defaultValue="001" style={{color: 'gray'}} className="inputbase"/>
+                                            <p style={{color: 'gray', marginBottom: 0}} className="inputbase">001</p>
+                                            {/* <InputBase defaultValue="001" style={{color: 'gray'}} className="inputbase"/>     */}
+                                        </div>
+                                        {/* <TextField label={"Num4"} value={"Input1"} className="text-para"/>
+                                        <TextField label={"Num4"} value={"Input2"}/>
+                                        <TextField label={"Num4"} value={"Input3"}/>
+                                        <TextField label={"Num4"} value={"Input4"}/> */}
+                                        <div className="form">
+                                            <p className="form-para">Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
+                                            <p style={{color: 'gray', marginBottom: 0}} className="inputbase">001</p>
                                                 
                                         </div>
                                         <div className="form">
                                             <p className="form-para">Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                            <InputBase defaultValue="001" style={{color: 'gray'}} className="inputbase"/>
+                                            <p style={{color: 'gray', marginBottom: 0}} className="inputbase">001</p>
                                                 
                                         </div>
                                         <div className="form">
                                             <p className="form-para">Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                            <InputBase defaultValue="001" style={{color: 'gray'}} className="inputbase"/>
-                                                
-                                        </div>
-                                        <div className="form">
-                                            <p className="form-para">Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                            <InputBase defaultValue="001" style={{color: 'gray'}} className="inputbase"/>
+                                            <p style={{color: 'gray', marginBottom: 0}} className="inputbase">001</p>
                                                 
                                         </div>
                                         
@@ -109,12 +113,12 @@ export default class CaseTabOne extends React.Component{
                                        
                                     <div className="form">
                                         <p className="form-para">Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                        <InputBase defaultValue="001" style={{color: 'gray'}} className="inputbase"/>
+                                        <p style={{color: 'gray', marginBottom: 0}} className="inputbase">001</p>
                                                 
                                     </div>
                                     <div className="form">
                                         <p className="form-para">Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                        <InputBase defaultValue="001" style={{color: 'gray'}} className="inputbase"/>
+                                        <p style={{color: 'gray', marginBottom: 0}} className="inputbase">001</p>
                                             
                                     </div>
                                         
@@ -129,7 +133,7 @@ export default class CaseTabOne extends React.Component{
                         <div className="col-lg-8 col-md-8 col-sm-12 case-tab-padding">
                             <div className="wrap-tab1-left wrap-tab1-right">
                                     <div className="tab1-heading">
-                                        <h2 className="h2-fontwght">CaseTab3</h2>
+                                        <h2>CaseTab3</h2>
                                         <div className="case-btn case-tab-btn">
                                             <button type="button" className="btn btnStyle btn-color1">Case Table</button>
                                         
@@ -186,7 +190,7 @@ export default class CaseTabOne extends React.Component{
                             <div className="col-lg-4 col-md-4 col-sm-12">
                                 <div className="wrap-tab1-left wrap-tab1-right tab4-margin">
                                     <div className="tab1-heading">
-                                        <h2 className="h2-fontwght">CaseTab4</h2>
+                                        <h2>CaseTab4</h2>
                                         <div className="case-btn case-tab-btn tabs-drpdwn">
                                             <div className="drpdwn-elt">
                                                 <DropdownElement/>

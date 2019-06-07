@@ -122,6 +122,7 @@ export const allMenuData = [
       },
       {
         name: 'pages.caseLaw',
+        icon: 'zmdi zmdi-book',
         data: [
           { link: '/app/screen/Case', name: 'pages.case' ,
             

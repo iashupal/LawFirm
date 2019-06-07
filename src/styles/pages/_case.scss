@@ -44,7 +44,7 @@ h2{
     line-height: 40px;
     letter-spacing: .5px;
     color: #000000;
-    font-weight: bold;
+    font-weight: 400;
     display: inline-block;
     // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -143,9 +143,8 @@ background-color: transparent;
 .case-tab-padding{
     padding-right: 0;
 }
-h2.h2-fontwght{
-    font-weight:500;
-}
+
+
 .wrap-tab1-left{
     width: 100%;
     margin: 0 auto;
@@ -175,7 +174,7 @@ h2.h2-fontwght{
     margin-top: 60px;
 }
 .form{
-    width: 95%;
+    width: 100%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -195,7 +194,7 @@ h2.h2-fontwght{
     width: 64%;
     padding-left: 15px;
     position: relative;
-    top: -7px;
+    // top: -7px;
     vertical-align: middle;
     font-size: 14px;
 }
@@ -399,6 +398,9 @@ border-right: 2px dotted lightgray;
     float: left;
     clear: both;
 }
+.font-div p{
+    color: #373930;
+}
 .font-wrapper{
     width: 98%;
     position: relative;
@@ -437,6 +439,13 @@ border-right: 2px dotted lightgray;
     vertical-align: top;
     flex-wrap: wrap;
 }
+.font-button button{
+font-weight: bold;
+color: #373930;
+}
+.font-icon button:hover i, .font-icon button:focus i, .font-icon button:active i{
+    color: #373930;
+}
 
 .font-wrapper-container span.font-mod-span{
     float: left;
@@ -446,7 +455,7 @@ border-right: 2px dotted lightgray;
 }
 .font-button button, .font-icon button{
     // min-width: 46px;
-    padding: 8px 13px;
+    padding: 4px 13px;
     width: 25%;
     min-width: 23%;
 }
@@ -622,7 +631,7 @@ border-right: 2px dotted lightgray;
 .font-drpdwn .drpdwn .dropdown-40 .ms-Dropdown-title, .font-drpdwn .drpdwn .caretDownWrapper-42{
     height: 40px;
     line-height: 40px;
-    color: #a6a6a6;
+    color: #373930;
 }
 .form.form-without-border{
     margin-top: 10px;
@@ -713,7 +722,9 @@ border-right: 2px dotted lightgray;
 .font-icon i{
     color: gray;
 }
-
+.icon{
+    font-size: 20px;
+}
 // casetabtwo
 .task-row2{
     width: 100%;
@@ -1072,12 +1083,26 @@ margin-bottom: 8px;
     color: gray;
     border: 1px solid lightgray;
 }
-
+.opt {
+    background: #ffffff;
+    color: #ff0000;
+  }
+  
+  .select .opt:checked,
+  .select .opt:focus {
+    background: linear-gradient(#ff0000, #ff0000);
+    -webkit-text-fill-color: #ffffff;
+    color: #ffffff;
+  }
+  
 // tab3
 .tab3{
     width: 100%;
     margin: 10px auto;
     position: relative;
+}
+.text-para p{
+margin-bottom: 0;
 }
 
 // responsive code

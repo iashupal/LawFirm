@@ -82,9 +82,9 @@ ul.nav-menu li button,
 ul.nav-menu li a {
   color: $sidebar-text-color;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   min-width: inherit !important;
-  padding: 7px 35px 8px 20px;
+  padding: 15px 35px 15px 20px;
   font-weight: 400;
   text-transform: capitalize;
   text-decoration: none;
@@ -134,6 +134,7 @@ ul.nav-menu li.menu > a:hover:before {
 ul.nav-menu li i {
   margin-right: 12px;
   font-size: 15px;
+  color: #323c4b;
 }
 
 ul.nav-menu li ul {
@@ -169,7 +170,7 @@ ul.nav-menu li.menu > button:before,
 ul.nav-menu li.menu > a:before {
   color: $sidebar-text-color;
   content: "\f2fb";
-  display: inline-block;
+  // display: inline-block;
   float: right;
   font: {
     family: 'Material-Design-Iconic-Font';

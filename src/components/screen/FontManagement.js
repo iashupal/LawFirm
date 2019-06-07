@@ -1,8 +1,15 @@
 import React from 'react';
 import DropdownElement from '../DropdownElement/DropdownElement';
 import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
 export default class FontManagement extends React.Component{
+    state = {
+        option: "1"
+    }
+    handleOptionsChange = (event) => {
+        this.setState({
+          option: event.target.value
+        });
+      }
     render(){
         return(
             <div className="font-div">
@@ -13,12 +20,29 @@ export default class FontManagement extends React.Component{
                             <DropdownElement/>
                         </div> 
                         <span className="font-mod-span">|</span>
-                        <div className="font-button">
-                            <Button>B</Button>
-                            <Button>I</Button>
-                            <Button>U</Button>
-                            <Button>abc</Button>
-                        </div>
+                        
+                            <div className="font-button">
+                            {/* <Select className="select" size={4} value={this.state.option} onChange={this.handleOptionsChange}>
+                                <option className="opt" value='1'><Button>B</Button></option>
+                                <option className="opt" value='2'><Button>I</Button></option>
+                                <option className="opt" value='3'><Button>U</Button></option>
+                                <option className="opt" value='4'><Button>abc</Button></option>
+                            </Select> */}
+                            
+                                <Button>B</Button>
+                                <Button><i className="material-icons icon">
+                                    format_italic
+                                    </i>
+                                </Button>
+                                <Button>
+                                <i className="material-icons icon">
+                                    format_underlined
+                                </i>
+                                </Button>
+                                <Button><strike style={{textTransform: 'lowercase', color: 'gray', fontWeight: '500'}}>abc</strike></Button>
+                            
+                            </div>
+                        
                         <div className="font-icon">
                          <Button>  
                             <i className="material-icons">

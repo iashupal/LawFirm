@@ -5,7 +5,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import { FormGroup } from '@material-ui/core';
-import Search from './Search';
+import Search from '../Search/Search';
 import EnhancedTable from './EnhancedTable';
 import Button from '@material-ui/core/Button';
 import TaskForm from './TaskForm';
@@ -103,7 +103,7 @@ export default class CaseTabTwo extends React.Component{
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-12 col-sm-12 case-rght-margin">
-                    <div className="wrap-tab1-left wrap-tab1-right left">
+                        <div className="wrap-tab1-left wrap-tab1-right left">
                             <div className="tab1-heading">
                                 <h2 className="h2-fontwght">CaseTab2</h2>
                                 <div className="case-btn case-tab-btn tab2-form-rght-btn">

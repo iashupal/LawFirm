@@ -11,6 +11,7 @@ import ic_main_10 from 'assets/images/icons/ic_main_10.png';
 import ic_main_11 from 'assets/images/icons/ic_main_11.png';
 import ic_main_14 from 'assets/images/icons/ic_main_14.png';
 import ic_main_15 from 'assets/images/icons/ic_main_15.png';
+import ic_main_18 from 'assets/images/icons/ic_main_18.png';
 import { RU } from 'helpers/ramda';
 import { Transition } from 'react-transition-group';
 import { transitionStyles } from 'helpers/styles';
@@ -69,7 +70,7 @@ class Main extends React.Component {
       {
         name: mlMessage('pages.case'),
         link: '/app/screen/Case',
-        icon: ic_main_15,
+        icon: ic_main_18,
       }
     ];
 
@@ -107,7 +108,7 @@ class Main extends React.Component {
               <CardBox styleName="col-lg-3 col-md-4" cardStyle="p-0" key={i.link}>
                 <Link className="" to={i.link} style={{ textDecoration: 'none' }}>
                   <div className="text-center pt-3 pb-3 main-page">
-                    <img src={i.icon} alt="" />
+                    <img src={i.icon} alt=""/>
                     <Transition
                       in={this.state.show}
                       timeout={500} // unmountOnExit

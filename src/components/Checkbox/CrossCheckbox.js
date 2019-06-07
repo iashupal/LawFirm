@@ -11,7 +11,12 @@ export default class CrossCheckbox extends React.Component{
                 </p> */}
                 <form>
                     <input id="checkbox7" className="css-checkbox" type="checkbox" />
-                    <label htmlFor="checkbox7" name="checkbox7_lbl" class="lite-x-gray">Selected Option</label>
+                    <label htmlFor="checkbox7" name="checkbox7_lbl" className="lite-x-gray">Selected Option</label>
+                </form>
+                <form>
+                    <input id="demo_box_2" className="css-checkbox" type="checkbox" />
+                    <label for="demo_box_2" name="demo_lbl_2" className="css-label">select</label>
+                    
                 </form>
 
                
