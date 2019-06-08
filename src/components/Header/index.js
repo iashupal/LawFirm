@@ -158,7 +158,7 @@ class Header extends React.Component {
           </div>
           <ManualDialog />
           
-          <ul className="header-notifications list-inline">
+          {/* <ul className="header-notifications list-inline">
             <li className="d-inline-block d-lg-none list-inline-item">
               <Dropdown
                 className="quick-menu nav-searchbox"
@@ -222,7 +222,7 @@ class Header extends React.Component {
                 </Dropdown>
               </li>
             )}
-          </ul>
+          </ul> */}
           {/* </div> */}
         </Toolbar>
       </AppBar>

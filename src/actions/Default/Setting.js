@@ -3,6 +3,7 @@ import {
   CHANGE_DIRECTION,
   CHANGE_NAVIGATION_STYLE,
   DARK_THEME,
+  // LIGHT_THEME,
   HORIZONTAL_MENU_POSITION,
   SWITCH_LANGUAGE,
   THEME_COLOR,
@@ -20,3 +21,5 @@ export const toggleCollapsedNav = createAction(TOGGLE_COLLAPSED_NAV);
 export const updateWindowWidth = createAction(WINDOW_WIDTH);
 export const setThemeColor = createAction(THEME_COLOR);
 export const switchLanguage = createAction(SWITCH_LANGUAGE);
+
+

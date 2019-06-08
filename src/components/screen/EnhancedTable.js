@@ -11,8 +11,8 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import Checkbox from '@material-ui/core/Checkbox';
 import Tooltip from '@material-ui/core/Tooltip';
-
-
+import '../../styles/ui/_checkbox.scss';
+import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
 let counter = 0;
 function createData(name, task, tags, text, buttons) {
   counter += 1;
@@ -222,16 +222,25 @@ export class EnhancedTable extends React.Component {
                   return (
                     <TableRow
                       hover
-                      onClick={event => this.handleClick(event, n.id)}
-                      role="checkbox"
+                      // onClick={event => this.handleClick(event, n.id)}
+                      // role="checkbox"
                       aria-checked={isSelected}
                       tabIndex={-1}
                       key={n.id}
                       selected={isSelected}
                       className="task-table2"
                     >
-                      <TableCell padding="checkbox" className="task-td-border task-checkbox-width">
+                      <TableCell padding="checkbox" className="task-td-border task-checkbox-width"
+                      onClick={event => this.handleClick(event, n.id)}
+                      role="checkbox"
+                       aria-checked={isSelected}
+                      >
                         <Checkbox checked={isSelected} />
+                        {/* <SimpleCheckbox checked={isSelected}/> */}
+                        {/* <div className="checkbox right">
+                            <input type="checkbox" id="checkboxTable" name="" value="" checked={isSelected}/>
+                            <label htmlFor="checkboxTable" ></label>
+                        </div> */}
                       </TableCell>
                       <TableCell component="th" scope="row" className="task-td-border task-checkbox-width">
                         {n.name}

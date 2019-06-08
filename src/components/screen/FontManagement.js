@@ -21,14 +21,7 @@ export default class FontManagement extends React.Component{
                         </div> 
                         <span className="font-mod-span">|</span>
                         
-                            <div className="font-button">
-                            {/* <Select className="select" size={4} value={this.state.option} onChange={this.handleOptionsChange}>
-                                <option className="opt" value='1'><Button>B</Button></option>
-                                <option className="opt" value='2'><Button>I</Button></option>
-                                <option className="opt" value='3'><Button>U</Button></option>
-                                <option className="opt" value='4'><Button>abc</Button></option>
-                            </Select> */}
-                            
+                            <div className="font-button"> 
                                 <Button>B</Button>
                                 <Button><i className="material-icons icon">
                                     format_italic

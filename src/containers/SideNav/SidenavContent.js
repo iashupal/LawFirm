@@ -6,7 +6,15 @@ import Button from '@material-ui/core/Button';
 import { connect } from 'react-redux';
 import { menuDataAdmin, menuData, allMenuData } from 'helpers/data';
 import { R, RU } from 'helpers/ramda';
-
+import IconButton from '@material-ui/core/IconButton';
+import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
+import { switchLanguage} from 'actions/Default/Setting';
+import { HORIZONTAL_NAVIGATION } from 'constants/ActionTypes';
+import LanguageSwitcher from 'components/LanguageSwitcher/index';
+import Avatar from '@material-ui/core/Avatar';
+import SearchBox from '../../components/SearchBox';
+import UserInfo from '../../components/UserInfo';
+import UserInfoPopup from '../../components/UserInfo/UserInfoPopup';
 const { changeURL, parseQueryStr, mlMessage, getRoleAuth, validatePhone } = RU;
 
 const RuleMC_Check = (myRoleArr, multiCompanyUser, roleList, multiCompanyHide, isMC_MyCompanyMode) => {
@@ -24,6 +32,40 @@ const RuleMC_Check = (myRoleArr, multiCompanyUser, roleList, multiCompanyHide, i
 };
 
 class SidenavContent extends Component {
+  state = {
+    userInfo: false,
+    langSwitcher: false,
+    searchBox: false,
+  }
+  onSearchBoxSelect = () => {
+    this.setState({ searchBox: !this.state.searchBox });
+  };
+  onLangSwitcherSelect = event => {
+    this.setState({ langSwitcher: !this.state.langSwitcher });
+  };
+  onUserInfoSelect = () => {
+    this.setState({ userInfo: !this.state.userInfo });
+  };
+  updateSearchText = evt => {
+    this.setState({ searchText: evt.target.value });
+  };
+  searchKeyPress = evt => {
+    if (evt.key === 'Enter') {
+      const searchText = evt.target.value;
+      changeURL(`/elastic_search?q=${searchText}`);
+      this.setState({ searchText: '' });
+    }
+  };
+  handleRequestClose = () => {
+    this.setState({
+      langSwitcher: false,
+      userInfo: false,
+      mailNotification: false,
+      appNotification: false,
+      searchBox: false,
+    });
+  };
+
   componentDidMount() {
     this.handleRenderMenu();
   }
@@ -119,7 +161,7 @@ class SidenavContent extends Component {
 
   render() {
     // 시스템 관리자용 메뉴, 권한 처리
-    const { myRoleArr, authUser, isMC_MyCompanyMode } = this.props;
+    const { myRoleArr, authUser, isMC_MyCompanyMode, switchLanguage, locale, settingIconHide, navigationStyle } = this.props;
     const { multiCompanyUser } = authUser;
 
     const currMenuData_temp = R.map(
@@ -160,11 +202,57 @@ class SidenavContent extends Component {
       <CustomScrollbars className="scrollbar">
         {currMenuData.map(item1 => (
           <ul className="nav-menu" key={item1.name}>
-            <li className="nav-header">
+            {/* <li className="nav-header">
               <IntlMessages id={item1.name} />
 
+            </li> */}
+           <li>
+          
+           <ul className="header-notifications list-inline">
+            <li className="list-inline-item">
+              <UserInfo />
             </li>
-           
+            {navigationStyle === HORIZONTAL_NAVIGATION && (
+              <li className="list-inline-item user-nav">
+                <Dropdown className="quick-menu" isOpen={this.state.userInfo} toggle={this.onUserInfoSelect.bind(this)}>
+                  <DropdownToggle className="d-inline-block" tag="span" data-toggle="dropdown">
+                    <IconButton className="icon-btn size-30">
+                      <Avatar alt="..." src="http://via.placeholder.com/150x150" className="size-30" />
+                    </IconButton>
+                  </DropdownToggle>
+                  <DropdownMenu right>
+                    <UserInfoPopup />
+                  </DropdownMenu>
+                </Dropdown>
+              </li>
+            )}
+            {!settingIconHide && (
+              <li className="list-inline-item">
+                <Dropdown
+                  className="quick-menu"
+                  isOpen={this.state.langSwitcher}
+                  toggle={this.onLangSwitcherSelect.bind(this)}
+                >
+                  <DropdownToggle className="d-inline-block" tag="span" data-toggle="dropdown">
+                    <div className="d-flex align-items-center pointer pt-1">
+                      {/* {locale.icon === 'kr' && <img src="assets/images/flag_kr.png" alt="" />}
+                      {locale.icon === 'us' && <img src="assets/images/flag_us.png" alt="" />} */}
+                      {locale.icon === 'kr' && <i className="zmdi zmdi-settings zmdi-hc-fw"></i>}
+                      {locale.icon === 'us' && <i className="zmdi zmdi-settings zmdi-hc-fw"></i>}
+                    </div>
+                  </DropdownToggle>
+                  <DropdownMenu right className="w-50">
+                    <LanguageSwitcher
+                      switchLanguage={switchLanguage}
+                      handleRequestClose={this.handleRequestClose}
+                      authUser={authUser}
+                    />
+                  </DropdownMenu>
+                </Dropdown>
+              </li>
+            )}
+          </ul>
+           </li>
            
             <li className="menu collapse-box">
               {item1.data.map(item2 => (
@@ -207,14 +295,15 @@ class SidenavContent extends Component {
   }
 }
 
-const mapStateToProps = ({ common, routing, auth }) => {
+const mapStateToProps = ({ common, routing, auth, settings }) => {
+  const {locale, navigationStyle, settingIconHide} = settings;
   const { allCodes, myRoleArr, allErrorOn, isMC_MyCompanyMode } = common;
   const { authUser } = auth;
   const { location } = routing;
-  return { allCodes, myRoleArr, allErrorOn, location, authUser, isMC_MyCompanyMode };
+  return { allCodes, myRoleArr, allErrorOn, location, authUser, isMC_MyCompanyMode, locale, navigationStyle, settingIconHide };
 };
 
 export default connect(
   mapStateToProps,
-  {},
+  {switchLanguage},
 )(withRouter(SidenavContent));

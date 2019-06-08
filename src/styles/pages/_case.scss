@@ -544,6 +544,22 @@ color: #373930;
 .accord1{
     width: 100%;
 }
+.textarea-chkbox{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 14px;
+    height: 99px;
+    float: left;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 .accord1 .accord-supreme-btn{
     margin-bottom: 10px;
 }
@@ -717,7 +733,8 @@ color: #373930;
 }
 
 .custom-checkbox.checkbox2{
-    top: 6px;
+    // top: 6px;
+    padding-left: 0;
 }
 .font-icon i{
     color: gray;
@@ -769,7 +786,7 @@ td .inr-wrap-chkbox{
     margin: 0 auto;
     position: relative;
     width: 100%;
-    top: 6px;
+    // top: 6px;
 }
 td .inr-wrap-chkbox .custom-checkbox{
     display: inline-block;

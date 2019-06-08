@@ -212,12 +212,8 @@ const styles = theme => ({
                                                                             
                                                                         </div>
                                                                         <div className="custom-checkbox">
-                                                                        <div className="checkbox right">
-                                                                            <input type="checkbox" id="checkbox3" name="" value=""/>
-                                                                            <label htmlFor="checkbox3"><span>Checkbox</span></label>
-                                                                        </div>
-                                                                            {/* <input type="checkbox" className="custom-control-input" id="customCheck1" name="example2" />
-                                                                            <label className="custom-control-label" for="customCheck1">Checkbox</label> */}
+                                                                            <SimpleCheckbox id={"checkbox5"}/>
+                                                                        
                                                                         </div>
                                                                     </div>
                                                                 </td>
@@ -331,7 +327,17 @@ const styles = theme => ({
                                                     
                                                 </div>
                                                 <div className="font-textarea">
-                                                    <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."></textarea>
+                                                <div className="textarea-chkbox">
+                                                    {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."> */}
+                                                    <div>
+                                                    <SimpleCheckbox id={"checkbox6"}/>
+                                                    </div>
+                                                    <div>
+                                                        <SimpleCheckbox id={"checkbox7"}/>
+                                                    </div>
+                                                    {/* </textarea> */}
+                                                    </div>
+                                                    {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."></textarea> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -356,7 +362,12 @@ const styles = theme => ({
                                                     
                                                 </div>
                                                 <div className="font-textarea">
-                                                    <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."></textarea>
+                                                <div className="textarea-chkbox">
+                                                {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."> */}
+                                                <SimpleCheckbox id={"checkbox8"}/>
+                                                {/* </textarea> */}
+                                                </div>
+                                                    {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."></textarea> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -381,7 +392,11 @@ const styles = theme => ({
                                                 
                                                 </div>
                                                 <div className="font-textarea">
-                                                <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."></textarea>
+                                                <div className="textarea-chkbox">
+                                                {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."> */}
+                                                    <SimpleCheckbox id={"checkbox9"}/>
+                                                {/* </textarea> */}
+                                                </div>
                                                 </div>
                                             </div>
                                        </div>

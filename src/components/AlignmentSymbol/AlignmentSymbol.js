@@ -64,7 +64,7 @@ export default class AlignmentSymbol extends React.Component {
       </Grid>
       <Grid item sm={12} md={6}>
         <div className={classes.toggleContainer}>
-          <ToggleButtonGroup value={formats} onChange={handleFormat}>
+          <ToggleButtonGroup value={formats} onChange={this.handleFormat}>
             <ToggleButton value="bold">
               <FormatBoldIcon />
             </ToggleButton>

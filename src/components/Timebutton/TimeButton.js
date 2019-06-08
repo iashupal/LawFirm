@@ -1,13 +1,26 @@
 import React from 'react';
 import ms from 'pretty-ms';
 import '../../styles/ui/_timebutton.scss';
+// import moment = require('moment');
+import moment from 'moment';
 export default class TimeButton extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
+        // let fixDate = (new Date()).setHours(0,0,0); // for 3:00:00 pm
+        // let currDate = new Date();
+        // let obj = {
+        //   "h": hours,
+        //   "m": minutes,
+        //   "s": seconds
+        // };
         this.state = {
           time: 0,
           start: 0,
-          isOn: false
+          isOn: false,
+          // fixDate,
+          //  diff: fixDate-currDate,
+          
+        
         }
         this.startTimer = this.startTimer.bind(this)
         this.stopTimer = this.stopTimer.bind(this)
@@ -31,6 +44,10 @@ export default class TimeButton extends React.Component{
         this.setState({time: 0})
       } 
     render(){
+      // const { diff } = this.state;
+      //   const hours = Math.floor(diff/(60*60*1000));
+      //   const mins = Math.floor((diff-(hours*60*60*1000))/(60*1000));
+      //   const secs = Math.floor((diff-(hours*60*60*1000)-(mins*60*1000))/1000);
         let start = (this.state.time == 0) ?
             <i className="material-icons left" onClick={this.startTimer}> play_circle_outline</i> :  //start//
             null
@@ -38,7 +55,7 @@ export default class TimeButton extends React.Component{
             <i className="material-icons left" onClick={this.stopTimer}> pause_circle_outline</i> :  //stop
             null
         let reset = (this.state.time != 0 && !this.state.isOn) ?
-            <i className="material-icons left" onClick={this.resetTimer}>play_circle_outline</i> :  //reset
+            <i className="material-icons right" onClick={this.resetTimer}>query_builder</i> :  //reset
             null
         let resume = (this.state.time != 0 && !this.state.isOn) ?
            <i className="material-icons left" onClick={this.startTimer}> play_circle_outline</i> :  //resume
@@ -49,12 +66,9 @@ export default class TimeButton extends React.Component{
                      
                         {start}
                         {stop}
-                        {/* {reset} */}
                         {resume}
-                        <h3>{ms(this.state.time)}</h3>
-                        
-                        
-                        <i className="material-icons right">query_builder</i>
+                        <h3 format="HH:mm:ss">{ms(this.state.time)}</h3>
+                        {reset}
                 </div>
             </div>
         )

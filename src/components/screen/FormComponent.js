@@ -119,21 +119,8 @@ export default class FormComponent extends React.Component{
                                                         <label htmlFor="demo_box_2" name="demo_lbl_2" className="css-label">Select</label>
                                                         
                                                     </form>
-                                                    {/* <div className="pretty p-icon p-curve">
-                                                        <input type="checkbox" />
-                                                        <div className="state">
-                                                            <i className="icon mdi mdi-check"></i>
-                                                            <label>Normal</label>
-                                                        </div>
-                                                        
-                                                    </div> */}
-                                                    
-                                                    {/* <div className="custom-control custom-checkbox">
-                                                        <input type="checkbox" className="custom-control-input" id="customCheck" name="example1" />
-                                                        <label className="custom-control-label" htmlFor="customCheck">Custom checkbox</label>
-                                                    </div> */}
                                                     <div className="custom-checkbox">
-                                                        <SimpleCheckbox/>
+                                                        <SimpleCheckbox id={"checkbox3"}/>
                                                     </div>
                                                     
                                                 </div>
@@ -167,9 +154,11 @@ export default class FormComponent extends React.Component{
                                                         </i>
                                                     </div>
                                                     <div className="custom-control custom-checkbox checkbox2">
-                                                        <input type="checkbox" className="custom-control-input" id="customCheck" name="example1" />
-                                                        <label className="custom-control-label" htmlFor="customCheck">check</label>
+                                                        {/* <input type="checkbox" className="custom-control-input" id="customCheck" name="example1" />
+                                                        <label className="custom-control-label" htmlFor="customCheck">check</label> */}
+                                                        <SimpleCheckbox id={"checkbox4"}/>
                                                     </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>

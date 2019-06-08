@@ -30,22 +30,9 @@ export default class CaseTabTwo extends React.Component{
                                 </div>
                                 <div className="task-head-right right">
                                     <Button className="btn left btnStyle accord3-btn-clr right" variant="contained">Button2</Button>
-                                        {/* <div className="checkbox right">
-                                            <FormGroup>  
-                                                <FormControlLabel
-                                                    control={
-                                                        <Checkbox
-                                                        icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
-                                                        checkedIcon={<CheckBoxIcon fontSize="small" />}
-                                                        value="checkedI"
-                                                        />
-                                                        }
-                                                        label="Custom size"
-                                                />
-                                            </FormGroup>  
-                                            
-                                        </div> */}
-                                            <SimpleCheckbox/>
+                                        <div className="right" style={{width: '34%'}}>
+                                            <SimpleCheckbox id={"checkbox1"}/>
+                                        </div>
                                     </div>  
 
                             </div>
@@ -53,24 +40,7 @@ export default class CaseTabTwo extends React.Component{
                                 <div className="row">
                                     <div className="col-lg-4 col-md-4 col-sm-12 case-tab-padding">
                                         <div className="task-row2">
-                                            {/* <div className="checkbox left">
-                                                <FormGroup>  
-                                                    <FormControlLabel
-                                                        control={
-                                                        <Checkbox
-                                                            icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
-                                                            checkedIcon={<CheckBoxIcon fontSize="small" />}
-                                                            value="checkedI"
-                                                                    />
-                                                            }
-                                                            label="Custom"
-                                                        />
-                                                </FormGroup>  
-                                            </div> */}
-                                            <div className="checkbox left">
-                                                <input type="checkbox" id="checkbox2" name="" value=""/>
-                                                <label htmlFor="checkbox2"><span>Checkbox</span></label>
-                                            </div>
+                                            <SimpleCheckbox id={"checkbox2"}/>
                                             <button type="button" className="btn btnStyle accord3-btn-clr ">Button2</button>
                                             <button type="button" className="btn btnStyle btn-color2">Button1</button>
                                             
