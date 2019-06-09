@@ -30,7 +30,7 @@ export default class CaseTabTwo extends React.Component{
                                 </div>
                                 <div className="task-head-right right">
                                     <Button className="btn left btnStyle accord3-btn-clr right" variant="contained">Button2</Button>
-                                        <div className="right" style={{width: '34%'}}>
+                                        <div className="right" style={{width: '115px'}}>
                                             <SimpleCheckbox id={"checkbox1"}/>
                                         </div>
                                     </div>  

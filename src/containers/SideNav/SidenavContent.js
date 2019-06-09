@@ -16,7 +16,7 @@ import SearchBox from '../../components/SearchBox';
 import UserInfo from '../../components/UserInfo';
 import UserInfoPopup from '../../components/UserInfo/UserInfoPopup';
 const { changeURL, parseQueryStr, mlMessage, getRoleAuth, validatePhone } = RU;
-
+// import { withTheme } from '@material-ui/core/styles';
 const RuleMC_Check = (myRoleArr, multiCompanyUser, roleList, multiCompanyHide, isMC_MyCompanyMode) => {
   // myRoleArr, multiCompanyUser -> 자신 정보
   // roleList, multiCompanyHide -> 메뉴 정보
@@ -163,7 +163,7 @@ class SidenavContent extends Component {
     // 시스템 관리자용 메뉴, 권한 처리
     const { myRoleArr, authUser, isMC_MyCompanyMode, switchLanguage, locale, settingIconHide, navigationStyle } = this.props;
     const { multiCompanyUser } = authUser;
-
+    // const {light, contrastText} = this.props;
     const currMenuData_temp = R.map(
       lv1 => ({
         name: lv1.name,
@@ -201,7 +201,7 @@ class SidenavContent extends Component {
     return (
       <CustomScrollbars className="scrollbar">
         {currMenuData.map(item1 => (
-          <ul className="nav-menu" key={item1.name}>
+          <ul className="nav-menu" key={item1.name} >
             {/* <li className="nav-header">
               <IntlMessages id={item1.name} />
 
@@ -209,7 +209,7 @@ class SidenavContent extends Component {
            <li>
           
            <ul className="header-notifications list-inline">
-            <li className="list-inline-item">
+            <li className="list-inline-item" >
               <UserInfo />
             </li>
             {navigationStyle === HORIZONTAL_NAVIGATION && (
@@ -227,7 +227,7 @@ class SidenavContent extends Component {
               </li>
             )}
             {!settingIconHide && (
-              <li className="list-inline-item">
+              <li className="list-inline-item user-setting">
                 <Dropdown
                   className="quick-menu"
                   isOpen={this.state.langSwitcher}

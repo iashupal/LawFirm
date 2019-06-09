@@ -10,10 +10,14 @@
   top: 70px !important;
 
   & .user-profile {
-    background-color: $sidebar-bg-darken;
+    // background-color: $sidebar-bg-darken;
     // padding: 13px 20px;
   }
-
+& .nav-menu {
+  & .user-setting{
+    padding-left: 22px;
+  }
+}
   & .user-avatar {
     margin: 0 15px 0 0 !important;
     height: 44px !important;
@@ -25,7 +29,7 @@
     & .user-name {
       color: $sidebar-hover-color;
       cursor: pointer;
-      font-size: $font-size-base;
+      font-size: $font-size-base !important;
       font-weight: 400;
       white-space: nowrap;
     }
@@ -85,9 +89,9 @@ ul.nav-menu li button,
 ul.nav-menu li a {
   color: $sidebar-text-color;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   min-width: inherit !important;
-  padding: 15px 35px 15px 20px;
+  padding: 10px 27px 10px 20px;
   font-weight: 400;
   text-transform: capitalize;
   text-decoration: none;
@@ -145,7 +149,7 @@ ul.nav-menu li ul {
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: $sidebar-bg-darken;
+  // background-color: $sidebar-bg-darken;
   // overflow: hidden;
 }
 

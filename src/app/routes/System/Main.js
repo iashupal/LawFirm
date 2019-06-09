@@ -12,6 +12,10 @@ import ic_main_11 from 'assets/images/icons/ic_main_11.png';
 import ic_main_14 from 'assets/images/icons/ic_main_14.png';
 import ic_main_15 from 'assets/images/icons/ic_main_15.png';
 import ic_main_18 from 'assets/images/icons/ic_main_18.png';
+import ic_main_19 from 'assets/images/icons/ic_main_19.png';
+import ic_main_20 from 'assets/images/icons/ic_main_20.png';
+import ic_main_21 from 'assets/images/icons/ic_main_21.png';
+import ic_main_22 from 'assets/images/icons/ic_main_22.png';
 import { RU } from 'helpers/ramda';
 import { Transition } from 'react-transition-group';
 import { transitionStyles } from 'helpers/styles';
@@ -70,7 +74,7 @@ class Main extends React.Component {
       {
         name: mlMessage('pages.case'),
         link: '/app/screen/Case',
-        icon: ic_main_18,
+        icon: ic_main_15,
       }
     ];
 

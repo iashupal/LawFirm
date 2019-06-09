@@ -71,3 +71,30 @@
 .checkbox input[type="checkbox"]:focus + label::before {
     outline: 0;
 }
+
+// 1640px media query
+@media query and (max-width:1640px){
+    .checkbox{
+        widows: 48%;
+    }
+}
+
+// 767px css code
+@media screen and (max-width:767px){
+    .checkbox{
+        width: 105px;
+    }
+}
+// 450px css code
+@media screen and (max-width:450px){
+    .checkbox label{
+        padding-left: 25px;
+    }
+    .checkbox label:before{
+        margin-left: 0;
+        width: 15px;
+        height: 15px;
+        border-radius: 1px;
+        top: 5px;
+    }
+}

@@ -113,12 +113,14 @@ export default class FormComponent extends React.Component{
                                             <p>Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span className="semi-coln">:</span>
                                             <div className="wrapper-checkbox">
                                                 <div className="inr-wrap-chkbox">
-                                                    {/* <CrossCheckbox/> */}
-                                                    <form className="cross-checkbox">
+                                                    <div className="cross-checkbox">
+                                                        <CrossCheckbox crossid={"id2"}/>
+                                                    </div>
+                                                    {/* <form className="cross-checkbox">
                                                         <input id="demo_box_2" className="css-checkbox" type="checkbox" />
                                                         <label htmlFor="demo_box_2" name="demo_lbl_2" className="css-label">Select</label>
                                                         
-                                                    </form>
+                                                    </form> */}
                                                     <div className="custom-checkbox">
                                                         <SimpleCheckbox id={"checkbox3"}/>
                                                     </div>

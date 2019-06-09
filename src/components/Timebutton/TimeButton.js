@@ -67,6 +67,8 @@ export default class TimeButton extends React.Component{
                         {start}
                         {stop}
                         {resume}
+                        {/* <h2>{moment.HTML5_FMT.TIME_SECONDS}</h2> */}
+                        {/* <h2>{moment().format('LTS')}</h2> */}
                         <h3 format="HH:mm:ss">{ms(this.state.time)}</h3>
                         {reset}
                 </div>

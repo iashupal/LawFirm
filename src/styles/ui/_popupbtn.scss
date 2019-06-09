@@ -69,3 +69,13 @@
 .MuiPaper-rounded-144{
     border-radius: 0;
 }
+
+// 1180px css code
+@media screen and (max-width:1180px){
+    .popup{
+      float: right;
+      margin-right: 10px;
+      width: 120px;
+    }
+  
+  }

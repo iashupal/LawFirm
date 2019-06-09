@@ -12,6 +12,7 @@ import TextField from '@material-ui/core/TextField';
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import '../../../node_modules/pretty-checkbox/dist/pretty-checkbox.min.css';
 import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
+import CrossCheckbox from '../Checkbox/CrossCheckbox';
 
 
 const styles = theme => ({
@@ -203,13 +204,16 @@ const styles = theme => ({
                                                                 <td>
                                                                     <div className="inr-wrap-chkbox">
                                         
-                                                                        <div className="pretty p-icon p-curve">
+                                                                        {/* <div className="pretty p-icon p-curve">
                                                                             <input type="checkbox" />
                                                                             <div className="state">
                                                                                 <i className="icon mdi mdi-check"></i>
                                                                                 <label>Normal</label>
                                                                             </div>
                                                                             
+                                                                        </div> */}
+                                                                        <div className="cross-checkbox">
+                                                                            <CrossCheckbox crossid={"id1"}/>
                                                                         </div>
                                                                         <div className="custom-checkbox">
                                                                             <SimpleCheckbox id={"checkbox5"}/>

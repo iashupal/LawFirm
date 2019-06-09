@@ -84,6 +84,7 @@ export const allMenuData = [
       },
       {
         name: 'pages.contractReview',
+        icon: 'zmdi zmdi-assignment',
         data: [
           { link: '/app/contract/save', name: 'pages.contractSave', multiCompanyHide: true },
           { link: '/app/contract/search', name: 'pages.contractSearch' },
@@ -101,6 +102,7 @@ export const allMenuData = [
       },
       {
         name: 'pages.legalAdvice',
+        icon: 'zmdi zmdi-accounts',
         data: [
           { link: '/app/law/save', name: 'pages.lawSave', multiCompanyHide: true },
           { link: '/app/law/search', name: 'pages.lawSearch' },
@@ -108,6 +110,7 @@ export const allMenuData = [
       },
       {
         name: 'pages.legalProject',
+        icon: 'zmdi zmdi-view-comfy',
         data: [
           { link: '/app/project/save', name: 'pages.projectSave', multiCompanyHide: true },
           { link: '/app/project/search', name: 'pages.projectSearch' },
@@ -115,6 +118,7 @@ export const allMenuData = [
       },
       {
         name: 'pages.legalLaw',
+        icon: 'zmdi zmdi-assignment-account',
         data: [
           { link: '/app/litigation/save', name: 'pages.litigationSave', multiCompanyHide: true },
           { link: '/app/litigation/search', name: 'pages.litigationSearch' },
@@ -127,7 +131,6 @@ export const allMenuData = [
           { link: '/app/screen/Case', name: 'pages.case' ,
             
           },
-          // { link: '/app/litigation/search', name: 'pages.litigationSearch' },
         ],
       },
       {
