@@ -484,7 +484,7 @@ color: #373930;
 .form-cal i{
     position: absolute;
     top: 8px;
-    left: 190px;
+    // left: 190px;
     font-size: 20px;
     color: gray;
 }
@@ -494,7 +494,7 @@ color: #373930;
     outline: 0;
 }
 .drpdwn-elt.form-drpdwn{
-    width: 20%;
+    width: 145px;
 }
 .form-accordian{
     width: 100%;
@@ -869,7 +869,7 @@ td .inr-wrap-chkbox .custom-checkbox{
     background-color: #3D7BE3;
 }
 .task-row2 .btnStyle{
-    padding: 10px 5px;
+    padding: 8px 5px;
     margin-right: 5px;
 }
 .task-rght-row-drpdwn{
@@ -949,7 +949,7 @@ td .inr-wrap-chkbox .custom-checkbox{
     text-align: left;
 }
 .table-body .task-table2 .task-checkbox-width:nth-child(6){
-    width: 12%;
+    width: 13%;
     padding: 5px;
     text-align: center;
     margin: 0 auto;
@@ -1121,6 +1121,9 @@ margin-bottom: 8px;
 .text-para p{
 margin-bottom: 0;
 }
+.form-cal .form-cal-btn.datepicker-btn i{
+    right: -6px;
+}
 
 // responsive code
 
@@ -1155,23 +1158,23 @@ margin-bottom: 0;
         
     }
     .form-cal-btn{
-        width: 21%;
+        width: 130px;
     }
     // .btnStyle{
     //     padding: 10px 20px;
     // }
-    .form-cal i{
-        left: 27.5%;
-    }
+    // .form-cal i{
+    //     left: 27.5%;
+    // }
     .font-button, .font-icon{
         width: 30%;
     }
     // .drpdwn-elt.form-drpdwn {
     //     width: 22%;
     // }
-    .form-cal .react-datepicker-wrapper{
-        width: 18%;
-    }
+    // .form-cal .react-datepicker-wrapper{
+    //     width: 18%;
+    // }
 }
 
 // 1600px
@@ -1196,26 +1199,29 @@ margin-bottom: 0;
     .textfield-wrapper .form-group{
         width: 43%;
     }
+    .task-head-middle {
+        padding-left: 10px;
+    }
     .btnStyle{
         padding: 10px 10px;
     }
     .table-inr-btns .btn-color1, .table-inr-btns .btn-color2{
         padding: 6px 2px;
     }
-    .form-cal-btn {
-        width: 30%;
-    }
+    // .form-cal-btn {
+    //     width: 30%;
+    // }
     .wrapper-checkbox {
         width: 80%;
     }
     .form-cal .react-datepicker-wrapper{
-        width: 110px;
+        width: 127px;
     }
-    .form-cal i {
-        left: 177px;
-    }
+    // .form-cal i {
+    //     left: 40%;
+    // }
     .drpdwn-elt.form-drpdwn, .form.form-without-border .react-datepicker-wrapper{
-        width: 125px;
+        width: 141px;
     }
   
 }
@@ -1349,9 +1355,9 @@ margin-bottom: 0;
     .textfield-wrapper .form-group {
         width: 47%;
     }
-    .form-cal-btn {
-        width: 25%;
-    }
+    // .form-cal-btn {
+    //     width: 25%;
+    // }
     .case-tab-padding.accord-exec-padding{
         padding-left: 15px;
     }
@@ -1406,9 +1412,9 @@ margin-bottom: 0;
         margin-right: 10px;
         margin-bottom: 10px;
     }
-    .form-cal-btn{
-        width: 140px;
-    }
+    // .form-cal-btn{
+    //     width: 140px;
+    // }
     .wrapper-checkbox {
         width: 75%;
     }
@@ -1417,6 +1423,10 @@ margin-bottom: 0;
     }
     .font-button, .font-icon {
         width: 34%;
+    }
+    .accord2-wrap-inr .drpdwn-elt{
+        width: 13%;
+        margin-right: 20px;
     }
    
 }
@@ -1441,6 +1451,21 @@ margin-bottom: 0;
         margin-right: 0;
     }
     .font-icon{
+        width: 100%;
+    }
+    .client-accord .row .col-lg-8.col-md-12.col-sm-12.case-tab-padding, .accord1 {
+    
+        width: 700px;
+        overflow-x: scroll;
+    }
+    .client-acord-wrap, .accord1 .accord-table, .table{
+        width: 100%;
+    }
+    
+}
+// 350px css code
+@media screen and (max-width:350px){
+    .wrapper-checkbox{
         width: 100%;
     }
 }

@@ -1,5 +1,5 @@
 .checkbox {
-    width: 34%;
+    width: 36%;
     // margin: 15px auto;
     position: relative;
     display: inline-block;
@@ -54,9 +54,9 @@
 }
 
 .checkbox label {
-    min-height: 25px;
+    min-height: 27px;
     display: block;
-    padding-left: 35px;
+    padding-left: 30px;
     margin-bottom: 0;
     font-weight: normal;
     cursor: pointer;
@@ -73,12 +73,24 @@
 }
 
 // 1640px media query
-@media query and (max-width:1640px){
+@media screen and (max-width:1640px){
     .checkbox{
-        widows: 48%;
+        width: 40%;
     }
 }
-
+// 1540px css code
+@media query and (max-width:1540px){
+    .checkbox{
+        width: 110px;
+    }
+    .checkbox label span{
+        font-size: 14px !important;
+    }
+}
+// 767px css code
+.checkbox {
+    width: 45%;
+}
 // 767px css code
 @media screen and (max-width:767px){
     .checkbox{

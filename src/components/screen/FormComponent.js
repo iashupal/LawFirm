@@ -80,7 +80,7 @@ export default class FormComponent extends React.Component{
                                         </div>
                                         <div className="form form-cal app-form-para">
                                             <p>Date</p>&nbsp;&nbsp;&nbsp;&nbsp;<span className="semi-coln">:</span>
-                                            
+                                            <div className="form-cal-btn datepicker-btn">
                                                 <DatePicker
                                                     selected={this.state.startDate}
                                                     onChange={this.handleChange}
@@ -93,10 +93,12 @@ export default class FormComponent extends React.Component{
                                                 <i className="material-icons">
                                                     date_range
                                                 </i>
+                                                </div>
                                              
                                         </div>
                                         <div className="form form-without-border app-form-para">
                                             <p>Date</p>&nbsp;&nbsp;&nbsp;&nbsp;<span className="semi-coln">:</span>
+                                            
                                                 <DatePicker
                                                     selected={this.state.startDate}
                                                     onChange={this.handleChange}
@@ -105,6 +107,7 @@ export default class FormComponent extends React.Component{
                                                     showYearDropdown
                                                     dropdownMode="select" 
                                                 />
+                                            
                                         </div>
                                         <TextField label={"Num4"} value={"Input1"}/>
                                         
