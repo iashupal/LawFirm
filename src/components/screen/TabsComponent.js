@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-// import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
-
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import '../../styles/pages/_case.scss';
@@ -41,6 +39,71 @@ function TabContainer(props) {
     handleChange = (event, value) => {
       this.setState({ value });
     };
+
+    renderTabContainer = (value) => {
+      switch(value){
+        case 0:
+          return (
+            <TabContainer>
+                <CaseTabOne/>
+            </TabContainer>
+          );
+    
+        case 1:
+          return (
+            <TabContainer><CaseTabTwo/></TabContainer>
+          );
+    
+        case 2:
+          return (
+            <TabContainer><CaseTabThree/></TabContainer>
+          );
+    
+        case 3:
+          return (
+            <TabContainer>Item Four</TabContainer>
+          );
+    
+        case 4:
+          return(
+            <TabContainer>Item Four</TabContainer>
+          );
+    
+        case 5:
+          return(
+            <TabContainer>Item Four</TabContainer>
+          );
+    
+        case 6:
+          return(
+            <TabContainer>Item Four</TabContainer>
+          );
+    
+        case 7:
+          return(
+            <TabContainer>Item Four</TabContainer>
+          );
+    
+        case 8:
+          return(
+            <TabContainer>Item Four</TabContainer>
+          );
+    
+        case 9:
+          return(
+            <TabContainer>Item Four</TabContainer>
+          );
+    
+        default:
+          return(
+          <TabContainer> <CaseTabOne/></TabContainer>
+          );
+       
+        
+      
+
+      }
+    }
   
   render(){
     
@@ -52,7 +115,6 @@ function TabContainer(props) {
                         <div className="col-lg-12 col-md-12 col-sm-12">
                             <div className="wrapper-tab">
                             <div className="tabs">
-                                {/* <AppBar position="static" color="default"> */}
                                    <Tabs
                                        value={value}
                                        onChange={this.handleChange}
@@ -75,19 +137,7 @@ function TabContainer(props) {
                                        <Tab label="Item Ten" className="custom-tab-inr"/>
                                      
                                    </Tabs>
-                                   {/* </AppBar> */}
-                                   {value === 0 && <TabContainer>
-                                        <CaseTabOne/>
-                                   </TabContainer>}
-                                   {value === 1 && <TabContainer><CaseTabTwo/></TabContainer>}
-                                   {value === 2 && <TabContainer><CaseTabThree/></TabContainer>}
-                                   {value === 3 && <TabContainer>Item Four</TabContainer>}
-                                   {value === 4 && <TabContainer>Item Five</TabContainer>}
-                                   {value === 5 && <TabContainer>Item Six</TabContainer>}
-                                   {value === 6 && <TabContainer>Item Seven</TabContainer>}
-                                   {value === 7 && <TabContainer>Item Eight</TabContainer>}
-                                   {value === 8 && <TabContainer>Item Nine</TabContainer>}
-                                   {value === 9 && <TabContainer>Item Ten</TabContainer>}
+                                   {this.renderTabContainer(value)}
                                </div>
                             </div>
                         </div>

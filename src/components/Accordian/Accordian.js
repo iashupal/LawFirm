@@ -8,7 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Button from '@material-ui/core/Button';
 import DropdownElement from '../DropdownElement/DropdownElement';
-import TextField from '@material-ui/core/TextField';
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import '../../../node_modules/pretty-checkbox/dist/pretty-checkbox.min.css';
 import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
@@ -20,7 +19,6 @@ const styles = theme => ({
       width: '100%',
     },
     heading: {
-    //   fontSize: theme.typography.pxToRem(15),
       fontWeight: theme.typography.fontWeightRegular,
       fontSize: '18px',
       fontFamily: 'Material-Design-Iconic-Font',
@@ -142,9 +140,6 @@ const styles = theme => ({
                            <div className="accord2-wrap">
                                <div className="accord2-wrap-inr">
                                    <span>Label </span> : 
-                                   {/* <div className="radio">
-                                        <label><input type="radio" name="optradio" checked />Option 1</label>
-                                    </div> */}
                                     <div className="pretty p-default p-round p-smooth padding-pretty">
                                         <input type="checkbox" />
                                         <div className="state p-primary">
@@ -203,15 +198,6 @@ const styles = theme => ({
                                                                 <td>Supreme</td>
                                                                 <td>
                                                                     <div className="inr-wrap-chkbox">
-                                        
-                                                                        {/* <div className="pretty p-icon p-curve">
-                                                                            <input type="checkbox" />
-                                                                            <div className="state">
-                                                                                <i className="icon mdi mdi-check"></i>
-                                                                                <label>Normal</label>
-                                                                            </div>
-                                                                            
-                                                                        </div> */}
                                                                         <div className="cross-checkbox">
                                                                             <CrossCheckbox crossid={"id1"}/>
                                                                         </div>
@@ -332,16 +318,13 @@ const styles = theme => ({
                                                 </div>
                                                 <div className="font-textarea">
                                                 <div className="textarea-chkbox">
-                                                    {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."> */}
                                                     <div>
                                                     <SimpleCheckbox id={"checkbox6"}/>
                                                     </div>
                                                     <div>
                                                         <SimpleCheckbox id={"checkbox7"}/>
                                                     </div>
-                                                    {/* </textarea> */}
                                                     </div>
-                                                    {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."></textarea> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -367,11 +350,9 @@ const styles = theme => ({
                                                 </div>
                                                 <div className="font-textarea">
                                                 <div className="textarea-chkbox">
-                                                {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."> */}
                                                 <SimpleCheckbox id={"checkbox8"}/>
                                                 {/* </textarea> */}
                                                 </div>
-                                                    {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."></textarea> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -397,9 +378,7 @@ const styles = theme => ({
                                                 </div>
                                                 <div className="font-textarea">
                                                 <div className="textarea-chkbox">
-                                                {/* <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."> */}
                                                     <SimpleCheckbox id={"checkbox9"}/>
-                                                {/* </textarea> */}
                                                 </div>
                                                 </div>
                                             </div>

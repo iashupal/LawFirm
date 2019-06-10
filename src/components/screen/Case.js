@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../styles/pages/_case.scss';
-// import ButtonComponent from '../Button/ButtonComponent';
 import TabsComponent from './TabsComponent';
 import FormComponent from './FormComponent';
 import Button from '@material-ui/core/Button';
@@ -29,23 +28,24 @@ import PageTitle from '../PageTitle/PageTitle';
                                     <i className="material-icons icon-left-menu-color">
                                         class
                                     </i>
-                                    {/* <h2>Case</h2> */}
-                                    <PageTitle/>
+                                    <PageTitle value = {"Case"}/>
                                 </div>
                             </div>
                             <div className="col-lg-2 col-md-2 col-sm-2 col-xs-6 case-padding case-main-button">
                                 <div className="case-btn">
-                                    {/* <ButtonComponent text={"Case"} icon={"add_to_queue"} onClick={this.handleClick}/> */}
-                                    <Button variant="contained" color="primary" onClick={this.handleClick}>Case
+                                    <Button variant="contained" color="primary" onClick={this.handleClick} className="case-change-btn">
+                                        <span className="label">
+                                            Case
+                                        </span>
                                         <i className="material-icons icon">add_to_queue</i> 
                                     </Button>
+                                  
                                 </div>
                             </div>
                         </div>
                 </div>
                 <div className="tabs-component">
-                    {this.state.show && <TabsComponent  />}
-                    {!this.state.show && <FormComponent />}
+                    {this.state.show ? <TabsComponent  />: <FormComponent/>}
                 </div>
             </div>
         )

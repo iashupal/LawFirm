@@ -16,13 +16,16 @@
 & .nav-menu {
   & .user-setting{
     padding-left: 22px;
+    // border-bottom: 1px solid lightgray;
+    padding-top: 20px;
+    padding-bottom: 19px;
   }
 }
   & .user-avatar {
     margin: 0 15px 0 0 !important;
-    height: 44px !important;
-    width: 44px !important;
-    line-height: 44px;
+    height: 38px !important;
+    width: 38px !important;
+    line-height: 38px;
   }
 
   & .user-detail {
@@ -91,7 +94,7 @@ ul.nav-menu li a {
   display: block;
   font-size: 14px;
   min-width: inherit !important;
-  padding: 10px 27px 10px 20px;
+  padding: 13px 27px 13px 20px;
   font-weight: 400;
   text-transform: capitalize;
   text-decoration: none;
@@ -143,7 +146,19 @@ ul.nav-menu li i {
   font-size: 15px;
   color: #323c4b;
 }
-
+ul.header-notifications{
+  margin: 10px auto !important;
+}
+.header-notifications li{
+  // border-bottom: 1px solid lightgray;
+  // margin-right: 0;
+}
+.header-notifications li.list-inline-item:not(:last-child){
+  margin-right: 0;
+}
+ul.nav-menu .header-notifications li.user-setting i{
+  color: #BFBFBF;
+}
 ul.nav-menu li ul {
   list-style: outside none none;
   margin: 0;

@@ -3,13 +3,9 @@ import '../../styles/ui/_crosscheckbox.scss';
 export default class CrossCheckbox extends React.Component{
     render(){
         return(
-                // <form>
-                //     <input id="demo_box_2" className="css-checkbox" type="checkbox" />
-                //     <label htmlFor="demo_box_2" name="demo_lbl_2" className="css-label">select</label>
-                // </form>
                  <form>
-                 <input id={this.props.crossid} className="css-checkbox" type="checkbox" />
-                 <label htmlFor={this.props.crossid} name="demo_lbl_2" className="css-label">select</label>
+                    <input id={this.props.crossid} className="css-checkbox" type="checkbox" />
+                    <label htmlFor={this.props.crossid} name="demo_lbl_2" className="css-label">select</label>
              </form>
         )
     }

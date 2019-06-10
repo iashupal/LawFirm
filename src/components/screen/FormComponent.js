@@ -3,13 +3,13 @@ import TextField from './TextField';
 import DropdownElement from '../DropdownElement/DropdownElement';
 import FontManagement from './FontManagement';
 import DatePicker from "react-datepicker";
-import InputBase from '@material-ui/core/InputBase';
 import "react-datepicker/dist/react-datepicker.css";
 import Accordian from '../Accordian/Accordian';
 import Button from '@material-ui/core/Button';
 import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
 import '../../styles/ui/_crosscheckbox.scss';
 import CrossCheckbox from '../Checkbox/CrossCheckbox';
+import PageTitle from '../PageTitle/PageTitle';
 export default class FormComponent extends React.Component{
     constructor(props){
         super(props);
@@ -31,18 +31,12 @@ export default class FormComponent extends React.Component{
                   <div className="col-lg-12 col-md-12 col-sm-12">
                       <div className="wrap-tab1-left">
                             <div className="tab1-heading">
-                                <h2>Case Application Form</h2>
+                            <PageTitle value={"Case Application Form"}/>
                             </div>
                       <div className="row">
                                 <div className="col-lg-6 col-md-12 col-sm-12">
                                     <div className="tab1-form">
-                                        {/* <div className="form app-form"> */}
-                                            {/* <p>Number2</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                            <InputBase defaultValue="input" style={{color: 'gray'}} className="inputbase"/> */}
-                                            <TextField value={"Input"} label={"Number"}/>
-                                            
-                                            
-                                        {/* </div> */}
+                                        <TextField value={"Input"} label={"Number"}/>
                                         <div className="form app-form">
                                             <p>Number2</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
                                             <div className="form-search-input">
@@ -119,11 +113,6 @@ export default class FormComponent extends React.Component{
                                                     <div className="cross-checkbox">
                                                         <CrossCheckbox crossid={"id2"}/>
                                                     </div>
-                                                    {/* <form className="cross-checkbox">
-                                                        <input id="demo_box_2" className="css-checkbox" type="checkbox" />
-                                                        <label htmlFor="demo_box_2" name="demo_lbl_2" className="css-label">Select</label>
-                                                        
-                                                    </form> */}
                                                     <div className="custom-checkbox">
                                                         <SimpleCheckbox id={"checkbox3"}/>
                                                     </div>
@@ -159,8 +148,6 @@ export default class FormComponent extends React.Component{
                                                         </i>
                                                     </div>
                                                     <div className="custom-control custom-checkbox checkbox2">
-                                                        {/* <input type="checkbox" className="custom-control-input" id="customCheck" name="example1" />
-                                                        <label className="custom-control-label" htmlFor="customCheck">check</label> */}
                                                         <SimpleCheckbox id={"checkbox4"}/>
                                                     </div>
                                                     

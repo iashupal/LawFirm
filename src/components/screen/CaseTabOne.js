@@ -1,25 +1,22 @@
 import React from 'react';
 import TextField from './TextField';
 import DropdownElement from '../DropdownElement/DropdownElement';
-// import ButtonComponent from '../Button/ButtonComponent';
-import InputBase from '@material-ui/core/InputBase';
+import PageTitle from '../PageTitle/PageTitle';
+import CaseCard from './CaseCard';
 export default class CaseTabOne extends React.Component{
     render(){
         return(
             <div className="tabone">
                 <div className="row">
-                    <div className="col-lg-8 col-md-8 col-sm-12 case-tab-padding">
-                        <div className="wrap-tab1-left">
-                            <div className="tab1-heading">
-                                <h2>CaseTab1</h2>
-                            </div>
+                    <div className="col-lg-8 col-md-8 col-sm-12 case-tab-padding">    
+                            <CaseCard>
                             <div className="row">
+                                
                                 <div className="col-lg-6 col-md-12 col-sm-12">
                                     <div className="tab1-form">
                                         <TextField label={"Number1"} value={"0001"}/>
                                         <div className="form">
                                             <p>Number2</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                            {/* <InputBase defaultValue="[input]" style={{color: 'gray'}} className="inputbase"/> */}
                                             <div className="form-search-input">
                                                 <p style={{color: '#427FDF'}}>[Input]</p>
                                                 
@@ -59,20 +56,14 @@ export default class CaseTabOne extends React.Component{
                                         
                                     </div>
                                 </div>
+                                
                             </div>
-                        </div>
+                            </CaseCard>
+                        {/* </div> */}
                     </div>
                     <div className="col-lg-4 col-md-4 col-sm-12 case-rght-margin">
-                    <div className="wrap-tab1-left wrap-tab1-right">
-                            <div className="tab1-heading">
-                                <h2>CaseTab2</h2>
-                                <div className="case-btn case-tab-btn">
-                                <button type="button" className="btn btnStyle btn-color">Case Form</button>
-                                {/* <ButtonComponent text={"Case Form"} className="btnStyle"/> */}
-                                </div>
-                            </div>
-                            
-                            <div className="row">
+                        <CaseCard buttonVisible buttonColor={'#3B434B'} title={"Case Form"}>
+                        <div className="row">
                                 <div className="col-lg-6 col-md-12 col-sm-12 case-tab-padding">
                                     <div className="tab1-form tab1-form2 tab1-spacing">
                                         <div className="case-contact-name">
@@ -84,12 +75,7 @@ export default class CaseTabOne extends React.Component{
                                         <div className="form">
                                             <p className="form-para">Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
                                             <p style={{color: 'gray', marginBottom: 0}} className="inputbase">001</p>
-                                            {/* <InputBase defaultValue="001" style={{color: 'gray'}} className="inputbase"/>     */}
                                         </div>
-                                        {/* <TextField label={"Num4"} value={"Input1"} className="text-para"/>
-                                        <TextField label={"Num4"} value={"Input2"}/>
-                                        <TextField label={"Num4"} value={"Input3"}/>
-                                        <TextField label={"Num4"} value={"Input4"}/> */}
                                         <div className="form">
                                             <p className="form-para">Number</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
                                             <p style={{color: 'gray', marginBottom: 0}} className="inputbase">001</p>
@@ -125,72 +111,66 @@ export default class CaseTabOne extends React.Component{
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </CaseCard>
+               
                     </div>
                 </div>
                 <div className="tabs-row2">
                     <div className="row">
                         <div className="col-lg-8 col-md-8 col-sm-12 case-tab-padding">
-                            <div className="wrap-tab1-left wrap-tab1-right">
-                                    <div className="tab1-heading">
-                                        <h2>CaseTab3</h2>
-                                        <div className="case-btn case-tab-btn">
-                                            <button type="button" className="btn btnStyle btn-color1">Case Table</button>
+                            <CaseCard buttonVisible title={"Case Table"}>
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                        <div className="tab1-form tab3-form">
                                         
+                                            <TextField label={"Num1"} value={"0001"}/>
+                                            <TextField label={"Num2"} value={"[Input]"}/>
                                         </div>
                                     </div>
-                                    
-                                    <div className="row">
-                                        <div className="col-lg-6 col-md-12 col-sm-12">
-                                            <div className="tab1-form tab3-form">
+                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                        <div className="tab1-form tab2-form">
+                                        <table className="table">
                                             
-                                                <TextField label={"Num1"} value={"0001"}/>
-                                                <TextField label={"Num2"} value={"[Input]"}/>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 col-md-12 col-sm-12">
-                                            <div className="tab1-form tab2-form">
-                                            <table className="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>John</td>
+                                                    <td>Doe</td>
                                                 
-                                                <tbody>
-                                                    <tr>
-                                                        <td>John</td>
-                                                        <td>Doe</td>
-                                                    
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Mary</td>
-                                                        <td>Moe</td>
-                                                    
-                                                    </tr>
-                                                    <tr>
-                                                        <td>July</td>
-                                                        <td>Dooley</td>
-                                                    
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Mary</td>
-                                                        <td>Moe</td>
-                                                    
-                                                    </tr>
-                                                    <tr>
-                                                        <td>July</td>
-                                                        <td>Dooley</td>
-                                                    
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mary</td>
+                                                    <td>Moe</td>
                                                 
+                                                </tr>
+                                                <tr>
+                                                    <td>July</td>
+                                                    <td>Dooley</td>
                                                 
-                                            </div>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mary</td>
+                                                    <td>Moe</td>
+                                                
+                                                </tr>
+                                                <tr>
+                                                    <td>July</td>
+                                                    <td>Dooley</td>
+                                                
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                            
+                                            
                                         </div>
                                     </div>
-                                </div>
+                            </div> 
+                            </CaseCard>
+                           
                             </div>
                             <div className="col-lg-4 col-md-4 col-sm-12">
                                 <div className="wrap-tab1-left wrap-tab1-right tab4-margin">
                                     <div className="tab1-heading">
-                                        <h2>CaseTab4</h2>
+                                    <PageTitle value={"CaseTab4"}/>
                                         <div className="case-btn case-tab-btn tabs-drpdwn">
                                             <div className="drpdwn-elt">
                                                 <DropdownElement/>

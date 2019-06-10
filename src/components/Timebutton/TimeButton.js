@@ -1,14 +1,9 @@
  import React from 'react';
- import ms from 'pretty-ms';
  import '../../styles/ui/_timebutton.scss';
- import formatDuration from 'format-duration';
-//  import timeFormat from 'time-format';
- import moment from 'moment';
  export default class TimeButton extends React.Component{
      constructor(props){
          super(props);
          this.state = {
-           timer : {},
            time: 0,
            start: 0,
            isOn: false,     
@@ -16,6 +11,7 @@
          this.startTimer = this.startTimer.bind(this);
          this.stopTimer = this.stopTimer.bind(this);
          this.resetTimer = this.resetTimer.bind(this);
+         this.formatDuration = this.formatDuration.bind(this);
      }  
 
      startTimer() {
@@ -35,6 +31,12 @@
        resetTimer() {
          this.setState({time: 0})
        } 
+        formatDuration(duration) {
+        const hours   = Math.floor(duration / 3.6e6).toString(10).padStart(2,'0');
+        const minutes = Math.floor((duration % 3.6e6) / 6e4).toString(10).padStart(2,'0');
+        const seconds = Math.floor((duration % 6e4) / 1000).toString(10).padStart(2,'0');
+        return `${hours}:${minutes}:${seconds}`;
+      }
      render(){
          let start = (this.state.time == 0) ?
              <i className="material-icons left" onClick={this.startTimer}> play_circle_outline</i> :  //start//
@@ -55,7 +57,7 @@
                          {start}
                          {stop}
                          {resume}
-                         <h3 >{formatDuration(this.state.time)}</h3>
+                         <h3 >{this.formatDuration(this.state.time)}</h3>
                          {reset}
                  </div>
              </div>
@@ -63,43 +65,3 @@
      }
  }
 
-// import React from 'react';
-// import ElapsedTime from './ElapsedTime';
-// import Buttons from './Buttons';
-
-// export default class TimeButton extends React.Component{
-//   constructor(props){
-//     super(props);
-//     this.state = {
-//       timingEvents : [],
-//       nounce: 0,
-//     }
-//     this.addTimerEvent = this.addTimerEvent.bind(this);
-//     this.tick = this.tick.bind(this);
-//     this.poll = setInterval(this.tick,1000)
-//   }
-//   tick(){
-//     this.setState((prevState) => ({nounce : prevState.nounce+1}))
-//   }
-//   addTimerEvent(){
-//     this.setState({
-//       timingEvents: [
-//         ...this.state.timingEvents,
-//         new Date()
-//       ]
-//     })
-//   }
-//   render(){
-//     return(
-//       <div className="timer">
-//         <ElapsedTime
-//           timingEvents = {this.state.timingEvents}
-//         />
-//         <Buttons 
-//           handleClick = {this.addTimerEvent}
-//           timingEvents = {this.state.timingEvents}
-//         />
-//       </div>
-//     )
-//   }
-// } 

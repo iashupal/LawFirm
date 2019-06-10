@@ -17,6 +17,7 @@ import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
 import CrossCheckbox from '../Checkbox/CrossCheckbox';
 import TimeButton from '../Timebutton/TimeButton';
 import PopupBtn from '../OpenPopupBtn/PopupBtn';
+import Timer from '../Timebutton/Timer';
 export default class CaseTabThree extends React.Component{
     render(){
         return(
@@ -33,11 +34,11 @@ export default class CaseTabThree extends React.Component{
                 <CrossCheckbox/>
                 <TimeButton/>
                 <PopupBtn/>
-                
+                <Timer/>
                 {/* <SimpleCheckbox/> */}
                 <Spliter/>
                 {/* <SwitchButton/> */}
-                {/* <RangeSlider/> */}
+                <RangeSlider/>
                 {/* <Dialogbox/> */}
               
 

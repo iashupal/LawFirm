@@ -10,9 +10,7 @@
 }
 
 h3{
-    margin: 0;
-    
-    // font-family: 'Material-Design-Iconic-Font'; 
+    margin: 0; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif; 
 }
 
@@ -21,7 +19,6 @@ h3{
     margin: 0 auto;
     position: relative;
     padding: 20px 20px;
-    // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .case .caseInr{
@@ -46,11 +43,27 @@ h2{
     color: #000000;
     font-weight: 400;
     display: inline-block;
-    // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .caseHeading i, .caseHeading h2{
     display: inline-block;
+}
+.case-btn .case-change-btn{
+    width: 150px;
+    padding: 13px 16px 12px;
+}
+.case-btn .case-change-btn span.label{
+    text-align: left;
+    width: 100%;
+    justify-content: initial;
+  vertical-align: middle;
+ 
+}
+.case-btn .case-change-btn span.label i{
+    position: absolute;
+    right: 14px;
+    vertical-align: top;
+  
 }
 .caseHeading h2{
 padding-left: 15px;
@@ -100,8 +113,7 @@ i.icon-left-menu-color{
     border-radius: 5px;
     margin-right: 10px;
     background-color: white;
-    min-width: 100px;
-    // font-family: 'Material-Design-Iconic-Font'; 
+    min-width: 100px; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .custom-tab-inr span{
@@ -164,7 +176,6 @@ background-color: transparent;
     position: relative;
     border-right: 1px solid lightgray;
     float: left;
-    // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .tab1-form.tab2-form{
@@ -242,16 +253,13 @@ background-color: transparent;
     position: relative;
     top: 0px;
     text-align: center;
-    // font-family: 'Material-Design-Iconic-Font';
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .btnStyle{
     
     color: white;
     padding: 10px 20px;
-    letter-spacing: .5px;
-    // font-family: "Noto Sans KR", sans-serif;
-    // font-family: 'Material-Design-Iconic-Font'; 
+    letter-spacing: .5px; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
    
 }
@@ -265,7 +273,6 @@ background-color: transparent;
     position: relative;
 }
 .checkbox label span{
-    // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .custom-tabs .MuiPrivateTabScrollButton-root-234{
@@ -320,11 +327,10 @@ border-right: 2px dotted lightgray;
     letter-spacing: .5px;
     width: 100%;
     margin: 0 auto;
-    // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .tab4-margin{
-    margin-top: -47px;
+    margin-top: -42px;
     padding: 0;
     clear: both;
     float: right;
@@ -346,7 +352,6 @@ border-right: 2px dotted lightgray;
     height: 430px;
     float: left;
     clear: both;
-    // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .case-4-inr-content{
@@ -500,7 +505,6 @@ color: #373930;
     width: 100%;
     margin: 10px auto;
     position: relative;
-    // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .form-accordian .expansion{
@@ -537,8 +541,6 @@ color: #373930;
     }
 }
 .form-accordian .expansion .expansion-summary {
-    // margin: 0px 0;
-    // padding: 20px 0;
     border-bottom: 1px solid lightgray;
 }
 .accord1{
@@ -566,7 +568,6 @@ color: #373930;
 .accord1 .accord-supreme-btn button{
     background-color: #3D7BE3;
     color: white;
-    // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .accord1 .accord-table{
@@ -578,7 +579,6 @@ color: #373930;
     background-color: #f2f1f2;
     color: #4B4B4B;
     padding: 8px 10px 6px;
-    // font-family: 'Material-Design-Iconic-Font'; 
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .accord-table .table tbody tr td:nth-child(2), .accord-table .table tbody tr td:nth-child(4), .accord-table .table tbody tr td:nth-child(6){
@@ -586,7 +586,6 @@ color: #373930;
     color: #4B4B4B;
     padding-left: 20px;
     padding: 8px 10px 6px 20px;
-    // font-family: 'Material-Design-Iconic-Font';
     font-family: "Roboto", "Helvetica", "Arial", sans-serif; 
 }
 .accord-table .table tbody tr td i{
@@ -609,11 +608,9 @@ color: #373930;
     width: 100%;
     margin: 10px auto;
     position: relative;
-    // font-family: 'Material-Design-Iconic-Font';
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .accord2-wrap-inr .padding-pretty{
-    // display: inline;
     margin-left: 20px;
 }
 .accord2-wrap-inr .drpdwn-elt{
@@ -668,20 +665,16 @@ color: #373930;
 }
 .wrapper-checkbox .inr-wrap-chkbox{
     width: 240px;
-    // margin: 0 auto;
     position: relative;
     border: 1px solid lightgray;
     padding: 5px 10px;
     border-radius: 4px;
     background-color: #eeeeee;
-    // display: flex;
-    // flex-wrap: wrap;
 }
 .pretty{
     margin-right: 0;
 }
 .wrapper-checkbox .inr-wrap-chkbox .custom-checkbox{
-    // display: inline-block;
     margin-bottom: 0;
     float: right;
     width: 45%;
@@ -806,7 +799,7 @@ td .inr-wrap-chkbox .custom-checkbox{
     padding-left: 0;
 }
 .textfield-wrapper span{
-    padding: 10px 10px;
+    padding: 10px 8px;
     vertical-align: middle;
 }
 .textfield-wrapper .inputtype{
@@ -1100,17 +1093,7 @@ margin-bottom: 8px;
     color: gray;
     border: 1px solid lightgray;
 }
-.opt {
-    background: #ffffff;
-    color: #ff0000;
-  }
-  
-  .select .opt:checked,
-  .select .opt:focus {
-    background: linear-gradient(#ff0000, #ff0000);
-    -webkit-text-fill-color: #ffffff;
-    color: #ffffff;
-  }
+
   
 // tab3
 .tab3{
@@ -1144,12 +1127,7 @@ margin-bottom: 0;
     .table-body .task-table2 .task-checkbox-width:nth-child(3){
         width: 40%;
     }
-    // .table-body .task-table2 .task-checkbox-width:nth-child(6){
-    //     width: 20%;
-    // }
-    // .table-body .task-table2 .task-checkbox-width:nth-child(2){
-    //     width: 14%;
-    // }
+ 
     .task-form td .form-cal-btn{
         width: 130px;
     }
@@ -1160,21 +1138,11 @@ margin-bottom: 0;
     .form-cal-btn{
         width: 130px;
     }
-    // .btnStyle{
-    //     padding: 10px 20px;
-    // }
-    // .form-cal i{
-    //     left: 27.5%;
-    // }
+   
     .font-button, .font-icon{
         width: 30%;
     }
-    // .drpdwn-elt.form-drpdwn {
-    //     width: 22%;
-    // }
-    // .form-cal .react-datepicker-wrapper{
-    //     width: 18%;
-    // }
+  
 }
 
 // 1600px
@@ -1217,9 +1185,7 @@ margin-bottom: 0;
     .form-cal .react-datepicker-wrapper{
         width: 127px;
     }
-    // .form-cal i {
-    //     left: 40%;
-    // }
+   
     .drpdwn-elt.form-drpdwn, .form.form-without-border .react-datepicker-wrapper{
         width: 141px;
     }
@@ -1274,6 +1240,12 @@ margin-bottom: 0;
     .font-wrapper-container .font-drpdwn {
         width: 22%;
     }
+    .tabs .custom-tabs{
+         overflow-x: scroll;
+     }
+     .MuiTabs-fixed-297{
+         overflow-x: auto;
+     }
 }
 // 1280px
 @media screen and (max-width:1280px){
@@ -1355,9 +1327,7 @@ margin-bottom: 0;
     .textfield-wrapper .form-group {
         width: 47%;
     }
-    // .form-cal-btn {
-    //     width: 25%;
-    // }
+  
     .case-tab-padding.accord-exec-padding{
         padding-left: 15px;
     }
@@ -1412,9 +1382,7 @@ margin-bottom: 0;
         margin-right: 10px;
         margin-bottom: 10px;
     }
-    // .form-cal-btn{
-    //     width: 140px;
-    // }
+  
     .wrapper-checkbox {
         width: 75%;
     }
