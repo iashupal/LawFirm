@@ -147,6 +147,7 @@ class Header extends React.Component {
                             title="logo"
                         />
                     </Link>
+
                     {!(location.pathname === '/app/elastic_search') && (
                         // <SearchBox
                         //   styleName="d-none d-lg-block"
@@ -163,17 +164,17 @@ class Header extends React.Component {
                         />
                     )}
 
-                    <div className="drpdwn-elt form-drpdwn header-dpdwn">
+                    <div className="drpdwn-elt form-drpdwn header-dpdwn d-md-block d-sm-none d-none">
                         <DropdownElement />
                     </div>
                     {/* <div className="right"> */}
-                    <div className="add-dialog ml-auto">
+                    <div className="add-dialog ml-auto d-md-block d-sm-none d-none">
                         <Button icon="add" variant="outlined" color="white">
                          Hello
                             
                         </Button>
                     </div>
-                    <div className="record-time">
+                    <div className="record-time d-md-block d-sm-none d-none">
                         <TimeButton />
                     </div>
                     <div className="notification-badge">
