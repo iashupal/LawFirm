@@ -169,7 +169,7 @@ export const allMenuData = [
             {
                 name: 'pages.case',
                 icon: 'zmdi zmdi-book',
-                data: [{ link: '/app/screen/Case', name: 'pages.case' }]
+                data: [{ link: '/app/componentDemo', name: 'pages.case' }]
             },
             {
                 name: 'pages.systemMng',
