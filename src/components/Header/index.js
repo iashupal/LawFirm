@@ -6,7 +6,12 @@ import Avatar from '@material-ui/core/Avatar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
-import { BELOW_THE_HEADER, COLLAPSED_DRAWER, FIXED_DRAWER, HORIZONTAL_NAVIGATION } from 'constants/ActionTypes';
+import {
+    BELOW_THE_HEADER,
+    COLLAPSED_DRAWER,
+    FIXED_DRAWER,
+    HORIZONTAL_NAVIGATION
+} from 'constants/ActionTypes';
 import SearchBox from 'components/SearchBox';
 import { switchLanguage, toggleCollapsedNav } from 'actions/Default/Setting';
 import { handleCommonChangeValues } from 'actions/Default/Common';
@@ -19,146 +24,163 @@ import DropdownElement from '../DropdownElement/DropdownElement';
 import TimeButton from '../Timebutton/TimeButton';
 // import PopupBtn from '../OpenPopupBtn/PopupBtn';
 import Search from '../Search/Search';
-import Notification from '../Badge/Notification';
+import NotificationBadge from '../NotificationBadge';
 import AddContent from '../AddContent/AddContent';
+import { notifications } from '../AppNotification/data';
+import Button from '../Button';
 const { changeURL, parseQueryStr } = RU;
 
 class Header extends React.Component {
-  state = {
-    searchBox: false,
-    searchText: '',
-    mailNotification: false,
-    userInfo: false,
-    langSwitcher: false,
-    appNotification: false,
-  };
+    state = {
+        searchBox: false,
+        searchText: '',
+        mailNotification: false,
+        userInfo: false,
+        langSwitcher: false,
+        appNotification: false
+    };
 
-  onAppNotificationSelect = () => {
-    this.setState({ appNotification: !this.state.appNotification });
-  };
+    onAppNotificationSelect = () => {
+        this.setState({ appNotification: !this.state.appNotification });
+    };
 
-  onMailNotificationSelect = () => {
-    this.setState({ mailNotification: !this.state.mailNotification });
-  };
+    onMailNotificationSelect = () => {
+        this.setState({ mailNotification: !this.state.mailNotification });
+    };
 
-  onLangSwitcherSelect = event => {
-    this.setState({ langSwitcher: !this.state.langSwitcher });
-  };
+    onLangSwitcherSelect = event => {
+        this.setState({ langSwitcher: !this.state.langSwitcher });
+    };
 
-  onSearchBoxSelect = () => {
-    this.setState({ searchBox: !this.state.searchBox });
-  };
+    onSearchBoxSelect = () => {
+        this.setState({ searchBox: !this.state.searchBox });
+    };
 
-  onUserInfoSelect = () => {
-    this.setState({ userInfo: !this.state.userInfo });
-  };
+    onUserInfoSelect = () => {
+        this.setState({ userInfo: !this.state.userInfo });
+    };
 
-  handleRequestClose = () => {
-    this.setState({
-      langSwitcher: false,
-      userInfo: false,
-      mailNotification: false,
-      appNotification: false,
-      searchBox: false,
-    });
-  };
+    handleRequestClose = () => {
+        this.setState({
+            langSwitcher: false,
+            userInfo: false,
+            mailNotification: false,
+            appNotification: false,
+            searchBox: false
+        });
+    };
 
-  onToggleCollapsedNav = e => {
-    const { navCollapsed, toggleCollapsedNav } = this.props;
-    toggleCollapsedNav(!navCollapsed);
-  };
+    onToggleCollapsedNav = e => {
+        const { navCollapsed, toggleCollapsedNav } = this.props;
+        toggleCollapsedNav(!navCollapsed);
+    };
 
-  updateSearchText = evt => {
-    this.setState({ searchText: evt.target.value });
-  };
+    updateSearchText = evt => {
+        this.setState({ searchText: evt.target.value });
+    };
 
-  searchKeyPress = evt => {
-    if (evt.key === 'Enter') {
-      const searchText = evt.target.value;
-      changeURL(`/elastic_search?q=${searchText}`);
-      this.setState({ searchText: '' });
-    }
-  };
+    searchKeyPress = evt => {
+        if (evt.key === 'Enter') {
+            const searchText = evt.target.value;
+            changeURL(`/elastic_search?q=${searchText}`);
+            this.setState({ searchText: '' });
+        }
+    };
 
-  render() {
-    const {
-      drawerType,
-      locale,
-      navigationStyle,
-      horizontalNavPosition,
-      location,
-      settingIconHide,
-      switchLanguage,
-      authUser,
-    } = this.props;
+    render() {
+        const {
+            drawerType,
+            locale,
+            navigationStyle,
+            horizontalNavPosition,
+            location,
+            settingIconHide,
+            switchLanguage,
+            authUser
+        } = this.props;
 
-    const drawerStyle2 = drawerType.includes(COLLAPSED_DRAWER) ? 'd-block' : 'd-none';
-    const drawerStyle = drawerType.includes(FIXED_DRAWER) ? 'd-block d-xl-none' : drawerStyle2;
+        const drawerStyle2 = drawerType.includes(COLLAPSED_DRAWER)
+            ? 'd-block'
+            : 'd-none';
+        const drawerStyle = drawerType.includes(FIXED_DRAWER)
+            ? 'd-block d-xl-none'
+            : drawerStyle2;
 
-    return (
-      <AppBar
-        className={`${
-          navigationStyle === HORIZONTAL_NAVIGATION && horizontalNavPosition === BELOW_THE_HEADER
-            ? 'app-main-header-top'
-            : ''
-        }`}
-      >
-        <Toolbar className="app-toolbar" disableGutters={false}>
-          {navigationStyle === HORIZONTAL_NAVIGATION ? (
-            <div
-              role="button"
-              tabIndex={0}
-              className="d-block d-md-none pointer mr-3"
-              onClick={this.onToggleCollapsedNav}
+        return (
+            <AppBar
+                className={`${
+                    navigationStyle === HORIZONTAL_NAVIGATION &&
+                    horizontalNavPosition === BELOW_THE_HEADER
+                        ? 'app-main-header-top'
+                        : ''
+                }`}
             >
-              <span className="jr-menu-icon">
-                <span className="menu-icon" />
-              </span>
-            </div>
-          ) : (
-            <IconButton
-              className={`jr-menu-icon mr-3 ${drawerStyle}`}
-              aria-label="Menu"
-              onClick={this.onToggleCollapsedNav}
-            >
-              <span className="menu-icon" />
-            </IconButton>
-          )}
-          <Link className="app-logo mr-2 d-none d-sm-block" to="/app/main">
-            <img src="assets/images/logo/Law.ai_white.png" style={{ width: '160px' }} alt="logo" title="logo" />
-          </Link>
-          {!(location.pathname === '/app/elastic_search') && (
-            // <SearchBox
-            //   styleName="d-none d-lg-block"
-            //   placeholder=""
-            //   value={this.state.searchText}
-            //   onChange={this.updateSearchText}
-            //   onKeyPress={this.searchKeyPress}
-            // />
-            <Search
-            styleName="d-none d-lg-block"
-               value={this.state.searchText}
-               onChange={this.updateSearchText}
-               onKeyPress={this.searchKeyPress}
-            />
-          )}
-          
-          <div className="drpdwn-elt form-drpdwn header-dpdwn">
-              <DropdownElement/>
-          </div>
-          {/* <div className="right"> */}
-          <div className="add-dialog ml-auto">
-            <AddContent/>
-          </div>
-          <div className="record-time">
-            <TimeButton/>
-          </div>
-          <div className="notification-badge">
-            <Notification/>
-          </div>
-          <ManualDialog />
-          
-          {/* <ul className="header-notifications list-inline">
+                <Toolbar className="app-toolbar" disableGutters={false}>
+                    {navigationStyle === HORIZONTAL_NAVIGATION ? (
+                        <div
+                            role="button"
+                            tabIndex={0}
+                            className="d-block d-md-none pointer mr-3"
+                            onClick={this.onToggleCollapsedNav}
+                        >
+                            <span className="jr-menu-icon">
+                                <span className="menu-icon" />
+                            </span>
+                        </div>
+                    ) : (
+                        <IconButton
+                            className={`jr-menu-icon mr-3 ${drawerStyle}`}
+                            aria-label="Menu"
+                            onClick={this.onToggleCollapsedNav}
+                        >
+                            <span className="menu-icon" />
+                        </IconButton>
+                    )}
+                    <Link
+                        className="app-logo mr-2 d-none d-sm-block"
+                        to="/app/main"
+                    >
+                        <img
+                            src="assets/images/logo/Law.ai_white.png"
+                            style={{ width: '160px' }}
+                            alt="logo"
+                            title="logo"
+                        />
+                    </Link>
+                    {!(location.pathname === '/app/elastic_search') && (
+                        // <SearchBox
+                        //   styleName="d-none d-lg-block"
+                        //   placeholder=""
+                        //   value={this.state.searchText}
+                        //   onChange={this.updateSearchText}
+                        //   onKeyPress={this.searchKeyPress}
+                        // />
+                        <Search
+                            styleName="d-none d-lg-block"
+                            value={this.state.searchText}
+                            onChange={this.updateSearchText}
+                            onKeyPress={this.searchKeyPress}
+                        />
+                    )}
+
+                    <div className="drpdwn-elt form-drpdwn header-dpdwn">
+                        <DropdownElement />
+                    </div>
+                    {/* <div className="right"> */}
+                    <div className="add-dialog ml-auto">
+                        <Button icon="send" variant="outlined">
+                            Hello
+                        </Button>
+                    </div>
+                    <div className="record-time">
+                        <TimeButton />
+                    </div>
+                    <div className="notification-badge">
+                        <NotificationBadge count={notifications.length} />
+                    </div>
+                    <ManualDialog />
+
+                    {/* <ul className="header-notifications list-inline">
             <li className="d-inline-block d-lg-none list-inline-item">
               <Dropdown
                 className="quick-menu nav-searchbox"
@@ -223,34 +245,40 @@ class Header extends React.Component {
               </li>
             )}
           </ul> */}
-          {/* </div> */}
-        </Toolbar>
-      </AppBar>
-    );
-  }
+                    {/* </div> */}
+                </Toolbar>
+            </AppBar>
+        );
+    }
 }
 
 const mapStateToProps = ({ settings, routing, auth, common }) => {
-  const { drawerType, locale, navigationStyle, horizontalNavPosition, settingIconHide } = settings;
-  const { authUser } = auth;
-  const queryString = parseQueryStr(routing.location.search);
-  const { location } = routing;
+    const {
+        drawerType,
+        locale,
+        navigationStyle,
+        horizontalNavPosition,
+        settingIconHide
+    } = settings;
+    const { authUser } = auth;
+    const queryString = parseQueryStr(routing.location.search);
+    const { location } = routing;
 
-  return {
-    drawerType,
-    locale,
-    navigationStyle,
-    horizontalNavPosition,
-    queryString,
-    location,
-    settingIconHide,
-    authUser,
-  };
+    return {
+        drawerType,
+        locale,
+        navigationStyle,
+        horizontalNavPosition,
+        queryString,
+        location,
+        settingIconHide,
+        authUser
+    };
 };
 
 export default withRouter(
-  connect(
-    mapStateToProps,
-    { toggleCollapsedNav, switchLanguage, handleCommonChangeValues },
-  )(Header),
+    connect(
+        mapStateToProps,
+        { toggleCollapsedNav, switchLanguage, handleCommonChangeValues }
+    )(Header)
 );

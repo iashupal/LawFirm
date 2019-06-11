@@ -1,0 +1,25 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "modules": false,
+                "targets": {
+                    "browsers": ["last 2 versions", ">= 5% in KR"]
+                }
+            }
+        ],
+        "@babel/react"
+    ],
+    "plugins": [
+        "@babel/syntax-dynamic-import",
+        "@babel/proposal-class-properties",
+        "@babel/transform-spread",
+        [
+            "@babel/proposal-object-rest-spread",
+            { "loose": true, "useBuiltIns": true }
+        ],
+        ["@babel/proposal-decorators", { "legacy": true }],
+        "react-hot-loader/babel"
+    ]
+}

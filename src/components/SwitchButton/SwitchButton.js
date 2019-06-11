@@ -1,16 +1,14 @@
 import React from 'react';
 import '../../styles/ui/_switchbutton.scss';
-export default class SwitchButton extends React.Component{   
-    render(){
-        return(
+export default class SwitchButton extends React.Component {
+    render() {
+        return (
             <div>
-              
-                 <label className="switch">
+                <label className="switch">
                     <input type="checkbox" />
-                    <span className="slider round"></span>
+                    <span className="slider round" />
                 </label>
             </div>
-           
-        )
+        );
     }
 }
