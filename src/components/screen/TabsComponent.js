@@ -121,7 +121,7 @@ function TabContainer(props) {
                                        indicatorColor="primary"
                                        textColor="primary"
                                        variant="scrollable"
-                                       scrollButtons="auto"
+                                      //  scrollButtons="auto"
                                        className="custom-tabs"
                                       
                                    >

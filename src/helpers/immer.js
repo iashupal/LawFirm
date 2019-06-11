@@ -1,7 +1,6 @@
 import produce from 'immer';
+import { makeProdFunc, reducerConnector, setReduxVal } from 'FrameworkTemp/common';
 
-export const prod = func => (state, payload) => produce(state, draft => func(state, draft, payload));
-export const reducerSelector = (initial, handlers) => (state = initial, action) => {
-  const handler = handlers[action.type];
-  return handler ? handler(state, action.payload) : state;
-};
+export const prod = makeProdFunc(produce);
+export const reducerSelector = reducerConnector;
+export const prodSetReduxValues = setReduxVal(produce);

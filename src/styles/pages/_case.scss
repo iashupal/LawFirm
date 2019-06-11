@@ -50,7 +50,7 @@ h2{
 }
 .case-btn .case-change-btn{
     width: 150px;
-    padding: 13px 16px 12px;
+    padding: 9px 16px;
 }
 .case-btn .case-change-btn span.label{
     text-align: left;
@@ -121,11 +121,9 @@ i.icon-left-menu-color{
     font-size: 13px;
 }
 
- .PrivateTabScrollButton-root-222, .MuiPrivateTabScrollButton-root-429, .MuiPrivateTabScrollButton-root-349,
-  .MuiPrivateTabScrollButton-root-577, .MuiPrivateTabScrollButton-root-339, .MuiPrivateTabScrollButton-root-443, .MuiPrivateTabScrollButton-root-340,
-  .MuiPrivateTabScrollButton-root-495,.MuiPrivateTabScrollButton-root-393{
+ div[class^="MuiPrivateTabScrollButton-root"]{
     width: initial;
-}
+ }
 .custom-tab {
     & .MuiPrivateTabScrollButton-root-495{
         width: initial;

@@ -21,7 +21,8 @@ const styles = theme => ({
     heading: {
       fontWeight: theme.typography.fontWeightRegular,
       fontSize: '18px',
-      fontFamily: 'Material-Design-Iconic-Font',
+    //   fontFamily: 'Material-Design-Iconic-Font',
+    fontFamily: "Roboto, Helvetica, Arial, sans-serif",
     },
     expandIcon: {
         left: 8,

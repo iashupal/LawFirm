@@ -68,7 +68,8 @@ class PopupBtn extends React.Component {
                             </DialogContentText>
                         </DialogContent>
                         <DialogActions> 
-                            <Button onClick={this.handleClose} className="cross-btn">
+                            <Button onClick={this.handleClose} color="primary">
+                            {/* className="cross-btn" */}
                                 {/* <CloseIcon /> */}
                                 DisAgree
                             </Button> 
