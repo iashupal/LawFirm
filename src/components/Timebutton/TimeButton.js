@@ -19,7 +19,7 @@ const styles = theme => ({
    width: '100%',
      borderRadius: theme.shape.borderRadius,
      [theme.breakpoints.up('sm')]: {
-       marginLeft: theme.spacing.unit * 3,
+       marginLeft: theme.spacing.unit * 1,
        width: 'auto',
      },
      padding: 5,

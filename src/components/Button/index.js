@@ -6,10 +6,11 @@ import { withStyles } from '@material-ui/core/styles';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 const styles = theme => ({
     customBtn: {
-        paddingTop: theme.spacing.unit,
+        width: '100%',
+        paddingTop: '10px',
         paddingRight: theme.spacing.unit,
         paddingBottom: theme.spacing.unit,
-        paddingLeft: theme.spacing.unit,
+        paddingLeft: '10px',
         textAlign: 'left',
         borderColor: fade(theme.palette.common.white, 0.75),
         '&:hover': {
@@ -32,7 +33,7 @@ const Button = ({ children, variant, icon, color, buttonColor, classes }) => (
         size="large"
         fullWidth
         variant={variant}
-        backgroundColor={buttonColor}
+        backgroundcolor={buttonColor}
         className={classes.customBtn}
     >
         <span className={classes.label}>{children}</span>

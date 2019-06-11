@@ -61,18 +61,26 @@
   width: 10%;
 }
 .add-dialog{
-  width: 194px;
+  width: 170px;
   position: relative;
-  height: 43px;
+  // height: 43px;
   z-index: 1;
   vertical-align: middle;
   float: right;
 }
-
+.notifcation-badge{
+  margin: 10px auto;
+}
 .record-time{
   position: relative;
     z-index: 1;
     float: right;
+    width: 170px;
+
+    @media screen and (max-width:992px){
+      margin-left: 10px;
+      width: 30%;
+    }
 }
 .drpdwn-elt.form-drpdwn.header-dpdwn .drpdwn .dropdown-40 .ms-Dropdown-title, .drpdwn-elt.form-drpdwn.header-dpdwn .drpdwn .ms-Dropdown-title {
     line-height: 40px;
