@@ -168,9 +168,12 @@ class Header extends React.Component {
                     </div>
                     {/* <div className="right"> */}
                     <div className="add-dialog ml-auto">
-                        <Button icon="add" variant="outlined" color="white">
-                         Hello
-                            
+                        <Button
+                            icon="add"
+                            variant="contained"
+                            color="secondary"
+                        >
+                            Hello
                         </Button>
                     </div>
                     <div className="record-time">

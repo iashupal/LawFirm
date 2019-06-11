@@ -22,7 +22,7 @@ import greenTheme from './themes/greenTheme';
 import AppLocale from '../lngProvider';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
-import Demo from './Demo';
+import Demo from './ComponentDemo';
 
 // https://github.com/dmtrKovalenko/material-ui-pickers/issues/864
 MomentUtils.prototype.getStartOfMonth = MomentUtils.prototype.startOfMonth;

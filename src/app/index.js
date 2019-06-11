@@ -124,7 +124,9 @@ class App extends React.Component {
                                     />
                                     <Route
                                         component={asyncComponent(() =>
-                                            import('../containers/Demo')
+                                            import(
+                                                '../containers/ComponentDemo'
+                                            )
                                         )}
                                         path={`${match.url}/componentDemo`}
                                     />
