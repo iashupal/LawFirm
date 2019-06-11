@@ -15,9 +15,10 @@ const styles = theme => ({
         borderColor: fade(theme.palette.common.white, 0.15),
    '&:hover': {
      borderColor: fade(theme.palette.common.white, 0.25),
-    fontSize: '14px',
-    letterSpacing: '.5px',
+    
    },
+   fontSize: '14px',
+    letterSpacing: '.5px',
         
     },
     label:{
