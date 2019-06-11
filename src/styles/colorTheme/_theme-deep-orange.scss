@@ -171,11 +171,13 @@ $sidebar-text-deep-orange: #868e96 !default;
 .deep-orange .side-nav {
   background-color: $sidebar-deep-orange !important;
   color: $sidebar-text-deep-orange !important;
-  @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
+  // @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
+  // @include box-shadow(none);
 
   & .user-profile {
     background-color: $sidebar-deep-orange;
-    @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
+    @include box-shadow(none);
+    // @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
     position: relative;
     z-index: 2;
   }

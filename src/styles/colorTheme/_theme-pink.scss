@@ -171,11 +171,13 @@ $sidebar-text-pink: #868e96 !default;
 .pink .side-nav {
   background-color: $sidebar-pink !important;
   color: $sidebar-text-pink !important;
-  @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
+  @include box-shadow(none);
+  // @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
 
   & .user-profile {
     background-color: $sidebar-pink;
-    @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
+    @include box-shadow(none);
+    // @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
     position: relative;
     z-index: 2;
   }

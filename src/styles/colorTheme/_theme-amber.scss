@@ -187,9 +187,11 @@ $sidebar-text-color-amber: #868e96 !default;
 .amber .side-nav {
   background-color: $sidebar-amber !important;
   color: $sidebar-text-color-amber !important;
+  @include box-shadow(none);
 
   & .user-profile {
     background-color: $sidebar-amber;
+    @include box-shadow(none);
   }
 
   & .user-detail {

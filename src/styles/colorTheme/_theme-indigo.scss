@@ -171,11 +171,13 @@ $sidebar-text-indigo: #868e96 !default;
 .indigo .side-nav {
   background-color: $sidebar-indigo !important;
   color: $sidebar-text-indigo !important;
-  @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
+  @include box-shadow(none);
+  // @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
 
   & .user-profile {
     background-color: $sidebar-indigo;
-    @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
+    // @include box-shadow(0 1px 4px 0 rgba(0, 0, 0, 0.15));
+    @include box-shadow(none);
     position: relative;
     z-index: 2;
   }

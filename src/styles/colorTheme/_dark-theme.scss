@@ -182,6 +182,7 @@ body.dark-theme {
 
   & .user-profile {
     background-color: $sidebar-darken-dark-theme;
+    
     @include box-shadow(none);
     position: relative;
     z-index: 2;

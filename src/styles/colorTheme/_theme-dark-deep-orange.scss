@@ -168,7 +168,7 @@ $link-hover-dark-deep-orange: $white;
 //_right-sidebar.scss
 .dark-deep-orange .color-theme-header {
   background-color: $app-primary-dark-deep-orange;
-
+  @include box-shadow(none);
 }
 
 //_sidebar.scss

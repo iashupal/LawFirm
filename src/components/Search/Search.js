@@ -69,6 +69,7 @@ class Search extends React.Component{
                         input: classes.inputInput,
                         }}
                     />
+                    {this.props.children}
                 </div>
         )
     }
