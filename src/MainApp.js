@@ -7,6 +7,7 @@ import { R, RU } from 'helpers/ramda';
 import configureStore, { history } from './store';
 // import './firebase/firebase';
 import App from './containers/App';
+import Demo from './containers/Demo';
 import NoBrowserSupport from './NoBrowserSupport';
 
 const { getEnv } = RU;
@@ -16,19 +17,19 @@ const Xenv = envStr === 'prod' || envStr === 'dev'; // 브라우저 제한, 배�
 const Xbrowser = !(isChrome || isSafari); // 브라우저 제한, 대상 브라우저
 
 const MainApp = () => {
-  if (Xenv && Xbrowser) {
-    return <NoBrowserSupport />;
-  }
+    if (Xenv && Xbrowser) {
+        return <NoBrowserSupport />;
+    }
 
-  return (
-    <Provider store={store}>
-      <ConnectedRouter history={history}>
-        <Switch>
-          <Route path="/" component={App} />
-        </Switch>
-      </ConnectedRouter>
-    </Provider>
-  );
+    return (
+        <Provider store={store}>
+            <ConnectedRouter history={history}>
+                <Switch>
+                    <Route path="/" component={App} />
+                </Switch>
+            </ConnectedRouter>
+        </Provider>
+    );
 };
 
 export default MainApp;
