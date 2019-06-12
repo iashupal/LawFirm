@@ -33,7 +33,7 @@ const styles = theme => ({
    transition: theme.transitions.create('width'),
    width: '100%',
    [theme.breakpoints.up('md')]: {
-     width: 180,
+    //  width: 180,
    },
    position: 'relative',
    verticalAlign: 'middle',
