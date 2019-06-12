@@ -56,14 +56,14 @@ const styles = theme => ({
         color: 'white'
     },
     inverted: {
-        backgroundColor: colors.grey[700],
+        backgroundColor: colors.grey[400],
         '&:hover': {
-            backgroundColor: colors.grey[800]
+            backgroundColor: colors.grey[500]
         },
         color: 'white'
     },
     root: {
-        borderRadius: 2
+        borderRadius: 4
     },
     toolbar: {
         backgroundColor: colors.grey[200],

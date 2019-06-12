@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '../components/Button';
 import PageTitle from '../components/PageTitle';
+import AutoComplete from '../components/AutoComplete';
+import TaskForm from '../components/screen/TaskForm';
 
 function ComponentDemo() {
     return (
@@ -14,7 +16,10 @@ function ComponentDemo() {
                 Hello
             </Button>
             <PageTitle icon="class" text="Case" iconVisible/>
+           <AutoComplete/>
            
+           <TaskForm/>
+
         </div>
     );
 }

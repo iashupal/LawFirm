@@ -305,9 +305,11 @@ border-right: 2px dotted lightgray;
     float: right;
 }
 .tab1-form.tab2-form .table tbody tr td{
-    text-align: center;
+    text-align: left;
     width: 50%;
-    padding: 7px 10px;
+    padding: 7px 13px;
+    vertical-align: middle;
+    
 }
 .tab1-form.tab2-form .table tbody tr td:first-child{
     background-color: #F2F1F2;
@@ -462,11 +464,14 @@ color: #373930;
     width: 25%;
     min-width: 23%;
 }
+td .form-group{
+    margin-bottom: 0;
+}
 .font-textarea{
     width: 100%;
     float: left;
     clear: both;
-    margin: 10px auto 0;
+    margin: 0px auto;
 }
 .form-control:focus{
     border-color: none;
@@ -700,6 +705,7 @@ color: #373930;
     width: 20%;
     position: relative;
     margin-right: 10px;
+    cursor: pointer;
 }
 .form-cal-btn .react-datepicker-wrapper{
     width: 100%;
@@ -716,6 +722,7 @@ color: #373930;
     border-bottom: none;
     width: 100%;
     outline: 0;
+    cursor: pointer;
 }
 .form-cal-btn i{
     position: absolute;
@@ -1056,8 +1063,13 @@ top: 4px;
     color: gray;
     letter-spacing: .5px;
 }
+.tab1-form tr td p{
+    margin-bottom: 0;
+    padding: 10px 0;
+}
 .task-form tr td p span{
     cursor: pointer;
+   
 }
 .task-form .font-textarea{
     margin-top: 0;

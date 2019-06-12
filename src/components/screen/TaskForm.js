@@ -1,6 +1,8 @@
 import React from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Button from '../../components/Button/';
+
 export default class TaskForm extends React.Component{
     constructor(props){
         super(props);
@@ -32,14 +34,22 @@ export default class TaskForm extends React.Component{
                                 <td>Mary</td>
                                 <td>
                                     <div className="font-textarea">
-                                        <textarea className="form-control z-depth-1" rows="4" placeholder="Write something here..."></textarea>
+                                        <textarea className="form-control z-depth-1" rows="6" placeholder="Write something here..."></textarea>
                                     </div>    
                                 </td>                    
                             </tr>
                             <tr>
                                 <td>July</td>
                                 <td>
-                                    <button type="button" className="btn left btnStyle accord3-btn-clr">Button2</button>
+                                    {/* <button type="button" className="btn left btnStyle accord3-btn-clr">Button2</button> */}
+                                    <Button 
+                                        mode="regular"
+                                        size="small"
+                                        color="inverted"
+                                        variant="contained"
+                                    >
+                                    Click
+                                    </Button>
                                 </td>                    
                             </tr>
                             <tr>
@@ -74,17 +84,40 @@ export default class TaskForm extends React.Component{
                             <tr>
                                 <td>July</td>
                                 <td>
-                                    <button type="button" className="btn left btnStyle accord3-btn-clr">Button2</button>
-                                    <p className="left"><span>Task1.pdf</span>  | <span>Task2.pdf</span></p>
+                                    {/* <button type="button" className="btn left btnStyle accord3-btn-clr">Button2</button> */}
+                                    <div className="left" style={{paddingRight:'15px'}}>
+                                        <Button 
+                                            mode="regular"
+                                            size="medium"
+                                            color="inverted"
+                                            variant="contained"
+                                            
+                                        >
+                                        Click
+                                        </Button>
+                                    </div>
+                                    <p className="left"><span>Task1.pdf</span> &nbsp; | &nbsp; <span>Task2.pdf</span></p>
                                 </td>                    
                             </tr>
                         </tbody>
                     </table>                                                
                 
                     <div className="task-form-para-btn">
-                        <p><span className="para-clr">Task</span>  | <span>2010-03-02 23:00</span></p>
-                        <p><span className="para-clr">Task</span>  | <span>2010-03-02 23:00</span></p>
-                        <button type="button" className="btn btnStyle accord3-btn-clr">Button2</button>
+                        <p><span className="para-clr">Task</span> &nbsp; | &nbsp; <span>2010-03-02 23:00</span></p>
+                        <p><span className="para-clr">Task</span> &nbsp; | &nbsp; <span>2010-03-02 23:00</span></p>
+                        {/* <button type="button" className="btn btnStyle accord3-btn-clr">Button2</button> */}
+                        <div style={{textAlign:'center'}}>
+                            <Button 
+                                mode="regular"
+                                size="large"
+                                color="primary"
+                                variant="contained"
+                                
+                            >
+                            Click
+                            </Button>
+                        </div>
+                       
                     </div>
                 </div>
 
