@@ -204,7 +204,7 @@ class IntegrationReactSelect extends React.Component {
 
     return (
       <div className={classes.root}>
-        <NoSsr>
+        {/* <NoSsr> */}
           <Select
             classes={classes}
             options={suggestions}
@@ -213,16 +213,8 @@ class IntegrationReactSelect extends React.Component {
             onChange={this.handleChange('single')}
             placeholder="Search a country (start with a)"
           />
-          {/* <Select
-            classes={classes}
-            options={suggestions}
-            components={components}
-            value={this.state.multi}
-            onChange={this.handleChange('multi')}
-            placeholder="Select multiple countries"
-            isMulti
-          /> */}
-        </NoSsr>
+         
+        {/* </NoSsr> */}
       </div>
     );
   }
