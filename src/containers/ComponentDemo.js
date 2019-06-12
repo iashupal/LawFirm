@@ -1,13 +1,13 @@
 import React from 'react';
-import Grid from '../components/Grid';
+import Tooltip from '../components/ToolTip';
 
 // theme.palette.primaray.main
 
 function ComponentDemo() {
     return (
-        <div>
-            <Grid />
-        </div>
+        <Tooltip title="Hello">
+            <p>Hello</p>
+        </Tooltip>
     );
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Grid({ contents }) {
     return (
@@ -20,5 +21,13 @@ function Grid({ contents }) {
         </div>
     );
 }
+
+Grid.propTypes = {
+    contents: PropTypes.array.isRequired
+};
+
+Grid.defaultProps = {
+    contents: []
+};
 
 export default Grid;
