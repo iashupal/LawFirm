@@ -18,7 +18,7 @@ Textbox.propTypes = {
     label: PropTypes.string,
     value: PropTypes.value,
     placeholder: PropTypes.placeholder,
-    onChange: PropTypes.func,
+    onChange: PropTypes.func.isRequired,
     multiline: PropTypes.bool
 };
 

@@ -1,30 +1,32 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
+import { Dialog as MaterialDialog } from '@material-ui/core';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import Typography from '@material-ui/core/Typography';
+import PropTypes from 'prop-types';
 
-export default function Dialog({ title, children, actions, onClose, open }) {
+function Dialog({ title, children, actions, onClose, open }) {
     return (
-        <Dialog
+        <MaterialDialog
             onClose={onClose}
             aria-labelledby="customized-dialog-title"
             open={open}
+            fullWidth
         >
             {title && (
-                <DialogTitle
-                    id="customized-dialog-title"
-                    onClose={this.handleClose}
-                >
-                    Modal title
+                <DialogTitle id="customized-dialog-title" onClose={onClose}>
+                    {title}
                 </DialogTitle>
             )}
 
             <DialogContent dividers>{children}</DialogContent>
             {actions && <DialogActions>{actions}</DialogActions>}
-        </Dialog>
+        </MaterialDialog>
     );
 }
+
+Dialog.propTypes = {
+    title: PropTypes.string
+};
+
+export default Dialog;

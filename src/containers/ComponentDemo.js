@@ -1,17 +1,14 @@
 import React from 'react';
-import Textbox from '../components/Textbox';
+import Dialog from '../components/Dialog';
 
 // theme.palette.primaray.main
 
 function ComponentDemo() {
     return (
         <div>
-            <Textbox
-                placeholder="hello"
-                value="hello"
-                onChange={e => console.log(e.target.value)}
-                multiline
-            />
+            <Dialog open title="Hello" actions={<p>Hello</p>}>
+                <p>Hello</p>
+            </Dialog>
         </div>
     );
 }

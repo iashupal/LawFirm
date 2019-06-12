@@ -172,7 +172,7 @@ class Header extends React.Component {
                         <Button
                             icon="add"
                             variant="outlined"
-                            color="white"
+                            color="inherit"
                             mode="rightIcon"
                         >
                             Hello
