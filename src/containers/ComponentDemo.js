@@ -1,12 +1,10 @@
 import React from 'react';
-import Button from '../components/Button';
+import File from '../components/File';
 
 function ComponentDemo() {
     return (
         <div>
-            <Button mode="regular" size="medium" color="danger">
-                Hello
-            </Button>
+            <File />
         </div>
     );
 }
