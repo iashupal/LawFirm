@@ -1,12 +1,17 @@
 import React from 'react';
-import Tab from '../components/Tab';
+import Textbox from '../components/Textbox';
 
 // theme.palette.primaray.main
 
 function ComponentDemo() {
     return (
         <div>
-            <Tab text="tab 1" selected />
+            <Textbox
+                placeholder="hello"
+                value="hello"
+                onChange={e => console.log(e.target.value)}
+                multiline
+            />
         </div>
     );
 }
