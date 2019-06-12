@@ -1,11 +1,12 @@
 import React from 'react';
-// import '../../styles/layout/_header.scss';
-import { Button as Btn, Icon } from '@material-ui/core';
+import { Button as Btn, Icon, colors } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { fade } from '@material-ui/core/styles/colorManipulator';
+import * as classnames from 'classnames';
+
 const styles = theme => ({
-    customBtn: {
+    rightIconButtonRoot: {
         width: '100%',
         paddingTop: '10px',
         paddingRight: theme.spacing.unit,
@@ -19,30 +20,102 @@ const styles = theme => ({
         fontSize: '15px',
         letterSpacing: '.5px'
     },
-    label: {
+    rightIconButtonLabel: {
         textAlign: 'left',
         width: '100%',
         justifyContent: 'initial',
         verticalAlign: 'middle'
+    },
+    warning: {
+        backgroundColor: colors.amber[500],
+        color: 'white'
+    },
+    primary: {
+        backgroundColor: colors.blue[600],
+        color: 'white'
+    },
+    success: {
+        backgroundColor: colors.green[600],
+        color: 'white'
+    },
+    danger: {
+        backgroundColor: colors.red[600],
+        color: 'white'
+    },
+    inverted: {
+        backgroundColor: colors.grey[700],
+        color: 'white'
+    },
+    root: {
+        borderRadius: 2
+    },
+    toolbar: {
+        backgroundColor: colors.grey[200],
+        border: `1px solid ${colors.grey[500]}`,
+        color: colors.grey[700],
+        fontSize: '10px'
     }
 });
 
-const Button = ({ children, variant, icon, color, buttonColor, classes }) => (
-    <Btn
-        style={(color = { color })}
-        size="large"
-        fullWidth
-        variant={variant}
-        backgroundcolor={buttonColor}
-        className={classes.customBtn}
-    >
-        <span className={classes.label}>{children}</span>
-        <Icon style={{ fontSize: '20px' }}>{icon}</Icon>
-    </Btn>
-);
+const Button = ({ children, variant, icon, color, classes, mode, size }) => {
+    if (mode === 'rightIcon') {
+        return (
+            <Btn
+                size={size}
+                variant={variant}
+                className={classes.rightIconButtonRoot}
+                color={color}
+            >
+                <span className={classes.rightIconButtonLabel}>{children}</span>
+                <Icon style={{ fontSize: '20px' }}>{icon}</Icon>
+            </Btn>
+        );
+    } else if (mode === 'regular') {
+        return (
+            <Btn
+                variant={variant}
+                size={size}
+                className={classnames({
+                    [classes.root]: true,
+                    [classes.primary]: color === 'primary',
+                    [classes.warning]: color === 'warning',
+                    [classes.success]: color === 'success',
+                    [classes.danger]: color === 'danger',
+                    [classes.inverted]: color === 'inverted'
+                })}
+            >
+                {children}
+            </Btn>
+        );
+    } else if (mode === 'toolbar') {
+        return (
+            <Btn
+                variant="contained"
+                color="default"
+                size="small"
+                className={classes.toolbar}
+            >
+                {children}
+            </Btn>
+        );
+    }
+};
 
 Button.propTypes = {
-    classes: PropTypes.object.isRequired
+    classes: PropTypes.object,
+    mode: PropTypes.string,
+    icon: PropTypes.string,
+    color: PropTypes.string,
+    size: PropTypes.string
+};
+
+Button.defaultProps = {
+    children: 'Button Text',
+    mode: 'regular',
+    color: 'default',
+    size: 'medium',
+    variant: 'contained',
+    icon: 'home'
 };
 
 export default withStyles(styles)(Button);

@@ -169,7 +169,12 @@ class Header extends React.Component {
                     </div>
                     {/* <div className="right"> */}
                     <div className="add-dialog ml-auto d-md-block d-sm-none d-none">
-                        <Button icon="add" variant="outlined" color="white">
+                        <Button
+                            icon="add"
+                            variant="outlined"
+                            color="white"
+                            mode="rightIcon"
+                        >
                             Hello
                         </Button>
                     </div>
