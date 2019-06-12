@@ -4,7 +4,7 @@ import Badge from '@material-ui/core/Badge';
 
 const NotificationBadge = ({ count }) => (
     <IconButton color="inherit">
-        <Badge badgeContent={count} color="secondary">
+        <Badge badgeContent={count} color="error">
             <i className="material-icons">notification_important</i>
         </Badge>
     </IconButton>

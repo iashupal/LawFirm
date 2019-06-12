@@ -12,6 +12,7 @@ function ComponentDemo() {
         <div>
             <CrossCheckbox label="Test Label" onChange={handleChange} />
             <SimpleCheckbox label="Test Label" onChange={handleChange} />
+           
         </div>
     );
 }
