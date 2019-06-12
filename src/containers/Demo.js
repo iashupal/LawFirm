@@ -1,7 +1,11 @@
 import React from 'react';
 
 function Demo() {
-    return <div>Demo</div>;
+    return (
+        <div>
+            <p>Hello</p>
+        </div>
+    );
 }
 
 export default Demo;
