@@ -8,7 +8,6 @@ export default class TextField extends React.Component{
            
                 <div className="form">
                     <p>{this.props.label}</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                    {/* <InputBase defaultValue={this.props.value} style={{color: 'gray'}} className="inputbase"/> */}
                     <p style={{color: 'gray'}} className="inputbase">{this.props.value}</p>
                     
                 </div>
