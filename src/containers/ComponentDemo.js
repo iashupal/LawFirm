@@ -1,10 +1,12 @@
 import React from 'react';
-import File from '../components/File';
+import Tab from '../components/Tab';
+
+// theme.palette.primaray.main
 
 function ComponentDemo() {
     return (
         <div>
-            <File />
+            <Tab text="tab 1" selected />
         </div>
     );
 }
