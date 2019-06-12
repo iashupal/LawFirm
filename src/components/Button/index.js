@@ -18,7 +18,8 @@ const styles = theme => ({
             borderColor: fade(theme.palette.common.white, 0.25)
         },
         fontSize: '15px',
-        letterSpacing: '.5px'
+        letterSpacing: '.5px',
+        
     },
     rightIconButtonLabel: {
         textAlign: 'left',
