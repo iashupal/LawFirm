@@ -168,20 +168,9 @@ class Header extends React.Component {
                         <DropdownElement />
                     </div>
                     {/* <div className="right"> */}
-<<<<<<< HEAD
-                    <div className="add-dialog ml-auto">
-                        <Button
-                            icon="add"
-                            variant="contained"
-                            color="secondary"
-                        >
-                            Hello
-=======
                     <div className="add-dialog ml-auto d-md-block d-sm-none d-none">
                         <Button icon="add" variant="outlined" color="white">
-                         Hello
-                            
->>>>>>> 831ad804733fcb0e6aefe237528d9dc81e91be38
+                            Hello
                         </Button>
                     </div>
                     <div className="record-time d-md-block d-sm-none d-none">

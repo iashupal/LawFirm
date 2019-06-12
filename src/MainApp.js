@@ -7,7 +7,7 @@ import { R, RU } from 'helpers/ramda';
 import configureStore, { history } from './store';
 // import './firebase/firebase';
 import App from './containers/App';
-import Demo from './containers/Demo';
+import Demo from './containers/ComponentDemo';
 import NoBrowserSupport from './NoBrowserSupport';
 
 const { getEnv } = RU;
