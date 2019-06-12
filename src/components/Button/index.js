@@ -28,22 +28,37 @@ const styles = theme => ({
     },
     warning: {
         backgroundColor: colors.amber[500],
+        '&:hover': {
+            backgroundColor: colors.amber[700]
+        },
         color: 'white'
     },
     primary: {
         backgroundColor: colors.blue[600],
+        '&:hover': {
+            backgroundColor: colors.blue[700]
+        },
         color: 'white'
     },
     success: {
         backgroundColor: colors.green[600],
+        '&:hover': {
+            backgroundColor: colors.green[700]
+        },
         color: 'white'
     },
     danger: {
         backgroundColor: colors.red[600],
+        '&:hover': {
+            backgroundColor: colors.red[700]
+        },
         color: 'white'
     },
     inverted: {
         backgroundColor: colors.grey[700],
+        '&:hover': {
+            backgroundColor: colors.grey[800]
+        },
         color: 'white'
     },
     root: {

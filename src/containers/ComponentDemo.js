@@ -4,9 +4,9 @@ import Button from '../components/Button';
 function ComponentDemo() {
     return (
         <div>
-            <CrossCheckbox label="Test Label" onChange={handleChange} />
-            <SimpleCheckbox label="Test Label" onChange={handleChange} />
-           
+            <Button mode="regular" size="medium" color="danger">
+                Hello
+            </Button>
         </div>
     );
 }
