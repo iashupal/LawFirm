@@ -1,13 +1,17 @@
 import React from 'react';
-import '../../styles/ui/_switchbutton.scss';
+import { Switch as MaterialSwitch } from '@material-ui/core';
+import PropTypes from 'prop-types';
 
-export default function Switch() {
+function Switch({ checked, onChange, value }) {
     return (
-        <div>
-            <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round" />
-            </label>
-        </div>
+        <MaterialSwitch checked={checked} onChange={onChange} value={value} />
     );
 }
+
+Switch.propTypes = {
+    checked: PropTypes.bool.isRequired,
+    onChange: PropTypes.func,
+    value: PropTypes.string
+};
+
+export default Switch;

@@ -1,6 +1,19 @@
-import React from './node_modules/react';
-import Tooltip from './node_modules/@material-ui/core/Tooltip';
+import React from 'react';
+import Tooltip from '@material-ui/core/Tooltip';
+import PropTypes from 'prop-types';
 
-export default function ToolTip({ title, children }) {
-    return <Tooltip title={title}>{children}</Tooltip>;
+function ToolTip({ title, children, placement }) {
+    return (
+        <Tooltip title={title} placement={placement}>
+            {children}
+        </Tooltip>
+    );
 }
+
+Tooltip.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node,
+    placement: PropTypes.string
+};
+
+export default ToolTip;
