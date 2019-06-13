@@ -5,7 +5,7 @@ import 'react-splitter-layout/lib/index.css';
 export default function Splitter(){
     return (
   
-    <SplitterLayout className={classes.spliter}>
+    <SplitterLayout>
         <div><EnhancedTable/></div>
         <div>Pane 2</div>
       </SplitterLayout>
