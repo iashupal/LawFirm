@@ -1,12 +1,20 @@
 import React from 'react';
-import Switch from '../components/Switch';
+import ContentCard from '../components/ContentCard';
+import Button from '../components/Button';
 
 // theme.palette.primaray.main
 
 function ComponentDemo() {
     return (
         <div>
-            <Switch />
+            <ContentCard
+                title="Hello"
+                actionButton={
+                    <Button mode="rightIcon" color="primary">
+                        Hello
+                    </Button>
+                }
+            />
         </div>
     );
 }
