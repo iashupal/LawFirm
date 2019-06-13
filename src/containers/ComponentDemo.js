@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from '../components/Button';
 import PageTitle from '../components/PageTitle';
-import AutoComplete from '../components/AutoComplete';
-import TaskForm from '../components/screen/TaskForm';
-
+import EnhancedTable from '../components/Table/EnhancedTable';
+import Splitter from '../components/Splitter';
+import CustomAvatar from '../components/CustomAvatar';
 function ComponentDemo() {
     return (
         <div>
@@ -16,10 +16,17 @@ function ComponentDemo() {
                 Hello
             </Button>
             <PageTitle icon="class" text="Case" iconVisible/>
-           <AutoComplete/>
-           
-           <TaskForm/>
-
+          
+           <EnhancedTable/>
+           <Splitter/>
+            <CustomAvatar color="blue">
+                <i className="material-icons" style={{fontSize: '20px'}}>add_to_queue</i>
+            </CustomAvatar>
+            <CustomAvatar color="pink">
+                H
+            </CustomAvatar>
+          
+          
         </div>
     );
 }

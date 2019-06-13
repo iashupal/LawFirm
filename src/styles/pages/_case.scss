@@ -914,6 +914,30 @@ td .inr-wrap-chkbox .custom-checkbox{
 
 
 // enhanced table
+.tableScroll{
+    width: 100%;
+    height: 320px;
+    overflow-x: auto;
+    overflow-y: auto;
+
+}
+    ::-webkit-scrollbar{
+    width: 5px;
+    }
+     ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: #3D7BE3; 
+    }
+  
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+
+
 .paginatn-table{
     width: 100%;
     margin: 0 auto;
@@ -921,6 +945,7 @@ td .inr-wrap-chkbox .custom-checkbox{
 }
 .table-row{
     border-top: 2px solid black;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif; 
 }
 .table-cell{
     border-bottom: 1px solid black;
@@ -940,11 +965,13 @@ td .inr-wrap-chkbox .custom-checkbox{
 {
     width: 10%;
     padding: 10px;
+    color: #464646;
 }
 .table-body .task-table2 .task-checkbox-width:nth-child(3){
     width: 45%;
     padding: 10px;
     text-align: left;
+    color: #464646;
 }
 .table-body .task-table2 .task-checkbox-width:nth-child(6){
     width: 13%;

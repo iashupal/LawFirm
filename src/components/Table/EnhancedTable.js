@@ -10,8 +10,8 @@ import TableRow from '@material-ui/core/TableRow';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Paper from '@material-ui/core/Paper';
 import Checkbox from '@material-ui/core/Checkbox';
-import Tooltip from '@material-ui/core/Tooltip';
 import '../../styles/ui/_checkbox.scss';
+import Button from '../../components/Button/';
 import SimpleCheckbox from '../Checkbox/SimpleCheckbox';
 let counter = 0;
 function createData(name, task, tags, text, buttons) {
@@ -44,7 +44,7 @@ function getSorting(order, orderBy) {
 }
 
 const rows = [
-  { id: 'name', numeric: false, disablePadding: true, label: 'Date' },
+  { id: 'date', numeric: false, disablePadding: true, label: 'Date' },
   { id: 'task', numeric: true, disablePadding: false, label: 'Task' },
   { id: 'tags', numeric: true, disablePadding: false, label: 'Tags' },
   { id: 'text', numeric: true, disablePadding: false, label: 'Text' },
@@ -61,7 +61,10 @@ const styles = theme => ({
   paper: {
     width: '100%',
     marginBottom: theme.spacing(2),
+    
   },
+ 
+  
   table: {
     minWidth: 750,
   },
@@ -92,11 +95,6 @@ class EnhancedTableHead extends React.Component {
                 padding={row.disablePadding ? 'none' : 'default'}
                 sortDirection={orderBy === row.id ? order : false}
               >
-                {/* <Tooltip
-                  title="Sort"
-                  placement={row.numeric ? 'bottom-end' : 'bottom-start'}
-                  enterDelay={300}
-                > */}
                   <TableSortLabel
                     active={orderBy === row.id}
                     direction={order}
@@ -104,7 +102,6 @@ class EnhancedTableHead extends React.Component {
                   >
                     {row.label}
                   </TableSortLabel>
-                {/* </Tooltip> */}
               </TableCell>
             ),
             this,
@@ -124,27 +121,65 @@ EnhancedTableHead.propTypes = {
   rowCount: PropTypes.number.isRequired,
 };
 
+const IconButton = ({props}) => {
+  return(
+    <React.Fragment>
+    <div className="table-action-btn table-btn-clr">
+        <i className="material-icons left icons">
+          access_time
+        </i>
+    </div>
+    <div className="table-action-btn table-btn-clr">
+      <i className="material-icons icons">
+        border_color
+      </i>
+    </div>
+    <div className="table-action-btn table-btn-clr">
+      <i className="material-icons icons">
+          delete
+      </i>
+    </div>
+    </React.Fragment>
+  )
+}
+const Tags = () => {
+  return(
+    <div className="task-tags-btn">
+        {/* <button type="button" className="btn btnStyle accord3-btn-clr">Button2</button> */}
+        <Button 
+            mode="regular"
+            size="small"
+            color="inverted"
+            variant="contained"
+        >
+        Btn
+        </Button>
+    </div>
+  )
+}
+
 
 export class EnhancedTable extends React.Component {
   state = {
     order: 'asc',
     orderBy: 'task',
     selected: [],
-    data: [
-      createData('2019-01-01', 'abx', 3.7, 67, 500),
-      createData('2019-01-01', 452, 25.0, 51, 4.9),
-      createData('2019-01-01', 262, 16.0, 24, 6.0),
-      createData('2019-01-01', 159, 6.0, 24, 4.0),
-      createData('2019-01-01', 356, 16.0, 49, 3.9),
-      createData('2019-01-01', 408, 3.2, 87, 6.5),
-      createData('2019-01-01', 237, 9.0, 37, 4.3),
-      createData('2019-01-01', 375, 0.0, 94, 0.0),
-      createData('2019-01-01', 518, 26.0, 65, 7.0),
-      createData('2019-01-01', 392, 0.2, 98, 0.0),
-      createData('2019-01-01', 318, 0, 81, 2.0),
-      createData('2019-01-01', 360, 19.0, 9, 37.0),
-      createData('2019-01-01', 437, 18.0, 63, 4.0),
+  
+    data :  [
+      {date: '2019-01-01', task:'abx', tags:(<Tags/>), text: 67, buttons:(<IconButton/>)},
+      {date: '2019-02-01', task:'123', tags:(<Tags/>), text: 68, buttons:(<IconButton/>)},
+      {date: '2019-03-01', task:'223', tags:(<Tags/>), text: 69, buttons:(<IconButton/>)},
+      {date: '2019-04-01', task:'667', tags:(<Tags/>), text: 70, buttons:(<IconButton/>)},
+      {date: '2019-05-01', task:'678', tags:(<Tags/>), text: 67, buttons:(<IconButton/>)},
+      {date: '2019-06-01', task:'abc', tags:(<Tags/>), text: 67, buttons:(<IconButton/>)},
+      {date: '2019-07-01', task:'ghj', tags:(<Tags/>), text: 67, buttons:(<IconButton/>)},
+      {date: '2019-08-01', task:'dfgh', tags:(<Tags/>), text: 67, buttons:(<IconButton/>)},
+      {date: '2019-09-01', task:'hjk', tags:(<Tags/>), text: 67, buttons:(<IconButton/>)},
+      {date: '2019-10-01', task:'cvb', tags:(<Tags/>), text: 67, buttons:(<IconButton/>)},
+      {date: '2019-11-01', task:'fgh', tags:(<Tags/>), text: 67, buttons:(<IconButton/>)},
+      {date: '2019-12-01', task:'ghi', tags:(<Tags/>), text: 67, buttons:(<IconButton/>)},
     ],
+    
     page: 0,
     rowsPerPage: 5,
   };
@@ -167,7 +202,6 @@ export class EnhancedTable extends React.Component {
     }
     this.setState({ selected: [] });
   };
-
   handleClick = (event, id) => {
     const { selected } = this.state;
     const selectedIndex = selected.indexOf(id);
@@ -200,12 +234,12 @@ export class EnhancedTable extends React.Component {
   isSelected = id => this.state.selected.indexOf(id) !== -1;
 
   render() {
-    const { data, order, orderBy, selected, rowsPerPage, page } = this.state;
+    const { data, order, orderBy, selected,  rowsPerPage, page } = this.state;
     const emptyRows = rowsPerPage - Math.min(rowsPerPage, data.length - page * rowsPerPage);
 
     return (
       <Paper>
-        <div>
+        <div className="tableScroll">
           <Table aria-labelledby="tableTitle">
             <EnhancedTableHead
               numSelected={selected.length}
@@ -225,10 +259,10 @@ export class EnhancedTable extends React.Component {
                       hover
                       // onClick={event => this.handleClick(event, n.id)}
                       // role="checkbox"
-                      aria-checked={isSelected}
+                      // aria-checked={isSelected}
                       tabIndex={-1}
                       key={n.id}
-                      selected={isSelected}
+                      // selected={isSelected}
                       className="task-table2"
                     >
                       <TableCell padding="checkbox" className="task-td-border task-checkbox-width"
@@ -236,40 +270,22 @@ export class EnhancedTable extends React.Component {
                       role="checkbox"
                        aria-checked={isSelected}
                       >
-                        <Checkbox checked={isSelected} />
-                        {/* <SimpleCheckbox checked={isSelected}/> */}
-                        {/* <div className="checkbox right">
-                            <input type="checkbox" id="checkboxTable" name="" value="" checked={isSelected}/>
-                            <label htmlFor="checkboxTable" ></label>
-                        </div> */}
+                        <Checkbox />
+                      
+                        
                       </TableCell>
                       <TableCell component="th" scope="row" className="task-td-border task-checkbox-width">
-                        {n.name}
+                        {n.date}
                       </TableCell>
                       <TableCell align="right" className="task-td-border task-checkbox-width">{n.task}</TableCell>
                       <TableCell align="right" className="task-td-border task-checkbox-width text-center">
-                        <div className="task-tags-btn">
-                          <button type="button" className="btn btnStyle accord3-btn-clr">Button2</button>
-                        </div>
+                        {n.tags}
+                       
                          
                       </TableCell>
                       <TableCell align="right" className="task-td-border task-checkbox-width text-center">{n.text}</TableCell>
-                      <TableCell align="right" className="task-checkbox-width">
-                        <div className="table-action-btn table-btn-clr">
-                          <i className="material-icons left icons">
-                            access_time
-                          </i>
-                        </div>
-                        <div className="table-action-btn table-btn-clr">
-                          <i className="material-icons icons">
-                            border_color
-                          </i>
-                         </div>
-                         <div className="table-action-btn table-btn-clr">
-                          <i className="material-icons icons">
-                            delete
-                          </i>
-                          </div>
+                      <TableCell align="right" className="task-checkbox-width">{n.buttons}
+                       
                       </TableCell>
                      
                     </TableRow>
