@@ -17,7 +17,7 @@ function Select({
             options={options}
             styles={styles}
             onChange={(event, option, index) => onChange(event, option, index)}
-            selectedKey={options[0].key}
+            selectedKey={selectedKey}
         />
     );
 }

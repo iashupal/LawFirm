@@ -8152,14 +8152,13 @@ react-sortable-hoc@1.8.3:
     invariant "^2.2.4"
     prop-types "^15.5.7"
 
-react-split-pane@^0.1.87:
-  version "0.1.87"
-  resolved "https://registry.yarnpkg.com/react-split-pane/-/react-split-pane-0.1.87.tgz#a7027ae554abfacca35f5f780288b07fe4ec4cbd"
-  integrity sha512-F22jqWyKB1WximT0U5HKdSuB9tmJGjjP+WUyveHxJJys3ANsljj163kCdsI6M3gdfyCVC+B2rq8sc5m2Ko02RA==
+react-split@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/react-split/-/react-split-2.0.5.tgz#6cf1d3b1d73c0301a125864655f35f626fa170b9"
+  integrity sha512-KFIKu6YK4XtRLRcKYG2kcqEpHlcZLjM0Y0SS+C3BSJlidvKt9wWi7BzPWHWimUHA/Ur3s4kxXQHtG2B5LyXTIw==
   dependencies:
-    prop-types "^15.5.10"
-    react-lifecycles-compat "^3.0.4"
-    react-style-proptype "^3.0.0"
+    prop-types "^15.5.7"
+    split.js "^1.5.9"
 
 react-splitter-layout@^4.0.0:
   version "4.0.0"
@@ -8173,13 +8172,6 @@ react-star-rating-component@^1.3.0:
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.6.1"
-
-react-style-proptype@^3.0.0:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/react-style-proptype/-/react-style-proptype-3.2.2.tgz#d8e998e62ce79ec35b087252b90f19f1c33968a0"
-  integrity sha512-ywYLSjNkxKHiZOqNlso9PZByNEY+FTyh3C+7uuziK0xFXu9xzdyfHwg4S9iyiRRoPCR4k2LqaBBsWVmSBwCWYQ==
-  dependencies:
-    prop-types "^15.5.4"
 
 react-swipeable-views-core@^0.13.1:
   version "0.13.1"
@@ -9313,6 +9305,11 @@ split-string@^3.0.1, split-string@^3.0.2:
   integrity sha512-NzNVhJDYpwceVVii8/Hu6DKfD2G+NrQHlS/V/qgv763EYudVwEcMQNxd2lh+0VrUByXN/oJkl5grOhYWvQUYiw==
   dependencies:
     extend-shallow "^3.0.0"
+
+split.js@^1.5.9:
+  version "1.5.11"
+  resolved "https://registry.yarnpkg.com/split.js/-/split.js-1.5.11.tgz#3654b2a8c625994e33c531df5c4dea83ca8af011"
+  integrity sha512-ec0sAbWnaMGpNHWo1ZgIlF3Mx7GzSyaO0GlcEBZGIFZQwYPPkbDV6JRpDmpzIshVig7USREuEPudy0ygQaskXg==
 
 sprintf-js@~1.0.2:
   version "1.0.3"
