@@ -29,7 +29,7 @@ const styles = theme => ({
     warning: {
         backgroundColor: colors.amber[500],
         '&:hover': {
-        backgroundColor: colors.amber[700]
+            backgroundColor: colors.amber[700]
         },
         color: 'white'
     },
@@ -72,7 +72,16 @@ const styles = theme => ({
     }
 });
 
-const Button = ({ children, variant, icon, color, classes, mode, size }) => {
+const Button = ({
+    children,
+    variant,
+    icon,
+    color,
+    classes,
+    mode,
+    size,
+    onClick
+}) => {
     if (mode === 'rightIcon') {
         return (
             <Btn
@@ -80,6 +89,7 @@ const Button = ({ children, variant, icon, color, classes, mode, size }) => {
                 variant={variant}
                 className={classes.rightIconButtonRoot}
                 color={color}
+                onClick={onClick}
             >
                 <span className={classes.rightIconButtonLabel}>{children}</span>
                 <Icon style={{ fontSize: '20px' }}>{icon}</Icon>
@@ -98,6 +108,7 @@ const Button = ({ children, variant, icon, color, classes, mode, size }) => {
                     [classes.danger]: color === 'danger',
                     [classes.inverted]: color === 'inverted'
                 })}
+                onClick={onClick}
             >
                 {children}
             </Btn>
@@ -109,6 +120,7 @@ const Button = ({ children, variant, icon, color, classes, mode, size }) => {
                 color="default"
                 size="small"
                 className={classes.toolbar}
+                onClick={onClick}
             >
                 {children}
             </Btn>
