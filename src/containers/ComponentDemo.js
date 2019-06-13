@@ -1,22 +1,11 @@
 import React from 'react';
+import Splitter from '../components/Splitter';
 import ContentCard from '../components/ContentCard';
-import Button from '../components/Button';
 
 // theme.palette.primaray.main
 
 function ComponentDemo() {
-    return (
-        <div>
-            <ContentCard
-                title="Hello"
-                actionButton={
-                    <Button mode="rightIcon" color="primary">
-                        Hello
-                    </Button>
-                }
-            />
-        </div>
-    );
+    return <ContentCard title="Hello" contents={[<Splitter />]} />;
 }
 
 export default ComponentDemo;
