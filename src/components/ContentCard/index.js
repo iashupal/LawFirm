@@ -22,32 +22,50 @@ const styles = theme => ({
     },
     heading: {
         gridColumnStart: 1,
-        gridColumnEnd: 9
+        gridColumnEnd: 9,
+        alignSelf: 'center'
     },
     action: {
         gridColumnStart: 12,
         gridColumnEnd: 13,
-        marginBottom: 10
+        alignSelf: 'center'
     },
     divider: {
         gridColumnStart: 1,
-        gridColumnEnd: 13
+        gridColumnEnd: 13,
+        marginTop: 10
+    },
+    content: {
+        display: 'flex',
+        flex: 1,
+        flexDirection: 'row',
+        marginTop: 45,
+        padding: 10
+    },
+    contents: {
+        flex: 1
     }
 });
 
-function ContentCard({ classes, title, actionButton, contents }) {
+function ContentCard({
+    classes,
+    title,
+    actionButton,
+    contents,
+    onActionClick
+}) {
     return (
         <Paper className={classes.container}>
             <div className={classes.header}>
-                <div className={classes.heading}>
-                    <p>{title}</p>
+                <h2 className={classes.heading}>{title}</h2>
+                <div className={classes.action} onClick={onActionClick}>
+                    {actionButton}
                 </div>
-                <div className={classes.action}>{actionButton}</div>
                 <Divider className={classes.divider} />
             </div>
             <div className={classes.content}>
                 {contents.map(content => (
-                    <div>{content}</div>
+                    <div className={classes.contents}>{content}</div>
                 ))}
             </div>
         </Paper>
@@ -57,7 +75,8 @@ function ContentCard({ classes, title, actionButton, contents }) {
 ContentCard.propTypes = {
     title: PropTypes.string.isRequired,
     actionButton: PropTypes.element,
-    content: PropTypes.array.isRequired
+    content: PropTypes.array.isRequired,
+    onActionClick: PropTypes.func
 };
 
 ContentCard.defaultProps = {
