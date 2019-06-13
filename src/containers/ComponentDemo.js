@@ -1,13 +1,13 @@
 import React from 'react';
-import Tooltip from '../components/ToolTip';
+import Switch from '../components/Switch';
 
 // theme.palette.primaray.main
 
 function ComponentDemo() {
     return (
-        <Tooltip title="Hello">
-            <p>Hello</p>
-        </Tooltip>
+        <div>
+            <Switch />
+        </div>
     );
 }
 
