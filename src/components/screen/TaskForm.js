@@ -33,6 +33,7 @@ export default class TaskForm extends React.Component {
                                     />
                                 </div>
                             </td>
+                            
                         </tr>
                     </tbody>
                 </table>
