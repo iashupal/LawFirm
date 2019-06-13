@@ -29,7 +29,7 @@ const styles = theme => ({
     warning: {
         backgroundColor: colors.amber[500],
         '&:hover': {
-            backgroundColor: colors.amber[700]
+        backgroundColor: colors.amber[700]
         },
         color: 'white'
     },

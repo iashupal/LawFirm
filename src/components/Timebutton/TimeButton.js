@@ -89,7 +89,7 @@ class TimeButton extends React.Component{
     render(){
       const {classes} = this.props;
         let start = (this.state.time == 0) ?
-    <i className="material-icons left" onClick={this.startTimer} style = {{cursor: 'pointer', fontSize: '20px'}}> play_circle_outline</i> :  //start//
+        <i className="material-icons left" onClick={this.startTimer} style = {{cursor: 'pointer', fontSize: '20px'}}> play_circle_outline</i> :  //start//
             null
         let stop = (this.state.isOn) ?
             <i className="material-icons left" onClick={this.stopTimer} style = {{cursor: 'pointer', fontSize: '20px'}}> pause_circle_outline</i> :  //stop

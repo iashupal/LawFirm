@@ -45,19 +45,25 @@ class SimpleMenu extends React.Component {
         notFound: false,
         value: false,
         anchorEl: null,
+       
     };
     handleClick = event => {
         this.setState({ anchorEl: event.currentTarget });
       }
     
       handleClose = () => {
-        this.setState({ anchorEl: null });
+        this.setState({ 
+          anchorEl: null,
+        });
       }
   render(){
     const {anchorEl} = this.state;
   return (
     <div>
-      <Button
+  
+
+       
+       <Button
         aria-controls="customized-menu"
         aria-haspopup="true"
         variant="contained"
@@ -92,9 +98,36 @@ class SimpleMenu extends React.Component {
           <ListItemText primary="Inbox" />
         </StyledMenuItem>
       </StyledMenu>
+      
     </div>
   );
   }
 }
 
 export default SimpleMenu;
+
+// const SimpleMenu = ({ title, children, onClose, onClick }) => {
+//   return(
+//     <div>
+//       <Button
+//           aria-controls="customized-menu"
+//           aria-haspopup="true"
+//           variant="contained"
+//           color="primary"
+//           onClick={this.handleClick}
+//         >
+//           {title}
+//       </Button>
+//       <StyledMenu
+//         id="customized-menu"
+//         anchorEl={anchorEl}
+//         keepMounted
+//         open={Boolean(anchorEl)}
+//         onClose={this.handleClose}
+//       >
+//         {children}
+//       </StyledMenu>
+//     </div>
+//   )
+// }
+// export default SimpleMenu;
