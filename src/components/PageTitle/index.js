@@ -17,7 +17,8 @@ const styles = {
     icon: {
         fontSize: '1.5rem',
         paddingRight: '2rem',
-        verticalAlign: 'sub',
+        // verticalAlign: 'sub',
+        alignSelf: 'flex-start',
     }
 };
 function PageTitle({ children, color, icon, classes }) {

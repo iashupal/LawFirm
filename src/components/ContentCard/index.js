@@ -28,7 +28,7 @@ const styles = theme => ({
         alignSelf: 'center'
     },
     action: {
-        gridColumnStart: 12,
+        gridColumnStart: 11,
         gridColumnEnd: 13,
         alignSelf: 'center'
     },
@@ -62,6 +62,7 @@ function ContentCard({
         <Paper className={classes.container}>
             <div className={classes.header}>
                 <h2 className={classes.heading}>{title}</h2>
+                
                 <div className={classes.action} onClick={onActionClick}>
                     {actionButton}
                 </div>

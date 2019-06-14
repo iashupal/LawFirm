@@ -16,6 +16,7 @@ function Grid({ contents }) {
                             </td>
                         </tr>
                     ))}
+                    
                 </tbody>
             </table>
         </div>

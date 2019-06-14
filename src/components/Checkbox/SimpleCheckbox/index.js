@@ -1,13 +1,15 @@
 import React from 'react';
 import '../../../styles/ui/_checkbox.scss';
 
-export default function SimpleCheckbox({ checked, label, value, onChange }) {
+ function SimpleCheckbox({ checked, label, value, onChange, onClick }) {
     return (
-        <div className="checkbox">
-            <input type="checkbox" checked={checked}/>
+        <div className="checkbox" onClick={onClick}>
+            <input type="checkbox" checked={checked} checked={checked}  value={value}/>
             <label>
                 <span>{label}</span>
             </label>
         </div>
     );
 }
+
+export default SimpleCheckbox;

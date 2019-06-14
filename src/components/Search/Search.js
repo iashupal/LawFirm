@@ -56,14 +56,14 @@ const styles = theme => ({
 });
 class Search extends React.Component{
     render(){
-        const { classes } = this.props;
+        const { classes,placeholder } = this.props;
         return(
                  <div className={classes.search}>
                     <div className={classes.searchIcon}>
                         <SearchIcon />
                     </div>
                     <InputBase
-                        placeholder="Search…"
+                        placeholder={placeholder}
                         classes={{
                         root: classes.inputRoot,
                         input: classes.inputInput,

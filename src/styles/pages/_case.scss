@@ -398,7 +398,7 @@ border-right: 2px dotted lightgray;
 // font management form
 .font-div, .font-wrapper-container{
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     position: relative;
     float: left;
     clear: both;
@@ -407,7 +407,7 @@ border-right: 2px dotted lightgray;
     color: #373930;
 }
 .font-wrapper{
-    width: 98%;
+    width: 100%;
     position: relative;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -415,6 +415,7 @@ border-right: 2px dotted lightgray;
     background-color: #f5f5f5;
     float: left;
     clear: both;
+    margin: 0 5px;
 
 }
 .font-wrapper-container .font-drpdwn{
@@ -463,6 +464,7 @@ color: #373930;
     padding: 4px 13px;
     width: 25%;
     min-width: 23%;
+    background-color: white;
 }
 td .form-group{
     margin-bottom: 0;
@@ -805,7 +807,7 @@ td .inr-wrap-chkbox .custom-checkbox{
     padding-left: 0;
 }
 .textfield-wrapper span{
-    padding: 10px 8px;
+    // padding: 10px 8px;
     vertical-align: middle;
 }
 .textfield-wrapper .inputtype{
@@ -831,6 +833,7 @@ td .inr-wrap-chkbox .custom-checkbox{
 .accord2-rght .table-inr-btns.table-rght-btns{
     float: right;
     width: initial;
+    margin-bottom: 10px;
 }
 .table-inr-btns.table-rght-btns .btn-color2, .task-row2 .btn.btn-color2{
     background-color: #3C424B;
