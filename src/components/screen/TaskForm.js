@@ -18,7 +18,7 @@ export default class TaskForm extends React.Component {
     }
     render() {
         return (
-            <div className="tab1-form tab2-form task-table-form">
+            <div className="tab1-form">
                 <table className="table">
                     <tbody>
                         <tr>
@@ -33,7 +33,7 @@ export default class TaskForm extends React.Component {
                                     />
                                 </div>
                             </td>
-                            
+
                         </tr>
                     </tbody>
                 </table>

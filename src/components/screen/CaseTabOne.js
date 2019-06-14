@@ -15,14 +15,14 @@ export default class CaseTabOne extends React.Component{
                                 <div className="col-lg-6 col-md-12 col-sm-12">
                                     <div className="tab1-form">
                                         <TextField label={"Number1"} value={"0001"}/>
-                                        <div className="form">
-                                            <p>Number2</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
-                                            <div className="form-search-input">
-                                                <p style={{color: '#427FDF'}}>[Input]</p>
-                                                
-                                                <i className="material-icons">
-                                                    search
-                                                </i>
+                                            <div className="form">
+                                                <p>Number2</p>&nbsp;&nbsp;&nbsp;&nbsp;<span>:</span>
+                                                <div className="form-search-input">
+                                                    <p style={{color: '#427FDF'}}>[Input]</p>
+                                                    
+                                                    <i className="material-icons">
+                                                        search
+                                                    </i>
                                             </div>
                                             
                                         </div>

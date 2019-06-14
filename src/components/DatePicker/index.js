@@ -1,7 +1,14 @@
 import React from 'react';
-
-function DatePicker() {
-    return <div>DatePicker</div>;
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+export default function Dateicker({onChange, selected})  {
+    return (<DatePicker
+                selected={this.state.startDate}
+                onChange={this.handleChange}
+                peekNextMonth
+                showMonthDropdown
+                showYearDropdown
+                dropdownMode="select" 
+            />);
 }
 
-export default DatePicker;

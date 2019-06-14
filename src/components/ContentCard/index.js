@@ -1,12 +1,14 @@
 import React from 'react';
 import { Paper, withStyles, Divider } from '@material-ui/core';
 import PropTypes from 'prop-types';
+import Button from '../../components/Button';
 
 const styles = theme => ({
     container: {
         padding: 20,
         display: 'grid',
-        gridTemplateRows: '40px 1fr'
+        gridTemplateRows: '40px 1fr',
+        borderRadius: '8px'
     },
     content: {
         paddingTop: 20,
@@ -22,7 +24,7 @@ const styles = theme => ({
     },
     heading: {
         gridColumnStart: 1,
-        gridColumnEnd: 9,
+        gridColumnEnd: 11,
         alignSelf: 'center'
     },
     action: {
@@ -52,9 +54,11 @@ function ContentCard({
     title,
     actionButton,
     contents,
-    onActionClick
+    onActionClick,
+    isEmpty
 }) {
     return (
+       
         <Paper className={classes.container}>
             <div className={classes.header}>
                 <h2 className={classes.heading}>{title}</h2>
@@ -75,7 +79,7 @@ function ContentCard({
 ContentCard.propTypes = {
     title: PropTypes.string.isRequired,
     actionButton: PropTypes.element,
-    content: PropTypes.array.isRequired,
+    contents: PropTypes.array.isRequired,
     onActionClick: PropTypes.func
 };
 

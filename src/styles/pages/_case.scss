@@ -170,7 +170,7 @@ background-color: transparent;
 }
 .tab1-form{
     width: 100%;
-    margin: 30px auto 20px;
+    // margin: 30px auto 20px;
     position: relative;
     border-right: 1px solid lightgray;
     float: left;
@@ -349,7 +349,7 @@ border-right: 2px dotted lightgray;
     width: 100%;
     margin: 0 auto;
     position: relative;
-    height: 430px;
+    height: 353px;
     float: left;
     clear: both;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -706,6 +706,7 @@ td .form-group{
     position: relative;
     margin-right: 10px;
     cursor: pointer;
+    display: inline-block;
 }
 .form-cal-btn .react-datepicker-wrapper{
     width: 100%;
