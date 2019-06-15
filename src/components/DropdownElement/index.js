@@ -4,7 +4,9 @@ import { Dropdown, DropdownMenuItemType } from 'office-ui-fabric-react/lib/Dropd
 import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
 initializeIcons(undefined, { disableWarnings: true });
 const dropdownStyles = {
-    dropdown: { width: '100%' }
+    dropdown: { 
+        width: '100%',
+     }
   };
   const options = [
     { key: 'fruitsHeader', text: 'Fruits', itemType: DropdownMenuItemType.Header },
@@ -21,8 +23,7 @@ const dropdownStyles = {
   
   const stackTokens = { childrenGap: 20 };
 
-export default class DropdownElement extends React.Component{
-    render(){
+function DropdownElement(){
        
         return(
             <div className="drpdwn">
@@ -30,6 +31,7 @@ export default class DropdownElement extends React.Component{
                     <Dropdown placeholder="Select an option" options={options} className="dropdown-inr" styles={dropdownStyles} />
                 </Stack>
             </div>
-        )
-    }
+        );
 }
+
+export default DropdownElement;

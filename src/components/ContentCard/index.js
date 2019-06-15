@@ -1,9 +1,8 @@
 import React from 'react';
 import { Paper, withStyles, Divider } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import Button from '../../components/Button';
 
-const styles = theme => ({
+const styles =  ({
     container: {
         padding: 20,
         display: 'grid',
@@ -24,11 +23,11 @@ const styles = theme => ({
     },
     heading: {
         gridColumnStart: 1,
-        gridColumnEnd: 11,
+        gridColumnEnd: 10,
         alignSelf: 'center'
     },
     action: {
-        gridColumnStart: 11,
+        gridColumnStart: 10,
         gridColumnEnd: 13,
         alignSelf: 'center'
     },
@@ -49,23 +48,23 @@ const styles = theme => ({
     }
 });
 
-function ContentCard({
+function ContentCard ({
     classes,
     title,
     actionButton,
     contents,
     onActionClick,
-    isEmpty
+    mode
 }) {
+   
     return (
-       
         <Paper className={classes.container}>
             <div className={classes.header}>
                 <h2 className={classes.heading}>{title}</h2>
                 
                 <div className={classes.action} onClick={onActionClick}>
                     {actionButton}
-                </div>
+                </div >
                 <Divider className={classes.divider} />
             </div>
             <div className={classes.content}>
@@ -76,6 +75,8 @@ function ContentCard({
         </Paper>
     );
 }
+    
+
 
 ContentCard.propTypes = {
     title: PropTypes.string.isRequired,

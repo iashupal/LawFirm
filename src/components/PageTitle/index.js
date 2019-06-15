@@ -9,7 +9,7 @@ const styles = {
         position: 'relative'
     },
     heading: {
-        fontSize: '1.4rem',
+        fontSize: '1.5rem',
         fontWeight: '400',
         display: 'inline-block',
         fontFamily: 'Roboto, Helvetica, Arial, sans-serif'
@@ -19,6 +19,8 @@ const styles = {
         paddingRight: '2rem',
         // verticalAlign: 'sub',
         alignSelf: 'flex-start',
+        position: 'relative',
+        top: 2,
     }
 };
 function PageTitle({ children, color, icon, classes }) {

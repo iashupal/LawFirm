@@ -83,12 +83,16 @@ top: -4px;
     text-align: right;
 }
 i.icon{
-    padding-left: 10px;
+    // padding-left: 10px;
 }
 
 // case tab
 i.icon-left-menu-color{
     color: #000000;
+    padding-left: 10px;
+    vertical-align: middle;
+    top: 5px;
+    position: relative;
 }
 .wrapper-tab{
     width: 100%;
@@ -120,7 +124,25 @@ i.icon-left-menu-color{
     color: #606060;
     font-size: 13px;
 }
-
+.ms-Dropdown .ms-Dropdown-title{
+    border-radius: 5px;
+    width: 100%;
+    // box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    border-color: lightgray !important;
+    color: #606060;
+    height: 40px;
+    line-height: 36px;
+}
+.ms-Dropdown .ms-Dropdown-caretDownWrapper{
+    line-height: 37px;
+}
+.ms-TextField-wrapper .ms-TextField-fieldGroup{
+border-color: lightgray;
+border-radius: 5px;
+height: 100%;
+line-height: 37px;
+}
  div[class^="MuiPrivateTabScrollButton-root"]{
     width: initial;
  }
@@ -267,7 +289,7 @@ background-color: transparent;
     position: relative;
 }
 .checkbox{
-    top: 2px;
+    // top: 2px;
     position: relative;
 }
 .checkbox label span{
@@ -306,7 +328,7 @@ border-right: 2px dotted lightgray;
 }
 .tab1-form.tab2-form .table tbody tr td{
     text-align: left;
-    width: 50%;
+    width: initial;
     padding: 7px 13px;
     vertical-align: middle;
     
@@ -349,7 +371,7 @@ border-right: 2px dotted lightgray;
     width: 100%;
     margin: 0 auto;
     position: relative;
-    height: 353px;
+    height: 363px;
     float: left;
     clear: both;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -465,6 +487,7 @@ color: #373930;
     width: 25%;
     min-width: 23%;
     background-color: white;
+    box-shadow: 0 0 0 0;
 }
 td .form-group{
     margin-bottom: 0;
@@ -666,7 +689,7 @@ td .form-group{
 .wrapper-checkbox{
     width: 88%;
     position: relative;
-    padding-left: 20px;
+    // padding-left: 20px;
 }
 .wrapper-checkbox .inr-wrap-chkbox{
     width: 240px;
@@ -801,7 +824,7 @@ td .inr-wrap-chkbox .custom-checkbox{
 }
 .textfield-wrapper .form-group{
     width: 45%;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
 .case-tab-padding.accord-exec-padding{
     padding-left: 0;
@@ -819,7 +842,7 @@ td .inr-wrap-chkbox .custom-checkbox{
 }
 .accord2-rght{
     width: 100%;
-    margin: 0 auto;
+    margin: 8px auto;
     position: relative;
     float: left;
 }
@@ -833,7 +856,7 @@ td .inr-wrap-chkbox .custom-checkbox{
 .accord2-rght .table-inr-btns.table-rght-btns{
     float: right;
     width: initial;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 }
 .table-inr-btns.table-rght-btns .btn-color2, .task-row2 .btn.btn-color2{
     background-color: #3C424B;
@@ -967,7 +990,7 @@ td .inr-wrap-chkbox .custom-checkbox{
 .table-body .task-table2 .task-checkbox-width:nth-child(4),
 .table-body .task-table2 .task-checkbox-width:nth-child(5)
 {
-    width: 10%;
+    width: 13%;
     padding: 10px;
     color: #464646;
 }
@@ -978,7 +1001,7 @@ td .inr-wrap-chkbox .custom-checkbox{
     color: #464646;
 }
 .table-body .task-table2 .task-checkbox-width:nth-child(6){
-    width: 13%;
+    width: 15%;
     padding: 5px;
     text-align: center;
     margin: 0 auto;
@@ -1097,6 +1120,8 @@ top: 4px;
 .tab1-form tr td p{
     margin-bottom: 0;
     padding: 10px 0;
+    float: right;
+    padding-left: 12px;
 }
 .task-form tr td p span{
     cursor: pointer;
@@ -1166,7 +1191,7 @@ margin-bottom: 0;
         width: 55%;
     }    
     .table-body .task-table2 .task-checkbox-width:nth-child(3){
-        width: 40%;
+        width: 38%;
     }
  
     .task-form td .form-cal-btn{
@@ -1182,6 +1207,9 @@ margin-bottom: 0;
    
     .font-button, .font-icon{
         width: 30%;
+    }
+    .textfield-wrapper .form-group{
+        width: 44%;
     }
   
 }
@@ -1200,10 +1228,13 @@ margin-bottom: 0;
 
     }
      .table-body .task-table2 .task-checkbox-width:nth-child(6){
-        width: 20%;
+        width: 25%;
     }
     .table-body .task-table2 .task-checkbox-width:nth-child(2){
-        width: 14%;
+        width: 18%;
+    }
+    .table-body .task-table2 .task-checkbox-width:nth-child(4),.table-body .task-table2 .task-checkbox-width:nth-child(5){
+        width:11%;
     }
     .textfield-wrapper .form-group{
         width: 43%;
@@ -1229,6 +1260,9 @@ margin-bottom: 0;
    
     .drpdwn-elt.form-drpdwn, .form.form-without-border .react-datepicker-wrapper{
         width: 141px;
+    }
+    .form-cal-btn{
+        margin-bottom: 10px;
     }
   
 }
@@ -1268,7 +1302,7 @@ margin-bottom: 0;
         width: 16%;
     }
     .textfield-wrapper .form-group {
-        width: 40%;
+        width: 42%;
     }
     .accord-table .table tbody tr td .drpdwn-elt{
         padding-left: 0;
@@ -1305,6 +1339,9 @@ margin-bottom: 0;
     }
     .font-button, .font-icon {
         width: 30%;
+    }
+    .textfield-wrapper .form-group {
+        width: 40%;
     }
   
 }

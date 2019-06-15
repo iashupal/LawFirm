@@ -6,16 +6,18 @@ import PropTypes from 'prop-types';
 const styles = theme => ({
     root: {
         backgroundColor: 'white',
-        border: '1px solid #e4e4e4',
+        border: '1.5px solid #e4e4e4',
         color: 'gray',
         paddingTop: 10,
         paddingBottom: 10,
         paddingLeft: 10,
         paddingRight: 10,
+        borderRadius: 5,
     },
     active: {
         border: `1.5px solid ${theme.palette.primary.main}`,
         color: theme.palette.primary.main,
+        borderRadius: 5,
     }
 });
 

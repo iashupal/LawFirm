@@ -8,11 +8,9 @@ import Tab from '../components/Tab';
 import EnhancedTable from '../components/Table/EnhancedTable';
 import Select from '../components/Select';
 import Grid from '../components/Grid';
-import Splitter from '../components/Splitter';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import AlignedFonts from '../components/AlignedFonts';
-// import Button from '@material-ui/core/Button';
 import Form from '../components/Form';
 import Textbox from '../components/Textbox';
 import TextArea from '../components/TextArea';
@@ -58,7 +56,7 @@ class ComponentDemo extends React.Component {
     onChange(e){
         this.setState({
             selectedKey : e.target.value,
-            checked: event.target.true
+
         });
     }
     changeTab(tab) {
@@ -219,8 +217,7 @@ class ComponentDemo extends React.Component {
                                                    <p className={classes.para}> 001</p>
                                             </div>
                                             <div className="form">
-                                                <p>Number</p>&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <span className="semi-coln">:</span>
+                                            <p className={classes.para}>Number</p><span className={classes.spanMargin}>:</span>
                                                 <div className="wrapper-checkbox">
                                                     <div className="inr-wrap-chkbox">
                                                     <div className="cross-checkbox">
@@ -232,7 +229,7 @@ class ComponentDemo extends React.Component {
                                                     </div>
                                                     <div className="contain-cal-btn">
                                                     <div className={classes.btnMargin}>
-                                                    <Button size="small" color="inverted" mode="regular">CalBtn</Button>
+                                                    <Button size="medium" color="inverted" mode="regular">CalBtn</Button>
                                                     </div>
                                                     <div className="form-cal-btn">
                                                         <DatePicker
@@ -246,7 +243,7 @@ class ComponentDemo extends React.Component {
                                                         <i className="material-icons">date_range</i>
                                                     </div>
                                                     <div className={classes.btnMargin}>
-                                                    <Button size="small" color="inverted" mode="regular">CalBtn</Button>
+                                                    <Button size="medium" color="inverted" mode="regular">CalBtn</Button>
                                                     </div>
                                                     <div className="form-cal-btn">
                                                         <DatePicker
@@ -445,8 +442,6 @@ class ComponentDemo extends React.Component {
                                                     </Button>
                                                     </div>
                                                     <Button size="small" color="primary" mode="regular">Button</Button>
-                                                            {/* <button type="button" className="btn right btnStyle btn-color2">Button1</button>
-                                                            <button type="button" className="btn right btnStyle btn-color1">Button2</button> */}
                                                             
                                                 </div>
                                             </div>
@@ -476,7 +471,6 @@ class ComponentDemo extends React.Component {
                                                 <div className={classes.dropdownElt}>
                                                     <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
                                                   </div>
-                                                {/* <h3 className="h2-fontwght">Content</h3> */}
                                                 <div className="table-inr-btns table-rght-btns">
                                                     <div className={classes.btnMargin}>
                                                     <Button 
@@ -489,8 +483,6 @@ class ComponentDemo extends React.Component {
                                                     </Button>
                                                     </div>
                                                     <Button size="small" color="primary" mode="regular">Button</Button>
-                                                            {/* <button type="button" className="btn right btnStyle btn-color2">Button1</button>
-                                                            <button type="button" className="btn right btnStyle btn-color1">Button2</button> */}
                                                             
                                                 </div>
                                             </div>
@@ -509,7 +501,6 @@ class ComponentDemo extends React.Component {
                                             <div className={classes.dropdownElt}>
                                                     <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
                                                   </div>
-                                                {/* <h3 className="h2-fontwght">Content</h3> */}
                                                 <div className="table-inr-btns table-rght-btns">
                                                     <div className={classes.btnMargin}>
                                                     <Button 
@@ -525,8 +516,6 @@ class ComponentDemo extends React.Component {
                                                         <Button size="small" color="inverted" mode="regular">Button</Button>
                                                     </div>
                                                     <Button size="small" color="primary" mode="regular">Button</Button>
-                                                            {/* <button type="button" className="btn right btnStyle btn-color2">Button1</button>
-                                                            <button type="button" className="btn right btnStyle btn-color1">Button2</button> */}
                                                             
                                                 </div>
                                             </div>
@@ -545,7 +534,6 @@ class ComponentDemo extends React.Component {
                                             <div className={classes.dropdownElt}>
                                                     <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
                                                   </div>
-                                                {/* <h3 className="h2-fontwght">Content</h3> */}
                                                 <div className="table-inr-btns table-rght-btns">
                                                     <div className={classes.btnMargin}>
                                                     <Button 
@@ -561,8 +549,6 @@ class ComponentDemo extends React.Component {
                                                         <Button size="small" color="inverted" mode="regular">Button</Button>
                                                     </div>
                                                     <Button size="small" color="primary" mode="regular">Button</Button>
-                                                            {/* <button type="button" className="btn right btnStyle btn-color2">Button1</button>
-                                                            <button type="button" className="btn right btnStyle btn-color1">Button2</button> */}
                                                             
                                                 </div>
                                             </div>
@@ -644,7 +630,6 @@ class ComponentDemo extends React.Component {
                                               <div className={classes.caseSectionWrapper}>
                                               <div >
                                                   <p className={classes.para}>Number</p><span className={classes.spanMargin}>:</span>
-                                                  {/* <p className={classes.para}>001</p> */}
                                                   <div className={classes.dropdownElt}>
                                                   <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
                                                   </div>
@@ -669,7 +654,7 @@ class ComponentDemo extends React.Component {
                                               </div>
                                         ]}/>
                                     <div>
-                                        <ContentCard title="Case2" actionButton={<Button size="medium" color="inverted">Button</Button>} contents={[
+                                        <ContentCard title="Case2" actionButton={<div style={{float: 'right'}}><Button size="medium" color="inverted">Button</Button></div>} contents={[
                                             <div className={classes.caseSectionWrapper}>
                                             <div className={classes.caseSectnImage}>
                                             
@@ -709,7 +694,7 @@ class ComponentDemo extends React.Component {
                                         ]}/>
                                     </div>
                                     <div>
-                                        <ContentCard title="Case3" actionButton={<Button size="large" color="primary">Button</Button>} 
+                                <ContentCard title="Case3" actionButton={<div style={{float: 'right'}}><Button size="large" color="primary">Button</Button></div>} 
                                         contents={[
                                             <div className={classes.caseSectionWrapper}>
                                             
@@ -745,57 +730,55 @@ class ComponentDemo extends React.Component {
                                         />
                                    
                                     </div>
-                                    <div>
+                                    <div className={classes.case4Mgn}>
                                         <ContentCard title="Case4" 
                                             actionButton={ 
-                                            // <div className={classes.dropdownRght}>
                                                 <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
-                                            //  </div>
                                             }
                                             contents={[
                                                 <div className="case-4-content">
-                                        <div className="case-4-inr-content">
-                                            <div className="case-4-inr-para">
-                                                <p>2018-03-30()</p>
-                                            </div>
-                                            <div style={{borderBottom: '1px solid lightgray'}}>
-                                                <div className="case-4-inr-div">
-                                                    <i className="material-icons icon-color">
-                                                        account_circle
-                                                    </i>
-                                                    <p>Ashu's <b>law</b> case <b> open</b> </p>
+                                                    <div className="case-4-inr-content">
+                                                        <div className="case-4-inr-para">
+                                                            <p>2018-03-30()</p>
+                                                        </div>
+                                                        <div style={{borderBottom: '1px solid lightgray'}}>
+                                                            <div className="case-4-inr-div">
+                                                                <i className="material-icons icon-color">
+                                                                    account_circle
+                                                                </i>
+                                                                <p>Ashu's <b>law</b> case <b> open</b> </p>
+                                                            </div>
+                                                            
+                                                            <div className="case-4-inr-div">
+                                                                <i className="material-icons icon-color">
+                                                                    chat_bubble_outline
+                                                                </i>
+                                                                <p>Ashu's <b>law</b> case <b> open</b> </p>
+                                                            </div>
+                                                        </div>
+                                                        <div className="case-4-inr-para">
+                                                            <p>2018-03-30()</p>
+                                                        </div>
+                                                        <div className="case-4-inr-div">
+                                                            <i className="material-icons icon-color">
+                                                                delete
+                                                            </i>
+                                                            <p>Ashu's <b>law</b> case <b> open</b> </p>
+                                                        </div>
+                                                        <div className="case-4-inr-div">
+                                                            <i className="material-icons icon-color">
+                                                                account_circle
+                                                            </i>
+                                                            <p>Ashu's <b>law</b> case <b> open</b> </p>
+                                                        </div>
+                                                        <div className="case-4-inr-div">
+                                                            <i className="material-icons icon-color">
+                                                                account_circle
+                                                            </i>
+                                                            <p>Ashu's <b>law</b> case <b> open</b> </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                
-                                                <div className="case-4-inr-div">
-                                                    <i className="material-icons icon-color">
-                                                        chat_bubble_outline
-                                                    </i>
-                                                    <p>Ashu's <b>law</b> case <b> open</b> </p>
-                                                </div>
-                                            </div>
-                                            <div className="case-4-inr-para">
-                                                <p>2018-03-30()</p>
-                                            </div>
-                                            <div className="case-4-inr-div">
-                                                <i className="material-icons icon-color">
-                                                    delete
-                                                </i>
-                                                <p>Ashu's <b>law</b> case <b> open</b> </p>
-                                            </div>
-                                            <div className="case-4-inr-div">
-                                                <i className="material-icons icon-color">
-                                                    account_circle
-                                                </i>
-                                                <p>Ashu's <b>law</b> case <b> open</b> </p>
-                                            </div>
-                                            <div className="case-4-inr-div">
-                                                <i className="material-icons icon-color">
-                                                    account_circle
-                                                </i>
-                                                <p>Ashu's <b>law</b> case <b> open</b> </p>
-                                            </div>
-                                        </div>
-                                    </div>
                                             ]}
                                             >
                                         
@@ -812,7 +795,7 @@ class ComponentDemo extends React.Component {
                                 }
                                 {tab === 1 && 
                                 <div className={classes.tab2}>
-                                {/* <Splitter> */}
+                           
                                     <ContentCard title={
                                         <div className={classes.tab2HeadingWrapper}>
                                             <h2>Case 2</h2>
@@ -838,12 +821,12 @@ class ComponentDemo extends React.Component {
                                     actionButton={
                                      
                                         <div className={classes.tab2HeadingRghtWrapper}>
-                                           <div className="tab2Checkbox">
+                                           <div className={classes.tab2Checkbox}>
                                                 <SimpleCheckbox label="Simple" checked={this.state.checked} onClick={this.toggleChecked} />
                                            </div>
-                                            <div className="tab2RghtButtons">
+                                            <div className={classes.tab2RghtButtons}>
                                                 
-                                                <Button size="small" color="inverted" mode="regular">Button</Button>
+                                                <Button size="medium" color="inverted" mode="regular">Button</Button>
                                             </div>
                                         </div>
                                     
@@ -874,21 +857,22 @@ class ComponentDemo extends React.Component {
                                                     />
                                                     </div>
                                                     <div className={classes.taskSelect}>
-                                                    <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
+                                                        <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
                                                     </div>
                                                     <div className={classes.taskSelect}>
-                                                    <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
+                                                        <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
                                                     </div>
                                                     <div className={classes.taskSelect}>
-                                                    <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
+                                                        <Select placeholder="Select an Option" options={options} onChange={this.onChange}/>
                                                     </div>
                                                     
 
                                                 </div>
-                                                </div>
+                                            </div>
                                            
-                                            
-                                            <EnhancedTable/>
+                                            <div className="paginatn-table left">
+                                                <EnhancedTable rows data/>
+                                            </div>
                                             </div>
                                            
                                         ]}
@@ -965,12 +949,12 @@ class ComponentDemo extends React.Component {
                                                 {
                                                     title: "fvf",
                                                     child: (
-                                                        <div>
-                                                            <Button 
-                                                            size="small"  
-                                                            color="inverted"
-                                                            mode="regular">Button</Button>
-                                                            <p className="left"><span>Task1.pdf</span>  | <span>Task2.pdf</span></p>
+                                                        <div className="left">
+                                                            <Button className="left"
+                                                                size="medium"  
+                                                                color="inverted"
+                                                                mode="regular">Button</Button>
+                                                            <p className="left"><span>Task1.pdf</span> &nbsp; | &nbsp; <span>Task2.pdf</span></p>
                                                         </div>
                                                     )
                                                 },
@@ -993,7 +977,7 @@ class ComponentDemo extends React.Component {
                                    
                                     />
                                     
-                                     {/* </Splitter> */}
+                                  
                                 </div>
                             }
                                 {tab === 2 && <p>2</p>}
@@ -1064,7 +1048,7 @@ const styles = theme => ({
         verticalAlign: 'top',
      },
      dropdownElt: {
-        width: '30%',
+        width: '26%',
         display: 'inline-block'
      },
      sectn2Span: {
@@ -1107,12 +1091,12 @@ const styles = theme => ({
         marginBottom: 10,
     },
     btnMargin: {
-        marginRight: 5,
+        marginRight: 8,
         display: 'inline-block',
     },
     formSpanPadding: {
-        paddingTop: 8,
-        paddingBottom: 8,
+        paddingTop: 5,
+        paddingBottom: 5,
         paddingLeft: 10,
         paddingRight: 10,   
 
@@ -1139,7 +1123,7 @@ const styles = theme => ({
     marginRight: 'auto',
     },
     selectFormElt: {
-        width: '18%',
+        width: '130px',
         display: 'inline-block'
     },
     tab2HeadingWrapper: {
@@ -1169,7 +1153,7 @@ const styles = theme => ({
     taskSearchWrap: {
         display: 'grid',
         gridTemplateColumns: 'repeat(12, 1fr)',
-        marginBottom: 10,
+        marginBottom: 15,
     },
     taskStart: {
         gridColumnStart: 1,
@@ -1198,19 +1182,18 @@ const styles = theme => ({
         gridColumnStart: 6,
         gridColumnEnd: 9,
         alignSelf: 'center',
+        lineHeight: '37px',
+    height: '37px',
        
         paddingRight: 10,
     },
     taskSelect: {
         paddingRight: 10,
         width: '23%',
+    },
+    case4Mgn:{
+        marginTop: '-12px',
     }
-
-
-
-
-
-
 
 });
 

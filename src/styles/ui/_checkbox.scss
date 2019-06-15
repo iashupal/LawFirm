@@ -1,5 +1,5 @@
 .checkbox {
-    width: 36%;
+    // width: 36%;
     // margin: 15px auto;
     position: relative;
     display: inline-block;
@@ -89,9 +89,7 @@
     }
 }
 // 767px css code
-.checkbox {
-    width: 45%;
-}
+
 // 767px css code
 @media screen and (max-width:767px){
     .checkbox{

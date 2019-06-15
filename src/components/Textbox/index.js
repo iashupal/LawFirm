@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TextField } from 'office-ui-fabric-react/lib/TextField';
 
-function Textbox({ placeholder, label, value, onChange, multiline }) {
+function Textbox({ placeholder, label, value, onChange, multiline}) {
     return (
         <TextField
             label={label}

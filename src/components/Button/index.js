@@ -17,7 +17,7 @@ const styles = theme => ({
         '&:hover': {
             borderColor: fade(theme.palette.common.white, 0.25)
         },
-        fontSize: '15px',
+        fontSize: '14px',
         letterSpacing: '.5px'
     },
     rightIconButtonLabel: {

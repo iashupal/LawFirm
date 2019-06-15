@@ -20,17 +20,30 @@ import UserInfoPopup from 'components/UserInfo/UserInfoPopup';
 import UserInfo from 'components/UserInfo';
 import { RU } from 'helpers/ramda';
 import ManualDialog from 'components/Header/ManualDialog';
-import DropdownElement from '../DropdownElement/DropdownElement';
+import DropdownElement from '../DropdownElement';
 import TimeButton from '../Timebutton/TimeButton';
-// import PopupBtn from '../OpenPopupBtn/PopupBtn';
 import Search from '../Search/Search';
 import NotificationBadge from '../NotificationBadge';
-import AddContent from '../AddContent/AddContent';
 import { notifications } from '../AppNotification/data';
+import Select from '../Select';
 import Button from '../Button';
 const { changeURL, parseQueryStr } = RU;
-
+const options = [
+    { key: 'fruitsHeader', text: 'Fruits' },
+    { key: 'apple', text: 'Apple' },
+    { key: 'banana', text: 'Banana' },
+    { key: 'orange', text: 'Orange', disabled: true },
+    { key: 'grape', text: 'Grape' },
+    { key: 'divider_1', text: '-', },
+    { key: 'vegetablesHeader', text: 'Vegetables'},
+    { key: 'broccoli', text: 'Broccoli' },
+    { key: 'carrot', text: 'Carrot' },
+    { key: 'lettuce', text: 'Lettuce' }
+  ];
+  
 class Header extends React.Component {
+
+
     state = {
         searchBox: false,
         searchText: '',
@@ -39,7 +52,7 @@ class Header extends React.Component {
         langSwitcher: false,
         appNotification: false
     };
-
+   
     onAppNotificationSelect = () => {
         this.setState({ appNotification: !this.state.appNotification });
     };
@@ -88,6 +101,7 @@ class Header extends React.Component {
     };
 
     render() {
+        // const {selectedKey} = this.state;
         const {
             drawerType,
             locale,
@@ -161,11 +175,13 @@ class Header extends React.Component {
                             value={this.state.searchText}
                             onChange={this.updateSearchText}
                             onKeyPress={this.searchKeyPress}
+                            placeholder="Search"
                         />
                     )}
 
                     <div className="drpdwn-elt form-drpdwn header-dpdwn d-md-block d-sm-none d-none">
                         <DropdownElement />
+                        {/* <Select placeholder="Select an Option" options={options}/> */}
                     </div>
                     {/* <div className="right"> */}
                     <div className="add-dialog ml-auto d-md-block d-sm-none d-none">

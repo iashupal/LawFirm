@@ -25,7 +25,10 @@ TextArea.propTypes = {
 };
 const styles = {
     textareaField: {
-        width: '100%'
+        width: '100%',
+        borderColor: 'lightgray',
+        borderRadius: '5px',
+    
     }
 }
 export default withStyles(styles)(TextArea);
