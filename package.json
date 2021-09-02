@@ -27,7 +27,7 @@
         "hh-mm-ss": "^1.2.0",
         "history": "^4.7.2",
         "iconv-lite": "^0.4.24",
-        "immer": "2.1.5",
+        "immer": "9.0.6",
         "lodash": "^4.17.10",
         "m-react-splitters": "^1.2.0",
         "material-ui-pickers": "2.0.0",
